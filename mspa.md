@@ -96,3 +96,21 @@ However, you can't remember it.
 [/left]
 [/spoiler]
 [/size]
+
+# page 8
+
+[size=24]
+[spoiler close="Close" open="Open"]
+[left]
+[color=#0cf]SPARKY: You just helped remember my name![/color]
+
+[color=#6a006a]ERIDAN: i wwonder howw you evven forgot it in the first place
+
+ERIDAN: but then your kind isnt known for your brains
+
+ERIDAN: wwhatevver listen up land dwweller i havve [/color][color=#0cf]SPARKY: Do you have anything to eat?[/color]
+
+[color=#6a006a]ERIDAN: wwhat[/color]
+[/left]
+[/spoiler]
+[/size]
