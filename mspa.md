@@ -73,10 +73,26 @@ However, you can't remember it.
 # page 6 -- Some other troll: Suddenly come in and remind her of her name.
 
 [size=24]
-[spoiler close="Close Dialog" open="Open Dialog"]
+[spoiler close="Close" open="Open"]
 [left]
 [color=#6a006a]ERIDAN: hey spark[/color]
 
 [color=#0cf]??????: That's it![/color]
 [/left]
 [/spoiler]
+
+# page 7
+
+[size=24]
+[spoiler close="Close" open="Open"]
+[left]
+[color=#0cf]SPARKY: Yay![/color]
+
+[color=#6a006a]ERIDAN: wwhat[/color]
+
+[color=#0cf]SPARKY: Thank you, thanks a lot!
+
+[color=#6a006a]ERIDAN: the fuck just happened[/color]
+[/left]
+[/spoiler]
+[/size]
