@@ -102,7 +102,7 @@ However, you can't remember it.
 [size=24]
 [spoiler close="Close" open="Open"]
 [left]
-[color=#0cf]SPARKY: You just helped remember my name![/color]
+[color=#0cf]SPARKY: You just helped me remember my name![/color]
 
 [color=#6a006a]ERIDAN: i wwonder howw you evven forgot it in the first place
 
