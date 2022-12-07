@@ -43,6 +43,16 @@ CHARACTERS: [color=#0cf]Sparky[/color], [color=#6a006a]Eridan[/color], [color=#0
 
 DEVIATION FROM HOMESTUCK: Not much. Actually it's not going to differ a lot to the canon trolls until right before they enter the game. [i]Objectif Luna[/i]
 
+[spoiler close="Notes & CW" open="Notes & CW"]
+- Every instance of "god" or "gog" is replaced with "boy".
+
+- Content warnings: basically Homestuck level. If you can read through the entirety of Homestuck, you'll be able to handle this.
+
+- I use a VPN to access Google Login API, because mspfa doesn't host accounts. So if I go for long without updating, it probably just means my vpn expired. No matter what, I will make this comic when I have time, even if they aren't uploaded to this site.
+
+- Sometimes I will add the text before I add the pictures. I won't notify readers when it's only a text-edit, but sometimes I forget anyways. Sorry :(
+[/spoiler]
+
 [spoiler close="Author's pathetic inner monologue (too long but plz read anyways)" open="Author's pathetic inner monologue (too long but plz read anyways)"]
 First of all, hey reader, thank you for clicking into this little adventure for whatever reason. Mostly because you saw it on the "recently updated" section.
 
@@ -55,11 +65,6 @@ Readers, I know this sounds like crap and I know you read this a thousand times,
 Finally, regarding the first-ever comment I received. I know Eridan is a controversial character, and some people might even turn away from a fanventure because Eridan's in it. Please don't, since then you might miss some great fanventures like Be The Sea Dweller Lowblood. Eridan is my patron troll; he's far from my favorite character but also far from the least fav. He is the second troll to appear (first canon troll) for obvious plot reasons. But the thing I want to clarify is that as douchey as he is, he is well-written and interesting, like most characters in Homestuck. With these characters, it's not hard to make them FUNNY. Funny! This is exactly what the "hilarity ensues" in the description means. Everyone gets to crack jokes!
 
 Whoa, I have no idea I had written this much. Thank you for sticking with me. Now go and stick with this little fanventure I made with all my heart.
-[/spoiler]
-
-[spoiler close="Notes & CW" open="Notes & CW"]
-- Every instance of "god" or "gog" is replaced with "boy".
-- Content warnings: basically Homestuck level. If you can read through the entirety of Homestuck, you'll be able to handle this.
 [/spoiler]
 [/size]
 
@@ -201,3 +206,56 @@ SPARKY: Ice cream! I love it![/color]
 [/left]
 [/spoiler]
 [/size]
+
+# page 13
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#6a006a]ERIDAN: you
+
+ERIDAN: i
+
+ERIDAN: there are so many holes in your logic it sounds like its bein riddled wwith a fallacy machine gun[/color]
+
+[color=#0cf]SPARKY: Machine gun? Where is it? Is it aimed at us?[/color]
+
+[color=#6a006a]ERIDAN: no shut up its a figurativve machine gun[/color]
+[/spoiler]
+[/size]
+
+# page 14
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: Is a figurative machine gun les dangerous than a real one? I think we stil need to take cover![/color]
+
+[color=#6a006a]ERIDAN: SHUT UP I SAID
+
+ERIDAN: there is no machine gun
+
+ERIDAN: there is also no ice cream
+
+ERIDAN: (there is also no such thin as spark has a brain)
+
+ERIDAN: (life just had to take all the nice girls awway an leavve me wwith idiots like her)[/color]
+[/spoiler]
+[/size]
+
+# page 15
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: Exactly, I don't see any machine guns around either.
+
+SPARKY: But[/color]
+[/spoiler]
+
+[img][/img]
+
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: No ice cream?!?! How do you explain the glases cloth on your hand???[/color]
+[/spoiler]
+[/size]
+
+# page 16
+
