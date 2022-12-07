@@ -259,3 +259,34 @@ SPARKY: But[/color]
 
 # page 16
 
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#6a006a]ERIDAN: thats wwhat i wwas about to say before you interrupted like the disrespectful ingorant idiot you are[/color]
+
+[color=#0cf]SPARKY: Sory! Please continue now, I realy want to hear this too![/color]
+
+[color=#6a006a]ERIDAN: (no doubt you do)
+
+ERIDAN: my glasses are foggin not cause ivve been in the freezer[/color]
+[/spoiler]
+[/size]
+
+# page 17
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#6a006a]ERIDAN: but cause the entire ship is air conditioned
+
+ERIDAN: its cooler and dryer than the outside so course i had to wwipe the fog awway right[/color]
+
+[color=#0cf]SPARKY: This DOES make sense now that you mention it!
+
+SPARKY: So I gues that means you don't have any ice cream?
+
+SPARKY: Awww... I was realy geting my hopes up...
+
+SPARKY: Never mind; sory for wasting your time, then. I'll[/color] [color=#6a006a]ERIDAN: WWAIT DONT GO[/color]
+[/spoiler]
+[/size]
+
+# page 18
