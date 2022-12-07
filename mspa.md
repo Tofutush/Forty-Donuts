@@ -123,7 +123,7 @@ However, you can't remember it.
 
 [color=#6a006a]ERIDAN: wwhat[/color]
 
-[color=#0cf]SPARKY: Thank you, thanks a lot!
+[color=#0cf]SPARKY: Thank you, thanks a lot![/color]
 
 [color=#6a006a]ERIDAN: the fuck just happened[/color]
 [/left]
@@ -138,7 +138,9 @@ However, you can't remember it.
 [color=#0cf]SPARKY: You just helped me remember my name![/color]
 
 [color=#6a006a]ERIDAN: i wwonder howw you evven forgot it in the first place
+
 ERIDAN: but then your kind isnt knowwn for your brains
+
 ERIDAN: wwhatevver listen up land dwweller i havve [/color][color=#0cf]SPARKY: Do you have anything to eat?[/color]
 
 [color=#6a006a]ERIDAN: wwhat[/color]
@@ -151,11 +153,16 @@ ERIDAN: wwhatevver listen up land dwweller i havve [/color][color=#0cf]SPARKY: D
 [size=24]
 [spoiler close="Close" open="Open"]
 [left]
-[color=#0cf]SPARKY: Ice cream! You just had some ice cream, didn't you?[/color]
+[color=#0cf]SPARKY: I'm so hungry right now! I think that's why I forgot everything. I'm too hungry.
+
+SPARKY: You just had some ice cream, didn't you?[/color]
 
 [color=#6a006a]ERIDAN: boy
+
 ERIDAN: this covversation is goin in a really wweird direction
+
 ERIDAN: but
+
 ERIDAN: wwhat makes you think i just had ice cream[/color]
 [/left]
 [/spoiler]
@@ -168,8 +175,9 @@ ERIDAN: wwhat makes you think i just had ice cream[/color]
 [left]
 [color=#0cf]SPARKY: Because of that glases cloth on your hand![/color]
 
-[color=#6a006a]ERIDAN: hrm
+[color=#6a006a]ERIDAN: hrm[/color]
 [/left]
+[/spoiler]
 [/size]
 
 # page 12
@@ -178,12 +186,18 @@ ERIDAN: wwhat makes you think i just had ice cream[/color]
 [spoiler close="Close" open="Open"]
 [left]
 [color=#0cf]SPARKY: Your glases are prety clear from what I can see here, but you stil have the cloth on your hand.
+
 SPARKY: Which means you'd probably just finished cleaning them.
+
 SPARKY: Tonight's kind of hot and humid, so I figure that you'd come out of somewhere cold, and vapor landed al on your glases!
+
 SPARKY: That cold place you came out of must be the freezer! You opened the freezer not long ago.
+
 SPARKY: Among al the cold stuf that are kept in the freezer, only ice cream tubs have to be put bak!
+
 SPARKY: Unles you ate it up, though. But if you put it bak into the freezer, that means you stil have ice cream left!
-SPARKY: Ice cream! I love it!
+
+SPARKY: Ice cream! I love it![/color]
 [/left]
 [/spoiler]
 [/size]
