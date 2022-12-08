@@ -91,7 +91,7 @@ Seriously, ever since she went into the forest she has eaten nothing but unident
 
 Yes, the kind of chalk used to draw stuff on the blackboard.
 
-Speaking of blackboards, she hasn't seen them in a long time either. Not since Amesia... Hey, check out that cool cloud! Ooh it's in the shape of...
+Speaking of blackboards, she hasn't seen them in a long time either. Not since Amisia... Hey, check out that cool cloud! Ooh it's in the shape of...
 [/size]
 
 # page 5 -- Give her a name while she's distracted.
@@ -290,3 +290,68 @@ SPARKY: Never mind; sory for wasting your time, then. I'll[/color] [color=#6a006
 [/size]
 
 # page 18
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: Huh?[/color]
+
+[color=#6a006a]ERIDAN: listen land dww
+
+ERIDAN: i mean listen spark[/color]
+
+[color=#0cf]SPARKY: I am listening.[/color]
+
+[color=#6a006a]ERIDAN: i can givve you anythin you wanna eat[/color]
+
+[color=#0cf]SPARKY: Seriously?!?![/color]
+
+[color=#6a006a]ERIDAN: yeah as long as you agree to play a game wwith me[/color]
+
+[color=#0cf]SPARKY: A game? SGRUB? I thought we weren't starting it until Karkat hit six sweeps.[/color]
+
+[color=#6a006a]ERIDAN: no not sgrub
+
+ERIDAN: flarp[/color]
+[/spoiler]
+[/size]
+
+# page 19
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: FLARP?!?!?!
+
+SPARKY: Are you kiding me?[/color]
+
+[color=#6a006a]ERIDAN: are you questionin me[/color]
+
+[color=#0cf]SPARKY: FLARP!?!?!?[/color]
+[/spoiler]
+[/size]
+
+# page 20
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#416600]NEPETA: :33 < flarp is a very dangerous game ind33d![/color]
+
+[color=#0cf]SPARKY: How so? It doesn't sound dangerous at al![/color]
+
+[color=#416600]NEPETA: :33 < while it may look like a harmless roleplaying game it is actually a terrible addictive mind-warper that will make trolls all fight and kill each other over nothing at all!
+
+NEPETA: :33 < and then there will be blood and gore flying everywhere in this endless blazing inferno of death!!![/color]
+[/spoiler]
+[/size]
+
+# page 21
+
+[size=24]
+[spoiler open="Open" close="Close"]
+[color=#0cf]SPARKY: Ouch![/color]
+
+[color=#416600]NEPETA: :33 < :33 < thats why you should always watch your head[/color]
+[/spoiler]
+Later on, commands to pages with gif images will be preceded with [G].
+[/size]
+
+# page 22
