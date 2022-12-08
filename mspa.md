@@ -267,7 +267,7 @@ SPARKY: But[/color]
 
 [color=#6a006a]ERIDAN: (no doubt you do)
 
-ERIDAN: my glasses are foggin not cause ivve been in the freezer[/color]
+ERIDAN: i havvent been in the freezer[/color]
 [/spoiler]
 [/size]
 
@@ -275,13 +275,19 @@ ERIDAN: my glasses are foggin not cause ivve been in the freezer[/color]
 
 [size=24]
 [spoiler open="Open" close="Close"]
-[color=#6a006a]ERIDAN: but cause the entire ship is air conditioned
+[color=#6a006a]ERIDAN: this isnt evven some glasses cloth
 
-ERIDAN: its cooler and dryer than the outside so course i had to wwipe the fog awway right[/color]
+ERIDAN: its a piece a paper
 
-[color=#0cf]SPARKY: This DOES make sense now that you mention it!
+ERIDAN: see its got stuff wwritten on it can you see that
 
-SPARKY: So I gues that means you don't have any ice cream?
+ERIDAN: can you evven read[/color]
+
+[color=#0cf]SPARKY: Oh right! It's a piece of paper!
+
+SPARKY: I was standing too far away, I think. Or maybe my vision blured because I was SO HUNGRY.
+
+SPARKY: But I gues that means you don't have any ice cream?
 
 SPARKY: Awww... I was realy geting my hopes up...
 
