@@ -402,7 +402,7 @@ ERIDAN: so maybe showw some respect to your superiors do you knoww wwhat respect
 
 [size=24]
 [spoiler open="Open" close="Close"]
-[color=#0cf]SPARKY: Wait a minute, let's go over this[/color]
+[color=#0cf]SPARKY: Wait a minute, let's go over this.[/color]
 
 [color=#6a006a]ERIDAN: wwhat is there to go ovver[/color]
 
