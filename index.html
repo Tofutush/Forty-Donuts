@@ -1,9 +1,261 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Forty Donuts</title>
-  </head>
-  <body>
-    hahahaha
-  </body>
+<head>
+<title>Forty Donuts</title>
+<style>
+	body {
+		background-color: #5a5a5a;
+		font-family: Courier New;
+		font-weight: bold;
+		margin: 0;
+		user-select: none;
+	}
+	a {
+		text-decoration: none;
+		color: #0cf;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:visited {
+		color: #0021cb;
+	}
+	::selection {
+		color: inherit;
+		background-color: #a5a5a5;
+	}
+	#navbar {
+		background-color: #5a5a5a;
+		font-size: 16px;
+		padding: 3px;
+		text-align: center;
+	}
+	#wrapper {
+		background-color: #eee;
+		margin: auto;
+		width: 1000px;
+	}
+	#frame {
+		width: 960px;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+	#switch-lang {
+		padding-top: 20px;
+	}
+	#command {
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		text-align: center;
+		user-select: text;
+	}
+	#content {
+		font-size: 24px;
+		text-align: center;
+		user-select: text;
+	}
+	#link {
+		font-size: 28px;
+		padding: 10px;
+	}
+	.p {
+		margin: 15px 0;
+	}
+	.panel {
+		user-select: none;
+	}
+	.dialog {
+		margin: 5px auto;
+	}
+	.dialog-speaker {
+		text-align: right;
+		vertical-align: top;
+	}
+	.dialog-line {
+		text-align: left;
+	}
+</style>
+</head>
+<body>
+<nav id="navbar">
+	<a class="navlink" href="https://mspfa.com/?s=48313&p=1" style="color: #e00707;">Forty Donuts on MSPFA</a>
+	<img class="navimg" src="navimg.png"/>
+	<a class="navlink" href="https://mspfa.com" style="color: #f1a500;">MSPFA Site</a>
+	<img class="navimg" src="navimg.png"/>
+	<a class="navlink" href="https://homestuck.com" style="color: #fffa36;">Homestuck Site</a>
+</nav>
+<div id="wrapper">
+	<div id="frame"></div>
+</div>
+<div id="footer">idk what to put here.</div>
+<script>
+	const colors = {
+		rust: '#a10000',
+		bronze: '#a15000',
+		gold: '#a1a100',
+		gray: '#626262',
+		olive: '#416600',
+		jade: '#078446',
+		teal: '#008282',
+		cerulean: '#004182',
+		indigo: '#0021cb',
+		equius: '#000056',
+		sparky: '#0cf',
+		purple: '#440a7f',
+		violet: '#6a006a',
+		fuchsia: '#99004d',
+		blue: '#0715cd',
+		lightblue: '#00d6f1',
+		lalondepurple: '#b536da',
+		pink: '#ff6ff2',
+		red: '#e00707',
+		orange: '#f1a500',
+		green: '#4a7925',
+		darkgreen: '#1e9300'
+	};
+	let url = new URLSearchParams(window.location.search);
+	let allPages = loadXML(`${url.get('lang') || 'en'}.xml`).children;
+
+	function findPage(num) {
+		for(let z = 0; z < allPages.length; z++) {
+			if(Number(allPages[z].getAttribute('num')) == num) return allPages[z];
+		};
+	}
+	function para(d, dom) {
+		let c = dom.childNodes;
+		for(let z = 0; z < c.length; z++) {
+			if(c[z].tagName) { // if it has something special, not a text node
+				let d1;
+				if(c[z].tagName == 'a') {
+					d1 = elt('a', {href: c[z].getAttribute('href')});
+				} else {
+					d1 = elt('span');
+					switch(c[z].tagName) {
+						case 'c': // color
+							d1.style.color = c[z].getAttribute('c');
+							break;
+						case 's': // size
+							d1.style.fontSize = c[z].getAttribute('s');
+							break;
+						case 'i': // italic
+							d1.style.fontStyle = 'italic';
+							break;
+						case 'u': // underline
+							d1.style.textDecoration = 'underline';
+							break;
+						case 'st': // strikethrough
+							d1.style.textDecoration = 'line-through';
+							break;
+						case 'w': // weight
+							d1.style.fontWeight = c[z].getAttribute('w');
+							break;
+						case 'cap': //all caps
+							d1.style.textTransform = 'uppercase';
+							break;
+						default:
+							throw new Error(`whoops sorry tag name ${c[z].tagName} not supported`);
+					}
+				};
+				d.appendChild(para(d1, c[z]));
+			} else { // if its a text node
+				d.appendChild(c[z]);
+				z--;
+			}
+		}
+		return d;
+	}
+	function dialog(dom) {
+		let t = elt('table', {className: 'dialog'});
+		let c = dom.children;
+		for(let z = 0; z < c.length; z++) {
+			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, ':'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
+		}
+		return t;
+	}
+
+	class Page {
+		constructor(num) {
+			this.num = num;
+			this.getDom();
+			this.getSwitchLang();
+			this.getCommand();
+			this.getContent();
+			this.getLink();
+			this.getControls();
+		}
+		getDom() {
+			this.dom = findPage(this.num);
+		}
+		getSwitchLang() {
+			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `index.html?page=${this.num}&lang=${lang('zh')}`}, lang('简体中文')));
+		}
+		getCommand() {
+			this.command = elt('div', {id: 'command'}, this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
+		}
+		getContent() {
+			let q = this.dom.children[1].children;
+			this.div = elt('div', {id: 'content'});
+			for(let z = 0; z < q.length; z++) {
+				switch(q[z].tagName) {
+					case 'img':
+						this.div.appendChild(elt('img', {className: 'panel', src: q[z].firstChild.nodeValue}));
+						break;
+					case 'p':
+						let d = elt('div', {className: 'p'});
+						this.div.appendChild(para(d, q[z]));
+						break;
+					case 'br':
+						this.div.appendChild(elt('br'));
+					case 'log':
+						this.div.appendChild(dialog(q[z]));
+						break;
+					default:
+						throw new Error(`dang it tag name "${q[z].tagName}" isnt supported sorry`);
+				}
+			}
+		}
+		getLink() {
+			let q = findPage(this.num + 1);
+			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `index.html?page=${this.num + 1}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
+			else this.link = 0;
+		}
+		getControls() {
+			this.controls = elt('div', {id: 'controls'}, elt('a', {href: `index.html?page=${this.num - 1}`}, lang('go back')), elt('span', {style: 'font-weight: bold;'}, ' | '), elt('a', {href: `index.html?page=1`}, lang('start over')));
+		}
+		appendStuff() {
+			let f = document.querySelector('#frame');
+			f.appendChild(this.switchLang);
+			f.appendChild(this.command);
+			f.appendChild(this.div);
+			if(this.link) f.appendChild(this.link);
+			f.appendChild(this.controls);
+		}
+	}
+	let page = new Page(Number(url.get('page')) || 1);
+	page.appendStuff();
+
+	function lang(txt) {
+		if(url.get('lang') == 'zh') {
+			switch(txt) {
+				case '简体中文':
+					return 'English (USA)';
+				case 'go back':
+					return '返回';
+				case 'start over':
+					return '重开';
+				case 'zh':
+					return 'en';
+			}
+		} else {
+			return txt;
+		}
+	}
+
+	function loadXML(url) {let r=new XMLHttpRequest();r.open('GET',url,false);r.send(null);let p=new DOMParser();let dom=p.parseFromString(r.responseText,'text/xml');if(isParseError(dom)){console.log(dom.children[0]);throw new Error('xmlparsing error')}else{return dom.children[0]}};
+	function elt(type,props,...children){let dom=document.createElement(type);if(props)Object.assign(dom,props);for(let child of children){if(typeof child!="string")dom.appendChild(child);else dom.appendChild(document.createTextNode(child));}return(dom);}
+	//https://stackoverflow.com/questions/11563554/how-do-i-detect-xml-parsing-errors-when-using-javascripts-domparser-in-a-cross
+	function isParseError(parsedDocument){var parser=new DOMParser(),errorneousParse=parser.parseFromString('<','application/xml'),parsererrorNS=errorneousParse.getElementsByTagName("parsererror")[0].namespaceURI;if(parsererrorNS==='http://www.w3.org/1999/xhtml'){return parsedDocument.getElementsByTagName("parsererror").length>0;}return parsedDocument.getElementsByTagNameNS(parsererrorNS,'parsererror').length>0;};
+</script>
+</body>
 </html>
