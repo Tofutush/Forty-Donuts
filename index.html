@@ -5,9 +5,10 @@
 <style>
 	body {
 		background-color: #5a5a5a;
-		font-family: Courier New;
+		font-family: Courier New, 微软雅黑 light;
 		font-weight: bold;
 		margin: 0;
+		overflow-y: scroll;
 		user-select: none;
 	}
 	a {
@@ -24,11 +25,16 @@
 		color: inherit;
 		background-color: #a5a5a5;
 	}
+	::-webkit-scrollbar {
+		display: none;
+	}
 	#navbar {
 		background-color: #5a5a5a;
 		font-size: 16px;
 		padding: 3px;
 		text-align: center;
+		position: sticky;
+		top: 0;
 	}
 	#wrapper {
 		background-color: #eee;
@@ -59,6 +65,9 @@
 		font-size: 28px;
 		padding: 10px;
 	}
+	#controls {
+		margin-top: 10px;
+	}
 	.p {
 		margin: 15px 0;
 	}
@@ -71,6 +80,7 @@
 	.dialog-speaker {
 		text-align: right;
 		vertical-align: top;
+		text-transform: uppercase;
 	}
 	.dialog-line {
 		text-align: left;
@@ -79,11 +89,11 @@
 </head>
 <body>
 <nav id="navbar">
-	<a class="navlink" href="https://mspfa.com/?s=48313&p=1" style="color: #e00707;">Forty Donuts on MSPFA</a>
+	<a id="fd" href="https://mspfa.com/?s=48313&p=1" style="color: #e00707;">Forty Donuts on MSPFA</a>
 	<img class="navimg" src="navimg.png"/>
-	<a class="navlink" href="https://mspfa.com" style="color: #f1a500;">MSPFA Site</a>
+	<a id="mspfa" href="https://mspfa.com" style="color: #f1a500;">MSPFA Site</a>
 	<img class="navimg" src="navimg.png"/>
-	<a class="navlink" href="https://homestuck.com" style="color: #fffa36;">Homestuck Site</a>
+	<a id="hs" href="https://homestuck.com" style="color: #fffa36;">Homestuck Site</a>
 </nav>
 <div id="wrapper">
 	<div id="frame"></div>
@@ -115,7 +125,8 @@
 		darkgreen: '#1e9300'
 	};
 	let url = new URLSearchParams(window.location.search);
-	let allPages = loadXML(`${url.get('lang') || 'en'}.xml`).children;
+	let language = url.get('lang') || 'en';
+	let allPages = loadXML(`${language}.xml`).children;
 
 	function findPage(num) {
 		for(let z = 0; z < allPages.length; z++) {
@@ -169,7 +180,7 @@
 		let t = elt('table', {className: 'dialog'});
 		let c = dom.children;
 		for(let z = 0; z < c.length; z++) {
-			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, ':'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
+			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: lang('dialog-speaker')}, lang(':')), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
 		}
 		return t;
 	}
@@ -177,12 +188,18 @@
 	class Page {
 		constructor(num) {
 			this.num = num;
+			this.prevNum = this.num - 1;
+			this.nextNum = this.num + 1;
 			this.getDom();
 			this.getSwitchLang();
 			this.getCommand();
 			this.getContent();
 			this.getLink();
 			this.getControls();
+			this.eventListeners();
+		}
+		goToPage(num) {
+			window.location.href = `index.html?page=${num}&lang=${language}`;
 		}
 		getDom() {
 			this.dom = findPage(this.num);
@@ -216,12 +233,20 @@
 			}
 		}
 		getLink() {
-			let q = findPage(this.num + 1);
-			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `index.html?page=${this.num + 1}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
+			let q = findPage(this.nextNum);
+			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `index.html?page=${this.nextNum}&lang=${language}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
 			else this.link = 0;
 		}
 		getControls() {
-			this.controls = elt('div', {id: 'controls'}, elt('a', {href: `index.html?page=${this.num - 1}`}, lang('go back')), elt('span', {style: 'font-weight: bold;'}, ' | '), elt('a', {href: `index.html?page=1`}, lang('start over')));
+			this.controls = elt('div', {id: 'controls'}, elt('a', {href: `index.html?page=${this.prevNum}&lang=${language}`}, lang('go back')), elt('span', {style: 'font-weight: bold;'}, ' | '), elt('a', {href: `index.html?page=1&lang=${language}`}, lang('start over')));
+		}
+		eventListeners() {
+			document.body.addEventListener('keydown', e => {
+				if(e.keyCode == 37 && findPage(this.prevNum)) // left arrow
+					this.goToPage(this.prevNum);
+				if(e.keyCode == 39 && findPage(this.nextNum)) // right arrow
+					this.goToPage(this.nextNum);
+			});
 		}
 		appendStuff() {
 			let f = document.querySelector('#frame');
@@ -235,8 +260,19 @@
 	let page = new Page(Number(url.get('page')) || 1);
 	page.appendStuff();
 
+	// navbar text
+	document.getElementById('fd').innerText = lang('Forty Donuts on MSPFA');
+	document.getElementById('mspfa').innerText = lang('MSPFA Site');
+	document.getElementById('hs').innerText = lang('Homestuck Site');
+
+	// alt progress bar at top cuz it looks stupid on the right. code from eloquentjavascript.net
+	window.addEventListener('scroll', e => {
+		let navbar = document.getElementById('navbar');
+		navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #5a5a5a 0%)`;
+	});
+
 	function lang(txt) {
-		if(url.get('lang') == 'zh') {
+		if(language == 'zh') {
 			switch(txt) {
 				case '简体中文':
 					return 'English (USA)';
@@ -246,15 +282,24 @@
 					return '重开';
 				case 'zh':
 					return 'en';
+				case ':':
+					return '：';
+				case 'Forty Donuts on MSPFA':
+					return '在 MSPFA 上查看四十甜甜圈';
+				case 'MSPFA Site':
+					return 'MSPFA 网站';
+				case 'Homestuck Site':
+					return '卡家网站';
+				default:
+					return txt;
 			}
 		} else {
 			return txt;
 		}
 	}
-
 	function loadXML(url) {let r=new XMLHttpRequest();r.open('GET',url,false);r.send(null);let p=new DOMParser();let dom=p.parseFromString(r.responseText,'text/xml');if(isParseError(dom)){console.log(dom.children[0]);throw new Error('xmlparsing error')}else{return dom.children[0]}};
 	function elt(type,props,...children){let dom=document.createElement(type);if(props)Object.assign(dom,props);for(let child of children){if(typeof child!="string")dom.appendChild(child);else dom.appendChild(document.createTextNode(child));}return(dom);}
-	//https://stackoverflow.com/questions/11563554/how-do-i-detect-xml-parsing-errors-when-using-javascripts-domparser-in-a-cross
+	//code from https://stackoverflow.com/questions/11563554/how-do-i-detect-xml-parsing-errors-when-using-javascripts-domparser-in-a-cross
 	function isParseError(parsedDocument){var parser=new DOMParser(),errorneousParse=parser.parseFromString('<','application/xml'),parsererrorNS=errorneousParse.getElementsByTagName("parsererror")[0].namespaceURI;if(parsererrorNS==='http://www.w3.org/1999/xhtml'){return parsedDocument.getElementsByTagName("parsererror").length>0;}return parsedDocument.getElementsByTagNameNS(parsererrorNS,'parsererror').length>0;};
 </script>
 </body>
