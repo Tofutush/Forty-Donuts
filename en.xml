@@ -538,4 +538,42 @@
 			</log>
 		</content>
 	</page>
+	<page num="41">
+		<command/>
+		<content>
+			<img>0/41.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>nowws the most important step a creating a character</d></l>
+				<l c="violet"><s>eridan</s><d>assignin these numbers to stats and determinin your class</d></l>
+				<l c="sparky"><s>sparky</s><d>I didn't get it, but it does aound important!</d></l>
+				<l c="violet"><s>eridan</s><d>exactly an thats wwhy im doing it for you</d></l>
+				<l c="violet"><s>eridan</s><d>feel lucky cause wwhen i played there wwas no one there to guide me</d></l>
+				<l c="violet"><s>eridan</s><d>i had to figure this shit all out on my own</d></l>
+				<l c="violet"><s>eridan</s><d>all a the others had a teammate but im all alone there</d></l>
+				<l c="violet"><s>eridan</s><d>it wwas so damn hard</d></l>
+				<l c="violet"><s>eridan</s><d>it wwas hard an nobody understands</d></l>
+				<l c="sparky"><s>sparky</s><d>Have you ever wondered how clouds stay up in the sky?</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat the fuck</d></l>
+				<l c="violet"><s>eridan</s><d>youd been wwonderin bout clouds this wwhole time</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="42">
+		<command/>
+		<content>
+			<img>0/42.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oh, sory! I gues I sort of lost focus.</d></l>
+				<l c="violet"><s>eridan</s><d>wwhateveer forget it</d></l>
+				<l c="violet"><s>eridan</s><d>look heres your class</d></l>
+				<l c="violet"><s>eridan</s><d>has to be the bast class evver</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="43">
+		<command>Sparky: Take a look.</command>
+		<content>
+			<img>0/43.png</img>
+		</content>
+	</page>
 </story>

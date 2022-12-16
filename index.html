@@ -35,6 +35,7 @@
 		text-align: center;
 		position: sticky;
 		top: 0;
+		// background: url('backgroundimage');
 	}
 	#wrapper {
 		background-color: #eee;
@@ -81,6 +82,7 @@
 		text-align: right;
 		vertical-align: top;
 		text-transform: uppercase;
+		white-space: nowrap;
 	}
 	.dialog-line {
 		text-align: left;
@@ -126,6 +128,7 @@
 	};
 	let url = new URLSearchParams(window.location.search);
 	let language = url.get('lang') || 'en';
+	document.title = language == 'en' ? 'Forty Donuts' : '四十甜甜圈';
 	let allPages = loadXML(`${language}.xml`).children;
 
 	function findPage(num) {
@@ -269,6 +272,7 @@
 	window.addEventListener('scroll', e => {
 		let navbar = document.getElementById('navbar');
 		navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #5a5a5a 0%)`;
+		// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 	});
 
 	function lang(txt) {
@@ -277,7 +281,7 @@
 				case '简体中文':
 					return 'English (USA)';
 				case 'go back':
-					return '返回';
+					return '上一页';
 				case 'start over':
 					return '重开';
 				case 'zh':
@@ -297,6 +301,7 @@
 			return txt;
 		}
 	}
+
 	function loadXML(url) {let r=new XMLHttpRequest();r.open('GET',url,false);r.send(null);let p=new DOMParser();let dom=p.parseFromString(r.responseText,'text/xml');if(isParseError(dom)){console.log(dom.children[0]);throw new Error('xmlparsing error')}else{return dom.children[0]}};
 	function elt(type,props,...children){let dom=document.createElement(type);if(props)Object.assign(dom,props);for(let child of children){if(typeof child!="string")dom.appendChild(child);else dom.appendChild(document.createTextNode(child));}return(dom);}
 	//code from https://stackoverflow.com/questions/11563554/how-do-i-detect-xml-parsing-errors-when-using-javascripts-domparser-in-a-cross
