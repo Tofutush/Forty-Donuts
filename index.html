@@ -1,109 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Forty Donuts</title>
-<style>
-	body {
-		background-color: #5a5a5a;
-		font-family: Courier New, 微软雅黑 light;
-		font-weight: bold;
-		margin: 0;
-		overflow-y: scroll;
-		user-select: none;
-	}
-	a {
-		text-decoration: none;
-		color: #0cf;
-	}
-	a:hover {
-		text-decoration: underline;
-	}
-	a:visited {
-		color: #0021cb;
-	}
-	::selection {
-		color: inherit;
-		background-color: #a5a5a5;
-	}
-	::-webkit-scrollbar {
-		display: none;
-	}
-	#navbar {
-		background-color: #5a5a5a;
-		font-size: 16px;
-		padding: 3px;
-		text-align: center;
-		position: sticky;
-		top: 0;
-		// background: url('backgroundimage');
-	}
-	#wrapper {
-		background-color: #eee;
-		margin: auto;
-		width: 1000px;
-	}
-	#frame {
-		width: 960px;
-		margin: auto;
-		padding-bottom: 20px;
-	}
-	#switch-lang {
-		padding-top: 20px;
-	}
-	#command {
-		font-size: 36px;
-		font-weight: bold;
-		margin-bottom: 20px;
-		text-align: center;
-		user-select: text;
-	}
-	#content {
-		font-size: 24px;
-		text-align: center;
-		user-select: text;
-	}
-	#link {
-		font-size: 28px;
-		padding: 10px;
-	}
-	#controls {
-		margin-top: 10px;
-	}
-	.p {
-		margin: 15px 0;
-	}
-	.panel {
-		user-select: none;
-	}
-	.dialog {
-		margin: 5px auto;
-	}
-	.dialog-speaker {
-		text-align: right;
-		vertical-align: top;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
-	.dialog-line {
-		text-align: left;
-	}
+	<title>Forty Donuts</title>
+	<link rel="stylesheet" href="style.css"/>
+	<style>
+		::-webkit-scrollbar {
+			display: none;
+		}
+		#link {
+			font-size: 28px;
+			padding: 10px;
+		}
+		#controls {
+			margin-top: 10px;
+		}
+		.p {
+			margin: 15px 0;
+		}
+		.panel {
+			user-select: none;
+		}
+		.dialog {
+			margin: 5px auto;
+		}
+		.dialog-speaker {
+			text-align: right;
+			vertical-align: top;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+		.dialog-line {
+			text-align: left;
+		}
 </style>
 </head>
 <body>
 <nav id="navbar">
 	<a href="info">Story Info</a>
-	<img class="navimg" src="navimg.png"/>
+	|
 	<a href="log">Story Log</a>
-	<img class="navimg" src="navimg.png"/>
+	|
+	<a href="map">Story Map</a>
+	|
 	<a href="https://mspfa.com/?s=48313&p=1">Forty Donuts on MSPFA</a>
-	<img class="navimg" src="navimg.png"/>
+	|
 	<a href="https://mspfa.com">MSPFA Site</a>
-	<img class="navimg" src="navimg.png"/>
+	|
 	<a href="https://homestuck.com">Homestuck Site</a>
 </nav>
 <div id="wrapper">
 	<div id="frame"></div>
 </div>
+<script src="functions.js"></script>
 <script>
 	const colors = {
 		rust: '#a10000',
@@ -132,11 +80,6 @@
 	let url = new URLSearchParams(window.location.search);
 	let allPages = loadXML('en.xml').children;
 
-	function findPage(num) {
-		for(let z = 0; z < allPages.length; z++) {
-			if(Number(allPages[z].getAttribute('num')) == num) return allPages[z];
-		};
-	}
 	function para(d, dom) {
 		let c = dom.childNodes;
 		for(let z = 0; z < c.length; z++) {
@@ -209,7 +152,7 @@
 			this.dom = findPage(this.num);
 		}
 		getSwitchLang() {
-			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `zh/index.html?page=${this.num}}`}, '简体中文'));
+			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `zh/index.html?page=${this.num}`}, '简体中文'));
 		}
 		getCommand() {
 			this.command = elt('div', {id: 'command'}, this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
@@ -297,11 +240,6 @@
 	// 		return txt;
 	// 	}
 	// }
-
-	function loadXML(url) {let r=new XMLHttpRequest();r.open('GET',url,false);r.send(null);let p=new DOMParser();let dom=p.parseFromString(r.responseText,'text/xml');if(isParseError(dom)){console.log(dom.children[0]);throw new Error('xmlparsing error')}else{return dom.children[0]}};
-	function elt(type,props,...children){let dom=document.createElement(type);if(props)Object.assign(dom,props);for(let child of children){if(typeof child!="string")dom.appendChild(child);else dom.appendChild(document.createTextNode(child));}return(dom);}
-	//code from https://stackoverflow.com/questions/11563554/how-do-i-detect-xml-parsing-errors-when-using-javascripts-domparser-in-a-cross
-	function isParseError(parsedDocument){var parser=new DOMParser(),errorneousParse=parser.parseFromString('<','application/xml'),parsererrorNS=errorneousParse.getElementsByTagName("parsererror")[0].namespaceURI;if(parsererrorNS==='http://www.w3.org/1999/xhtml'){return parsedDocument.getElementsByTagName("parsererror").length>0;}return parsedDocument.getElementsByTagNameNS(parsererrorNS,'parsererror').length>0;};
 </script>
 </body>
 </html>

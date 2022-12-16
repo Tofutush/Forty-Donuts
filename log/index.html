@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Story Log</title>
+	<link rel="stylesheet" href="../style.css"/>
+	<style>
+		#content {
+			text-align: left;
+			column: 30% 3;
+		}
+		.log-page {
+			margin: 10px;
+		}
+		.old-to-new:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav id="navbar">
+		<a href="../info">Story Info</a>
+		|
+		<a href="..">Back to the Story</a>
+		|
+		<a href="../map">Story Map</a>
+		|
+		<a href="https://mspfa.com/?s=48313&p=1">Forty Donuts on MSPFA</a>
+		|
+		<a href="https://mspfa.com">MSPFA Site</a>
+		|
+		<a href="https://homestuck.com">Homestuck Site</a>
+	</nav>
+	<div id="wrapper">
+		<div id="frame">
+			<div id="switch-lang"><a href="zh/log">简体中文</a></div>
+			<div id="command">Story Log</div>
+			<div id="content"/>
+		</div>
+	</div>
+	<script src="../functions.js"></script>
+	<script>
+		// first get info
+		let content = document.getElementById('content');
+		let allPages = loadXML('../en.xml').children;
+		let log = [], flag = true;
+		for(let z = allPages.length - 1; z >= 0; z--) {
+			log.push({
+				num: z + 1,
+				command: allPages[z].children[0].firstChild ? allPages[z].children[0].firstChild.nodeValue : '======->'
+			});
+		}
+		// then append stuff
+		let oldToNew = elt('a', {className: 'old-to-new'}, 'View oldest to newest');
+		content.appendChild(oldToNew);
+		let logAsc = elt('div', {className: 'log-div', style: 'display: none;'});
+		let logDsc = elt('div', {className: 'log-div'});
+		for(let z = log.length - 1; z >= 0; z--) {
+			logAsc.appendChild(elt('div', {className: 'log-page',}, elt('span', {}, `${log[z].num}: `), elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
+		}
+		for(let z = 0; z < log.length; z++) {
+			logDsc.appendChild(elt('div', {className: 'log-page'}, elt('span', {}, `${log[z].num}: `), elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
+		}
+		content.appendChild(logAsc);
+		content.appendChild(logDsc);
+		// old to new function
+		oldToNew.addEventListener('click', e => {
+			if(flag) { // asc
+				logAsc.style.display = 'block';
+				logDsc.style.display = 'none';
+				oldToNew.innerText = 'View newest to oldest';
+			} else { // desc
+				logDsc.style.display = 'block';
+				logAsc.style.display = 'none';
+				oldToNew.innerText = 'View oldest to newest';
+			}
+			flag = !flag;
+		});
+	</script>
+</body>
