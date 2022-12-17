@@ -7,7 +7,7 @@
 			<p>闪闪被波江拉入了扑翅过家家的坑。他们在第一步就卡住了 -- 怎么起队名呢？</p>
 			<p>垃圾队！很好。</p>
 			<br/>
-			<p>CHARACTERS: <c c="#0cf">闪闪</c>, <c c="#6a006a">波江</c>, <c c="#008282">谭吉</c>, <c c="#005682">维卡</c>, <c c="#a10000">狄娅</c>, <c c="#a15000">塔罗</c>, <c c="#426600">荆芥</c> (插叙).</p>
+			<p>CHARACTERS: <c c="#0cf">闪闪</c>, <c c="#6a006a">波江</c>, <c c="#008282">谭吉</c>, <c c="#005682">维卡</c>, <c c="#a10000">狄娅</c>, <c c="#a15000">塔罗</c>, <c c="#426600">荆芥</c>（插叙）。</p>
 			<br/>
 			<p>DEVIATION FROM HOMESTUCK: Not much. Actually it's not going to differ a lot to the canon trolls until right before they enter the game. <i>Objectif Luna</i></p>
 			<br/>
@@ -24,21 +24,21 @@
 	<page num="2">
 		<command>启程。</command>
 		<content>
-			<img>0/2.png</img>
+			<img>../0/2.png</img>
 			<p>一位年轻山怪坐在临海的小码头上。碰巧她已经忘掉了自己的名字，忘掉了今天是周几，忘掉了自己的生日，还忘掉了她为什么坐在这里。</p>
 		</content>
 	</page>
 	<page num="3">
 		<command>为什么她已忘乎所有？</command>
 		<content>
-			<img>0/3.png</img>
+			<img>../0/3.png</img>
 			<p>因为她太饿啦！</p>
 		</content>
 	</page>
 	<page num="4">
 		<command/>
 		<content>
-			<img>0/4.png</img>
+			<img>../0/4.png</img>
 			<p>真的，自从她搬进森林里开始她就只吃过匹兹堡分熟的不明生物肉和可能有毒也可能没毒的野果。还有粉笔。</p>
 			<p>对，那种在黑板上画画用的粉笔。</p>
 			<p>说到黑板，这她也好久没见到了。自从梅娅开始……嘿，看看那朵云！哦，它的形状像一个……</p>
@@ -47,14 +47,14 @@
 	<page num="5">
 		<command>趁她不注意给她起个名。</command>
 		<content>
-			<img>0/5.png</img>
+			<img>../0/5.png</img>
 			<p>While she's busy being distracted, you give her the name of 疯狂甜甜圈·斗鸡眼。</p>
 		</content>
 	</page>
 	<page num="6">
 		<command>疯狂甜甜圈：你的名字好像错了。</command>
 		<content>
-			<img>0/6.png</img>
+			<img>../0/6.png</img>
 			<p>Yeah, you're PRETTY sure your name isn't Donutmania. First of all it's supposed to be six letters. Second, "Derpeyes" is a horrible last name. Your own last name is way cooler than that, with a fascinating backstory.</p>
 			<p>However, you can't remember it.</p>
 		</content>
@@ -62,19 +62,19 @@
 	<page num="7">
 		<command>另一个山怪：忽然跑进来提醒她名字。</command>
 		<content>
-			<img>0/7_0.png</img>
+			<img>../0/7_0.png</img>
 			<log>
 				<p c="violet"><s>波江</s><d>喂 闪</d></p>
 				<p c="sparky"><s>？？</s><d>我想起来了！</d></p>
 			</log>
-			<img>0/7_1.png</img>
+			<img>../0/7_1.png</img>
 			<p>你想起来了！你的名字叫闪闪·甜甜圈!</p>
 		</content>
 	</page>
 	<page num="8">
 		<command/>
 		<content>
-			<img>0/8.png</img>
+			<img>../0/8.png</img>
 			<log>
 				<p c="sparky"><s>闪闪</s><d>耶！</d></p>
 				<p c="violet"><s>波江</s><d>啥</d></p>
@@ -86,7 +86,7 @@
 	<page num="9">
 		<command/>
 		<content>
-			<img>0/9.png</img>
+			<img>../0/9.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>你刚刚帮我记起了我的名字！</d></l>
 				<l c="violet"><s>波江</s><d>你这都能忘</d></l>
@@ -99,7 +99,7 @@
 	<page num="10">
 		<command/>
 		<content>
-			<img>0/10.png</img>
+			<img>../0/10.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>我现在好饿！所以我才把它忘掉了吧。我太饿了。</d></l>
 				<l c="sparky"><s>闪闪</s><d>你刚才吃了点冰激凌，不是吗？</d></l>
@@ -113,7 +113,7 @@
 	<page num="11">
 		<command/>
 		<content>
-			<img>0/11.png</img>
+			<img>../0/11.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>因为你手上的眼镜布！</d></l>
 				<l c="violet"><s>波江</s><d>嗯</d></l>
@@ -123,7 +123,7 @@
 	<page num="12">
 		<command/>
 		<content>
-			<img>0/12.png</img>
+			<img>../0/12.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>你的眼镜在我这儿看来挺干净的，但你还拿着眼镜布。</d></l>
 				<l c="sparky"><s>闪闪</s><d>这说明你估计是刚刚擦完眼镜。</d></l>
@@ -138,7 +138,7 @@
 	<page num="13">
 		<command/>
 		<content>
-			<img>0/13.png</img>
+			<img>../0/13.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>你</d></l>
 				<l c="violet"><s>波江</s><d>我</d></l>
@@ -151,7 +151,7 @@
 	<page num="14">
 		<command/>
 		<content>
-			<img>0/14.png</img>
+			<img>../0/14.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Is a figurative machine gun les dangerous than a real one? I think we stil need to take cover!</d></l>
 				<l c="violet"><s>波江</s><d>SHUT UP I SAID</d></l>
@@ -165,12 +165,12 @@
 	<page num="15">
 		<command/>
 		<content>
-			<img>0/15_0.png</img>
+			<img>../0/15_0.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Exactly, I don't see any machine guns around either.</d></l>
 				<l c="sparky"><s>闪闪</s><d>But</d></l>
 			</log>
-			<img>0/15_1.png</img>
+			<img>../0/15_1.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>No ice cream?!?! How do you explain the glases cloth on your hand???</d></l>
 			</log>
@@ -179,7 +179,7 @@
 	<page num="16">
 		<command/>
 		<content>
-			<img>0/16.png</img>
+			<img>../0/16.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>thats wwhat i wwas about to say before you interrupted like the disrespectful ingorant idiot you are</d></l>
 				<l c="sparky"><s>闪闪</s><d>Sory! Please continue now, I realy want to hear this too!</d></l>
@@ -191,7 +191,7 @@
 	<page num="17">
 		<command/>
 		<content>
-			<img>0/17.png</img>
+			<img>../0/17.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>this isnt evven some glasses cloth</d></l>
 				<l c="violet"><s>波江</s><d>its a piece a paper</d></l>
@@ -208,7 +208,7 @@
 	<page num="18">
 		<command/>
 		<content>
-			<img>0/18.png</img>
+			<img>../0/18.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>嗯？</d></l>
 				<l c="violet"><s>波江</s><d>听着 陆栖</d></l>
@@ -226,7 +226,7 @@
 	<page num="19">
 		<command/>
 		<content>
-			<img>0/19.png</img>
+			<img>../0/19.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>扑翅过家家？！？！？！</d></l>
 				<l c="sparky"><s>闪闪</s><d>你在逗我玩吗？</d></l>
@@ -238,7 +238,7 @@
 	<page num="20">
 		<command>闪闪：回忆。</command>
 		<content>
-			<img>0/20.png</img>
+			<img>../0/20.png</img>
 			<log>
 				<l c="olive"><s>荆芥</s><d>:33 &lt; flarp is a very dangerous game ind33d!</d></l>
 				<l c="sparky"><s>闪闪</s><d>How so? It doesn't sound dangerous at al!</d></l>
@@ -250,7 +250,7 @@
 	<page num="21">
 		<command>[Gif] ======-></command>
 		<content>
-			<img>0/21.gif</img>
+			<img>../0/21.gif</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>哎呦！</d></l>
 				<l c="olive"><s>荆芥</s><d>:33 &lt; 所以你应该注意保护头顶。</d></l>
@@ -261,7 +261,7 @@
 	<page num="22">
 		<command/>
 		<content>
-			<img>0/22_0.png</img>
+			<img>../0/22_0.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>闪</d></l>
 				<l c="violet"><s>波江</s><d>闪</d></l>
@@ -269,7 +269,7 @@
 				<l c="violet"><s>波江</s><d>alternia to spark is your brain still in your skull</d></l>
 				<l c="violet"><s>波江</s><d>艹</d></l>
 			</log>
-			<img>0/22_1.png</img>
+			<img>../0/22_1.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>什么？</d></l>
 				<l c="sparky"><s>闪闪</s><d>抱歉，你刚才说什么？</d></l>
@@ -279,7 +279,7 @@
 	<page num="23">
 		<command/>
 		<content>
-			<img>0/23.png</img>
+			<img>../0/23.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>i wwas talkin to you bout flarp wwhen you zoned out like an idiot</d></l>
 				<l c="violet"><s>波江</s><d>so maybe showw some respect to your superiors do you knoww wwhat respect is</d></l>
@@ -291,7 +291,7 @@
 	<page num="24">
 		<command/>
 		<content>
-			<img>0/24.png</img>
+			<img>../0/24.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Wait a minute, let's go over this.</d></l>
 				<l c="violet"><s>波江</s><d>wwhat is there to go ovver</d></l>
@@ -313,7 +313,7 @@
 	<page num="25">
 		<command/>
 		<content>
-			<img>0/25.png</img>
+			<img>../0/25.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>哦，哦！我明白你的言外之意了！</d></l>
 				<l c="violet"><s>波江</s><d>什么鬼言外之意 我说得分明很直白</d></l>
@@ -333,7 +333,7 @@
 	<page num="26">
 		<command/>
 		<content>
-			<img>0/26.png</img>
+			<img>../0/26.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>an thats the entire reason wwhy youre so fuckin freaked out by evven a slight mention a flarp</d></l>
 				<l c="sparky"><s>闪闪</s><d>Uh, yes.</d></l>
@@ -346,7 +346,7 @@
 	<page num="27">
 		<command>波江: Try harder to get her to FLARP with you; you can't afford yet another night spent all alone!</command>
 		<content>
-			<img>0/27.png</img>
+			<img>../0/27.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>cmon spark</d></l>
 				<l c="violet"><s>波江</s><d>howw much do you knoww bout flarp besides wwhat nep told you</d></l>
@@ -370,7 +370,7 @@
 	<page num="28">
 		<command>Sparky: Have inner monologue.</command>
 		<content>
-			<img>0/28.png</img>
+			<img>../0/28.png</img>
 			<p>The 荆芥 card isn't working for you.</p>
 			<p>Why are you even bothering? The disaster Doc Scratch told you about can't be avoided anyways, can it?</p>
 			<p>And even if it can be avoided, would it be any use to simply refuse to play FLARP?</p>
@@ -380,7 +380,7 @@
 	<page num="29">
 		<command>Sparky: Try.</command>
 		<content>
-			<img>0/29.png</img>
+			<img>../0/29.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Listen here, 波江.</d></l>
 				<l c="sparky"><s>闪闪</s><d>I don't think I should play FLARP, and I don't think you should either.</d></l>
@@ -396,7 +396,7 @@
 	<page num="30">
 		<command>Sparky: You don't say no to an M1911!</command>
 		<content>
-			<img>0/30.png</img>
+			<img>../0/30.png</img>
 			<p>Right! You're in dead need of a new gun ever since your old one got stolen.</p>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Deal!!!!!!!!!!!!!</d></l>
@@ -409,7 +409,7 @@
 	<page num="31">
 		<command>波江: Yes, she's aboard! She's never getting off now!</command>
 		<content>
-			<img>0/31.png</img>
+			<img>../0/31.png</img>
 			<p>No, that's a stupid thing to say. She <i>is</i> getting off the ship.</p>
 			<p><i>You</i> are not.</p>
 		</content>
@@ -417,7 +417,7 @@
 	<page num="32">
 		<command>Sparky: Receive your pistol.</command>
 		<content>
-			<img>0/32.png</img>
+			<img>../0/32.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Is this a new one or an old one?</d></l>
 				<l c="violet"><s>波江</s><d>does it look neww</d></l>
@@ -429,7 +429,7 @@
 	<page num="33">
 		<command>Sparky: Show off your marksmanship!</command>
 		<content>
-			<img>0/33.png</img>
+			<img>../0/33.png</img>
 			<p>No, no, no, you're not a show-off. And anyways, a good marksmanship isn't really a glorious skill or something. It means you practiced a lot. You wouldn't be so pleased to meet someone who claims that they've practiced a lot of shooting.</p>
 			<log>
 				<l c="violet"><s>波江</s><d>here is your flarp rulebook</d></l>
@@ -449,7 +449,7 @@
 	<page num="34">
 		<command>Sparky: Pay attention as an act of gratitude.</command>
 		<content>
-			<img>0/34.png</img>
+			<img>../0/34.png</img>
 			<p>You try to pay attention, which proves to be difficult to you, because you have Attention Deficit Hyperactivity Disorder, Inattentive type.</p>
 			<p>You didn't use to have it, but hey, trolls change.</p>
 		</content>
@@ -457,7 +457,7 @@
 	<page num="35">
 		<command>Sparky: Try anyways.</command>
 		<content>
-			<img>0/35.png</img>
+			<img>../0/35.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>so like i wwas sayin</d></l>
 				<l c="violet"><s>波江</s><d>a flarp rulebook is a must havve for all flarpers</d></l>
@@ -472,7 +472,7 @@
 	<page num="36">
 		<command/>
 		<content>
-			<img>0/36.png</img>
+			<img>../0/36.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>哦 因为那只是目录</d></l>
 			</log>
@@ -481,7 +481,7 @@
 	<page num="37">
 		<command/>
 		<content>
-			<img>0/37.png</img>
+			<img>../0/37.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>原书在这儿</d></l>
 			</log>
@@ -490,7 +490,7 @@
 	<page num="38">
 		<command/>
 		<content>
-			<img>0/36.png</img>
+			<img>../0/36.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>不要感到压力</d></l>
 				<l c="violet"><s>波江</s><d>有我这个大佬带你飞 咱们队伍绝对能屌炸</d></l>
@@ -502,7 +502,7 @@
 	<page num="39">
 		<command>波江: Start making her character; you don't have all night!</command>
 		<content>
-			<img>0/39.png</img>
+			<img>../0/39.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>the sheet a paper i havve here in my hand is your character sheet</d></l>
 				<l c="sparky"><s>闪闪</s><d>Cool, what does it do?</d></l>
@@ -514,7 +514,7 @@
 	<page num="40">
 		<command>[G] Sparky: Roll dice.</command>
 		<content>
-			<img>0/40.gif</img>
+			<img>../0/40.gif</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>哇，这么一堆数字。</d></l>
 				<l c="sparky"><s>闪闪</s><d>现在干什么？</d></l>

@@ -152,7 +152,7 @@
 			this.dom = findPage(this.num);
 		}
 		getSwitchLang() {
-			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `zh/index.html?page=${this.num}`}, '简体中文'));
+			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `zh/?page=${this.num}`}, '简体中文'));
 		}
 		getCommand() {
 			this.command = elt('div', {id: 'command'}, this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
