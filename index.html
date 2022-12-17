@@ -127,7 +127,7 @@
 		let t = elt('table', {className: 'dialog'});
 		let c = dom.children;
 		for(let z = 0; z < c.length; z++) {
-			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, colon), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
+			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, ':'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
 		}
 		return t;
 	}
@@ -213,33 +213,6 @@
 		navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #5a5a5a 0%)`;
 		// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 	});
-
-	// function lang(txt) {
-	// 	if(language == 'zh') {
-	// 		switch(txt) {
-	// 			case '简体中文':
-	// 				return 'English (USA)';
-	// 			case 'go back':
-	// 				return '上一页';
-	// 			case 'start over':
-	// 				return '重开';
-	// 			case 'zh':
-	// 				return 'en';
-	// 			case ':':
-	// 				return '：';
-	// 			case 'Forty Donuts on MSPFA':
-	// 				return '在 MSPFA 上查看四十甜甜圈';
-	// 			case 'MSPFA Site':
-	// 				return 'MSPFA 网站';
-	// 			case 'Homestuck Site':
-	// 				return '卡家网站';
-	// 			default:
-	// 				return txt;
-	// 		}
-	// 	} else {
-	// 		return txt;
-	// 	}
-	// }
 </script>
 </body>
 </html>

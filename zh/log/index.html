@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Story Log</title>
-	<link rel="stylesheet" href="../style.css"/>
+	<title>页面清单</title>
+	<link rel="stylesheet" href="../../style.css"/>
 	<style>
 		#content {
 			text-align: left;
@@ -18,30 +18,30 @@
 </head>
 <body>
 	<nav id="navbar">
-		<a href="../info">Story Info</a>
+		<a href="../info">故事简介</a>
 		|
-		<a href="..">Back to the Story</a>
+		<a href="..">返回</a>
 		|
-		<a href="../map">Story Map</a>
+		<a href="../map">故事地图</a>
 		|
-		<a href="https://mspfa.com/?s=48313&p=1">Forty Donuts on MSPFA</a>
+		<a href="https://mspfa.com/?s=48313&p=1">MSPFA 上查看四十甜甜圈</a>
 		|
-		<a href="https://mspfa.com">MSPFA Site</a>
+		<a href="https://mspfa.com">MSPFA 主站</a>
 		|
-		<a href="https://homestuck.com">Homestuck Site</a>
+		<a href="https://homestuck.com">卡家主站</a>
 	</nav>
 	<div id="wrapper">
 		<div id="frame">
-			<div id="switch-lang"><a href="../zh/log">简体中文</a></div>
-			<div id="command">Story Log</div>
+			<div id="switch-lang"><a href="../../log">English (USA)</a></div>
+			<div id="command">页面清单</div>
 			<div id="content"/>
 		</div>
 	</div>
-	<script src="../functions.js"></script>
+	<script src="../../functions.js"></script>
 	<script>
 		// first get info
 		let content = document.getElementById('content');
-		let allPages = loadXML('../en.xml').children;
+		let allPages = loadXML('../zh.xml').children;
 		let log = [], flag = true;
 		for(let z = allPages.length - 1; z >= 0; z--) {
 			log.push({
@@ -50,7 +50,7 @@
 			});
 		}
 		// then append stuff
-		let oldToNew = elt('a', {className: 'old-to-new'}, 'View oldest to newest');
+		let oldToNew = elt('a', {className: 'old-to-new'}, '由旧到新');
 		content.appendChild(oldToNew);
 		let logAsc = elt('div', {className: 'log-div', style: 'display: none;'});
 		let logDsc = elt('div', {className: 'log-div'});
@@ -67,11 +67,11 @@
 			if(flag) { // asc
 				logAsc.style.display = 'block';
 				logDsc.style.display = 'none';
-				oldToNew.innerText = 'View newest to oldest';
+				oldToNew.innerText = '由新到旧';
 			} else { // desc
 				logDsc.style.display = 'block';
 				logAsc.style.display = 'none';
-				oldToNew.innerText = 'View oldest to newest';
+				oldToNew.innerText = '由旧到新';
 			}
 			flag = !flag;
 		});
