@@ -19,7 +19,7 @@
 			<p>In which Sparky gets roped into FLARPing by Eridan, and they get stuck on the first step: coming up with a team name.</p>
 			<p>Team Garbage? Sounds great.</p>
 			<br/>
-			<p>CHARACTERS: <c c="#0cf">Sparky</c>, <c c="#6a006a">Eridan</c>, <c c="#008282">Terezi</c>, <c c="#005682">Vriska</c>, <c c="#a10000">Aradia</c>, <c c="#a15000">Tavros</c>, <c c="#426600">Nepeta</c> (flashback).</p>
+			<p>CHARACTERS: <c c="sparky">Sparky</c>, <c c="violet">Eridan</c>, <c c="teal">Terezi</c>, <c c="cerulean">Vriska</c>, <c c="rust">Aradia</c>, <c c="bronze">Tavros</c>, <c c="olive">Nepeta</c> (flashback).</p>
 			<br/>
 			<p>DEVIATION FROM HOMESTUCK: Not much. Actually it's not going to differ a lot to the canon trolls until right before they enter the game. <i>Objectif Luna</i></p>
 			<br/>
@@ -564,7 +564,7 @@
 			<img>0/42.png</img>
 			<log>
 				<l c="sparky"><s>sparky</s><d>Oh, sory! I gues I sort of lost focus.</d></l>
-				<l c="violet"><s>eridan</s><d>wwhateveer forget it</d></l>
+				<l c="violet"><s>eridan</s><d>wwhatevver forget it</d></l>
 				<l c="violet"><s>eridan</s><d>look heres your class</d></l>
 				<l c="violet"><s>eridan</s><d>has to be the bast class evver</d></l>
 			</log>
@@ -574,6 +574,88 @@
 		<command>Sparky: Take a look.</command>
 		<content>
 			<img>0/43.png</img>
+			<p><i>Petticoat Seagrift</i></p>
+		</content>
+	</page>
+	<page num="44">
+		<command/>
+		<content>
+			<img>0/44.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>This is cool! What does this  do?</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat does it do</d></l>
+				<l c="violet"><s>eridan</s><d>boy this stuff is wway more than that</d></l>
+				<l c="violet"><s>eridan</s><d>bein the most important trait your class is basically wwhat defines your flarp character</d></l>
+				<l c="violet"><s>eridan</s><d>it accompanies you through your wwhole flarpin journey all the wway to the end</d></l>
+				<l c="violet"><s>eridan</s><d>settin your bounds an challengin your limits</d></l>
+				<l c="violet"><s>eridan</s><d>blah blah blah... abilities... blah blah... glub glub... goob goob... doy dum dee...</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="45">
+		<command/>
+		<content>
+			<img>0/45.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Hey Eridan, what's YOUR clas?</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat mine</d></l>
+				<l c="violet"><s>eridan</s><d>not as nice as yours you dont evven need to knoww about it</d></l>
+				<l c="violet"><s>eridan</s><d>like i said i didnt havve anyone guidin me</d></l>
+				<l c="violet"><s>eridan</s><d>but evven then i managed to get to max levvel</d></l>
+				<l c="sparky"><s>sparky</s><d>Whoa, there's a level?</d></l>
+				<l c="violet"><s>eridan</s><d>yeah like if you get enough experience points or somethin you can levvel up</d></l>
+				<l c="violet"><s>eridan</s><d>youre on levvel one right noww it wwould take you pretty long to reach maximum</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="46">
+		<command>Sparky: Prove him wrong.</command>
+		<content>
+			<img>0/46.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Realy? It seems that al of my level boxes are checked though!</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat the fuck</d></l>
+				<l c="sparky"><s>sparky</s><d>See?</d></l>
+				<l c="violet"><s>eridan</s><d>you checked them yourself didnt you</d></l>
+				<l c="sparky"><s>sparky</s><d>Why, can't I?</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="47">
+		<command>Eridan: Of course you can!</command>
+		<content>
+			<img>0/47.png</img>
+			<p>Hey, nice! Now you have a max-level Petticoat Seagrift, who basically cheated to get there, but it isn't your fault.</p>
+			<p>Your night keeps on getting better and better.</p>
+		</content>
+	</page>
+	<page num="48">
+		<command>Eridan: Finish character creation.</command>
+		<content>
+			<img>0/48.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>lets put the finishing touches on your character</d></l>
+				<l c="violet"><s>eridan</s><d>think of a name for her</d></l>
+				<l c="sparky"><s>sparky</s><d>A name? Hmm...</d></l>
+				<l c="sparky"><s>sparky</s><d>I'm not sure what to name her!</d></l>
+				<l c="sparky"><s>sparky</s><d>What did you name yours?</d></l>
+				<l c="violet"><s>eridan</s><d>mine</d></l>
+				<l c="violet"><s>eridan</s><d>orphaner dualscar the same as my ancestors</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="49">
+		<command/>
+		<content>
+			<img>0/49.png</img>
+			<!-- sparky remembers jackalopemom -->
+		</content>
+	</page>
+	<page num="50">
+		<command>Sparky: Have another flashback</command>
+		<content>
+			<img>0/49.png</img>
+			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one.</p>
 		</content>
 	</page>
 </story>
