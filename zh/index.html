@@ -186,8 +186,33 @@
 			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `?page=${this.nextNum}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
 			else this.link = 0;
 		}
+		getLoadAndSaveButtons() {
+			this.saveButton = elt('a', {}, '保存进度');
+			this.loadButton = elt('a', {}, '加载进度');
+			this.saveButton.addEventListener('click', e => {
+				document.cookie = `page=${this.num}`;
+			});
+			this.loadButton.addEventListener('click', e => {
+				let cookies = document.cookie.split('; ');
+				for(let z = 0; z < cookies.length; z++) {
+					if(cookies[z].split('=')[0] == 'page') {
+						window.location.href = `?${cookies[z]}`;
+						return;
+					}
+				}
+				alert('进度未保存！请在加载前点击“保存进度”。')
+			});
+		}
 		getControls() {
-			this.controls = elt('div', {id: 'controls'}, elt('a', {href: `?page=${this.prevNum}`}, '上一页'), elt('span', {style: 'font-weight: bold;'}, ' | '), elt('a', {href: `?page=1`}, '重开'));
+			this.getLoadAndSaveButtons();
+			this.controls = elt('div', {id: 'controls'},
+				elt('a', {href: `?page=${this.prevNum}`}, '返回'),
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				elt('a', {href: `?page=1`}, '重开'),
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				this.saveButton,
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				this.loadButton);
 		}
 		eventListeners() {
 			document.body.addEventListener('keydown', e => {
