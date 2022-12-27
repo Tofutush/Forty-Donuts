@@ -186,8 +186,33 @@
 			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `?page=${this.nextNum}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
 			else this.link = 0;
 		}
+		getLoadAndSaveButtons() {
+			this.saveButton = elt('a', {}, 'save place');
+			this.loadButton = elt('a', {}, 'load place');
+			this.saveButton.addEventListener('click', e => {
+				document.cookie = `page=${this.num}`;
+			});
+			this.loadButton.addEventListener('click', e => {
+				let cookies = document.cookie.split('; ');
+				for(let z = 0; z < cookies.length; z++) {
+					if(cookies[z].split('=')[0] == 'page') {
+						window.location.href = `?${cookies[z]}`;
+						return;
+					}
+				}
+				alert('no place saved! make sure to click "save place" before you can load.')
+			});
+		}
 		getControls() {
-			this.controls = elt('div', {id: 'controls'}, elt('a', {href: `?page=${this.prevNum}`}, 'go back'), elt('span', {style: 'font-weight: bold;'}, ' | '), elt('a', {href: `?page=1`}, 'start over'));
+			this.getLoadAndSaveButtons();
+			this.controls = elt('div', {id: 'controls'},
+				elt('a', {href: `?page=${this.prevNum}`}, 'go back'),
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				elt('a', {href: `?page=1`}, 'start over'),
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				this.saveButton,
+				elt('span', {style: 'font-weight: bold;'}, ' | '),
+				this.loadButton);
 		}
 		eventListeners() {
 			document.body.addEventListener('keydown', e => {
@@ -212,7 +237,7 @@
 	// alt progress bar at top cuz it looks stupid on the right. code from eloquentjavascript.net
 	window.addEventListener('scroll', e => {
 		let navbar = document.getElementById('navbar');
-		navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #5a5a5a 0%)`;
+		navbar.style.backgroundImage = `linear-gradient(to right, #0cf ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #000 0%)`;
 		// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 	});
 </script>

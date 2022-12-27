@@ -1,5 +1,5 @@
 body {
-	background-color: #5a5a5a;
+	background-color: #000;
 	font-family: Courier New, 微软雅黑 light;
 	font-weight: bold;
 	margin: 0;
@@ -12,6 +12,7 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 a:visited {
 	color: #0ac;
@@ -21,8 +22,10 @@ a:visited {
 	background-color: #a5a5a5;
 }
 #navbar {
-	background-color: #5a5a5a;
+	background-color: #000;
 	font-size: 16px;
+	color: #fff;
+	text-shadow: #000 1px 1px 0;
 	padding: 3px;
 	text-align: center;
 	position: sticky;
@@ -30,7 +33,9 @@ a:visited {
 	// background: url('backgroundimage');
 }
 #wrapper {
-	background-color: #eee;
+	background-color: #fff;
+	border: 12px solid #0cf;
+	//border-width: 0 12px;
 	margin: auto;
 	width: 1000px;
 }
