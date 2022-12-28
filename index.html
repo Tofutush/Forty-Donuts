@@ -190,17 +190,13 @@
 			this.saveButton = elt('a', {}, 'save place');
 			this.loadButton = elt('a', {}, 'load place');
 			this.saveButton.addEventListener('click', e => {
-				document.cookie = `page=${this.num}`;
+				localStorage.setItem('page', this.num);
+				alert('place saved!');
 			});
 			this.loadButton.addEventListener('click', e => {
-				let cookies = document.cookie.split('; ');
-				for(let z = 0; z < cookies.length; z++) {
-					if(cookies[z].split('=')[0] == 'page') {
-						window.location.href = `?${cookies[z]}`;
-						return;
-					}
-				}
-				alert('no place saved! make sure to click "save place" before you can load.')
+				let storage = localStorage.getItem('page');
+				if(storage) window.location.href = `?page=${storage}`;
+				else alert('no place saved! make sure to click "save place" before you can load.')
 			});
 		}
 		getControls() {

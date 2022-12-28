@@ -190,17 +190,13 @@
 			this.saveButton = elt('a', {}, '保存进度');
 			this.loadButton = elt('a', {}, '加载进度');
 			this.saveButton.addEventListener('click', e => {
-				document.cookie = `page=${this.num}`;
+				localStorage.setItem('page', this.num);
+				alert('进度已保存');
 			});
 			this.loadButton.addEventListener('click', e => {
-				let cookies = document.cookie.split('; ');
-				for(let z = 0; z < cookies.length; z++) {
-					if(cookies[z].split('=')[0] == 'page') {
-						window.location.href = `?${cookies[z]}`;
-						return;
-					}
-				}
-				alert('进度未保存！请在加载前点击“保存进度”。')
+				let storage = localStorage.getItem('page');
+				if(storage) window.location.href = `?page=${storage}`;
+				else alert('进度未保存！请在加载前点击“保存进度”。');
 			});
 		}
 		getControls() {
