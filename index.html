@@ -38,11 +38,11 @@
 </head>
 <body>
 <nav id="navbar">
-	<a href="info">Story Info</a>
+	<a onclick="switchPage('info')">Story Info</a>
 	|
-	<a href="log">Story Log</a>
+	<a onclick="switchPage('log')">Story Log</a>
 	|
-	<a href="map">Story Map</a>
+	<a onclick="switchPage('map')">Story Map</a>
 	|
 	<a href="https://mspfa.com/?s=48313&p=1">Forty Donuts on MSPFA</a>
 	|
@@ -190,11 +190,11 @@
 			this.saveButton = elt('a', {}, 'save place');
 			this.loadButton = elt('a', {}, 'load place');
 			this.saveButton.addEventListener('click', e => {
-				localStorage.setItem('page', this.num);
+				window.localStorage.setItem('place', this.num);
 				alert('place saved!');
 			});
 			this.loadButton.addEventListener('click', e => {
-				let storage = localStorage.getItem('page');
+				let storage = window.localStorage.getItem('place');
 				if(storage) window.location.href = `?page=${storage}`;
 				else alert('no place saved! make sure to click "save place" before you can load.')
 			});
@@ -230,6 +230,11 @@
 	let page = new Page(Number(url.get('page')) || 1);
 	page.appendStuff();
 
+	// switch page needs to remember previous page num
+	function switchPage(kind) {
+		window.localStorage.setItem('switchpagenum', page.num);
+		window.location.href = kind;
+	}
 	// alt progress bar at top cuz it looks stupid on the right. code from eloquentjavascript.net
 	window.addEventListener('scroll', e => {
 		let navbar = document.getElementById('navbar');

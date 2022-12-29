@@ -20,7 +20,7 @@
 	<nav id="navbar">
 		<a href="../info">Story Info</a>
 		|
-		<a href="..">Back to the Story</a>
+		<a id="back">Back to the Story</a>
 		|
 		<a href="../map">Story Map</a>
 		|
@@ -75,5 +75,7 @@
 			}
 			flag = !flag;
 		});
+		// when going back, go to last visited page
+		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum')}`;
 	</script>
 </body>

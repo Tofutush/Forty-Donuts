@@ -20,7 +20,7 @@
 	<nav id="navbar">
 		<a href="../info">故事简介</a>
 		|
-		<a href="..">返回</a>
+		<a id="back">返回</a>
 		|
 		<a href="../map">故事地图</a>
 		|
@@ -75,5 +75,7 @@
 			}
 			flag = !flag;
 		});
+		// when going back, go to last visited page
+		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum')}`;
 	</script>
 </body>
