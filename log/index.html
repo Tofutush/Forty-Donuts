@@ -11,6 +11,9 @@
 		.log-page {
 			margin: 10px;
 		}
+		.log-div {
+			margin-left: 24px;
+		}
 		.old-to-new:hover {
 			cursor: pointer;
 		}
@@ -52,13 +55,13 @@
 		// then append stuff
 		let oldToNew = elt('a', {className: 'old-to-new'}, 'View oldest to newest');
 		content.appendChild(oldToNew);
-		let logAsc = elt('div', {className: 'log-div', style: 'display: none;'});
-		let logDsc = elt('div', {className: 'log-div'});
+		let logAsc = elt('ol', {className: 'log-div', style: 'display: none;'});
+		let logDsc = elt('ol', {className: 'log-div', reversed: 1});
 		for(let z = log.length - 1; z >= 0; z--) {
-			logAsc.appendChild(elt('div', {className: 'log-page',}, elt('span', {}, `${log[z].num}: `), elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
+			logAsc.appendChild(elt('li', {className: 'log-page'}, elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
 		}
 		for(let z = 0; z < log.length; z++) {
-			logDsc.appendChild(elt('div', {className: 'log-page'}, elt('span', {}, `${log[z].num}: `), elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
+			logDsc.appendChild(elt('li', {className: 'log-page'}, elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
 		}
 		content.appendChild(logAsc);
 		content.appendChild(logDsc);
