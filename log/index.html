@@ -79,6 +79,6 @@
 			flag = !flag;
 		});
 		// when going back, go to last visited page
-		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum')}`;
+		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
 	</script>
 </body>
