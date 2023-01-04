@@ -38,6 +38,9 @@ a:visited {
 	z-index: 999;
 	// background: url('backgroundimage');
 }
+#navbar a {
+	color: #0cf;
+}
 #wrapper {
 	background-color: #fff;
 	border: 12px solid #0cf;

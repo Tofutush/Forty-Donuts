@@ -10,18 +10,18 @@
 		}
 		.section {
 			border-left: 12px solid var(--bd);
-			padding: 0 24px;
+			padding: 0 24px 0 36px;
 			position: relative;
 			user-select: none;
 		}
 		.section::before {
-			content: '';
-			position: absolute;
-			height: 12px;
-			width: 12px;
-			top: 0;
 			background-color: var(--bd);
+			content: '';
+			height: 12px;
 			left: 0;
+			position: absolute;
+			top: 0;
+			width: 12px;
 		}
 		.section::after {
 			content: '';
@@ -32,12 +32,29 @@
 			bottom: 0;
 			left: 0;
 		}
+		.section-flap {
+			background-color: var(--bd);
+			color: #fff;
+			font-size: 24px;
+			left: -34px;
+			line-height: 21px;
+			padding: 5px 3px;
+			position: absolute;
+			top: 40px;
+			width: 28px;
+			word-wrap: break-word;
+		}
+		.section-flap p {
+			font-size: 40px;
+			margin: 10px 0;
+		}
 		.act {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			border: 8px solid var(--bd);
 			background-color: var(--bg);
+			color: var(--c);
 			padding: 3px;
 			margin: 12px 0;
 		}
@@ -77,8 +94,10 @@
 			<div id="command">Story Map</div>
 			<div id="content">
 				<div class="section" style="--bd: blue">
+					<div class="section-flap">Side <p>1</p></div>
 					<div class="section" style="--bd: red">
-						<div class="act" href="../?page=1" alt="page 1" style="--bg: yellow; --bd: green">
+						<div class="section-flap">Part <p>1</p></div>
+						<div class="act" href="../?page=1" alt="page 1" style="--bg: yellow; --bd: green; --c: magenta;">
 							<a href="../?page=1" class="act-img"><img src="img/a1.png"/></a>
 							<div class="act-des">
 								<span class="act-des-1" style="--c: red">Act 1</span>
@@ -95,7 +114,7 @@
 						<a href="../?page=3"><img src="img/2.png"/></a>
 						<a href="../?page=4"><img src="img/2.png"/></a>
 						<a href="../?page=5"><img src="img/2.png"/></a>
-						<div class="act" href="../?page=1" alt="page 1" style="--bg: yellow; --bd: green">
+						<div class="act" href="../?page=1" alt="page 1" style="--bg: yellow; --bd: green; --c: aliceblue;">
 							<a href="../?page=1" class="act-img"><img src="img/a1.png"/></a>
 							<div class="act-des">
 								<span class="act-des-1" style="--c: red">Act 1</span>
@@ -114,6 +133,7 @@
 						<a href="../?page=5"><img src="img/2.png"/></a>
 					</div>
 					<div class="section" style="--bd: red">
+						<div class="section-flap">Part <p>2</p></div>
 						<div class="act" href="../?page=1" alt="page 1" style="--bg: yellow; --bd: green">
 							<a href="../?page=1" class="act-img"><img src="img/a1.png"/></a>
 							<div class="act-des">
@@ -155,6 +175,70 @@
 	</div>
 	<script src="../functions.js"></script>
 	<script>
+		const qq = [
+			{ // side 1
+				c: '#b7b7b7',
+				q: [
+					{ // part 1
+						c: '#00f',
+						q: [
+							{ // act 1
+								bd: '#???',
+								bg: '#???',
+								c: '#???',
+								type: 1, // 1 means act
+								num: 1,
+								name: 'FLARPventure',
+								ml: 1,
+								mls: [2, 3, 4, 5]
+							},
+							{ // intermission 1
+								bd: '#somescratchtheme',
+								bg: '#somescratchtheme',
+								c: '#fff',
+								type: 0, // 0 means intermission
+								num: 1,
+								name: 'The Flashback',
+								ml: 0,
+								mls: [0, 0]
+							},
+							{ // act 1
+								bd: '#???',
+								bg: '#???',
+								c: '#???',
+								type: 1,
+								num: 1,
+								name: 'Continued',
+								ml: 0,
+								mls: [0]
+							},
+							{ // act 2
+								bd: '#???',
+								bg: '#???',
+								c: '#???',
+								type: 1,
+								name: 'Crashed Party', // make her pay
+								ml: 0,
+								mls: [0]
+							},
+							{ // act 3
+								bd: '#???',
+								bg: '#???',
+								c: '#???',
+								type: 1,
+								name: 'Milk, Tea, and Donuts',
+								ml: 0,
+								mls: [0]
+							}
+						]
+					}
+				]
+			},
+			{ // side 2
+				c: '#b7b7b7',
+			}
+		];
+		// code relies heavily on structure of qq object
 		// when going back, go to last visited page
 		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
 	</script>
