@@ -15,15 +15,14 @@
 			font-size: 16px;
 			margin-top: 10px;
 		}
-		.p {
-			margin: 15px 0;
+		.an-item {
+			margin: 15px auto;
 		}
 		.panel {
-			user-select: none;
 			height: 540px;
+			user-select: none;
 		}
 		.dialog {
-			margin: 5px auto;
 			max-width: 750px;
 		}
 		.dialog-speaker {
@@ -127,7 +126,7 @@
 		return d;
 	}
 	function dialog(dom) {
-		let t = elt('table', {className: 'dialog'});
+		let t = elt('table', {className: 'an-item dialog'});
 		let c = dom.children;
 		for(let z = 0; z < c.length; z++) {
 			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')] || c[z].getAttribute('c')}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, ':'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
@@ -166,10 +165,10 @@
 			for(let z = 0; z < q.length; z++) {
 				switch(q[z].tagName) {
 					case 'img':
-						this.div.appendChild(elt('div', {className: 'panel'}, elt('img', {src: q[z].firstChild.nodeValue})));
+						this.div.appendChild(elt('div', {className: 'an-item panel'}, elt('img', {src: q[z].firstChild.nodeValue})));
 						break;
 					case 'p':
-						let d = elt('div', {className: 'p'});
+						let d = elt('div', {className: 'an-item p'});
 						this.div.appendChild(para(d, q[z]));
 						break;
 					case 'br':

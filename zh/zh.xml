@@ -47,7 +47,7 @@
 		<command>疯狂甜甜圈：你的名字好像错了。</command>
 		<content>
 			<img>../0/6.png</img>
-			<p>是啊，你<i>挺</i>确定你的名字不叫“疯狂甜甜圈”。首先它太长了。其次，“斗鸡眼”这个姓氏就很差劲。你原本的姓氏比这酷多了，还带着个令人向往的背景故事。</p>
+			<p>是啊，你<i>挺</i>确定你的名字不叫“疯狂甜甜圈”。首先它太长了。其次，“斗鸡眼”这个姓氏就很差劲。你原本的姓氏比这酷多了，还带着个神秘的的背景故事。</p>
 			<p>但是你想不起来了。</p>
 		</content>
 	</page>
@@ -245,7 +245,7 @@
 			<img>../0/21.gif</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>哎呦！</d></l>
-				<l c="olive"><s>荆芥</s><d>:33 &lt; 所以你应该一直小心你的头。</d></l>
+				<l c="olive"><s>荆芥</s><d>:33 &lt; 所以你应该一直小心头顶之灾。</d></l>
 			</log>
 			<p>从此往后，带有动图的页数的指令会以 [G] 开头。</p>
 		</content>
@@ -273,8 +273,8 @@
 		<content>
 			<img>../0/23.png</img>
 			<log>
-				<l c="violet"><s>波江</s><d>i wwas talkin to you bout flarp wwhen you zoned out like an idiot</d></l>
-				<l c="violet"><s>波江</s><d>so maybe showw some respect to your superiors do you knoww wwhat respect is</d></l>
+				<l c="violet"><s>波江</s><d>我在跟你讲扑翅过家家的事儿呢 然后你就像个傻逼样地走神了</d></l>
+				<l c="violet"><s>波江</s><d>尊重尊重你的上级吧 你知道尊重是啥吗</d></l>
 				<l c="sparky"><s>闪闪</s><d>扑翅过家家？！？！？！</d></l>
 				<l c="violet"><s>波江</s><d>艹 又来了</d></l>
 			</log>

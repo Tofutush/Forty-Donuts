@@ -43,14 +43,13 @@ a:visited {
 }
 #wrapper {
 	background-color: #fff;
-	border: 12px solid #0cf;
+	border: 24px solid #0cf;
 	margin: auto;
 	width: 1000px;
 }
 #frame {
 	width: 960px;
-	margin: auto;
-	padding-bottom: 20px;
+	margin: 0 auto 20px auto;
 }
 #content {
 	font-size: 24px;

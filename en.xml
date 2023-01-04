@@ -6,7 +6,7 @@
 				<img>url</img>
 				<p>every paragraph must be wrapped with it.</p>
 				<log>
-					<p c="color, rust - fuchsia or sparky or equius"><s>speaker, no : needed</s><d>what they say</d></p>
+					<l c="color, rust - fuchsia or sparky or equius"><s>speaker, no : needed</s><d>what they say</d></l>
 				</log>
 			</content>
 		</page>
@@ -656,6 +656,31 @@
 		<content>
 			<img>0/49.png</img>
 			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one.</p>
+		</content>
+	</page>
+	<page num="51">
+		<command/>
+		<content>
+			<img>0/51.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>That's cool! I have an ancestor too!</d></l>
+				<l c="violet"><s>eridan</s><d>oh wwell wwhatevver just come up wwith a name already</d></l>
+				<l c="sparky"><s>sparky</s><d>Hmmmmmmmmmmmmm...</d></l>
+				<l c="sparky"><s>sparky</s><d>Aha! I got it!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="52">
+		<command/>
+		<content>
+			<img>0/52_0.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Donutmania Derpeyes!</d></l>
+			</log>
+			<img>0/52_1.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>(i wwant to fuckin kill you right here right noww)</d></l>
+			</log>
 		</content>
 	</page>
 </story>
