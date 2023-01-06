@@ -139,13 +139,21 @@
 			this.num = num;
 			this.prevNum = this.num - 1;
 			this.nextNum = this.num + 1;
-			this.getDom();
-			this.getSwitchLang();
-			this.getCommand();
-			this.getContent();
-			this.getLink();
-			this.getControls();
-			this.eventListeners();
+			try {
+				this.getDom();
+				this.getSwitchLang();
+				this.getCommand();
+				this.getContent();
+				this.getLink();
+				this.getControls();
+				this.eventListeners();
+				this.appendStuff();
+			} catch(e) { // page number larger than largest page number
+				this.getControls();
+				let f = document.getElementById('frame');
+				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
+				f.appendChild(this.controls);
+			}
 		}
 		goToPage(num) {
 			window.location.href = `?page=${num}`;
@@ -219,7 +227,7 @@
 			});
 		}
 		appendStuff() {
-			let f = document.querySelector('#frame');
+			let f = document.getElementById('frame');
 			f.appendChild(this.switchLang);
 			f.appendChild(this.command);
 			f.appendChild(this.div);
@@ -228,7 +236,7 @@
 		}
 	}
 	let page = new Page(Number(url.get('page')) || 1);
-	page.appendStuff();
+	// page.appendStuff();
 
 	// switch page needs to remember previous page num
 	function switchPage(kind) {
