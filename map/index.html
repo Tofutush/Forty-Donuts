@@ -179,7 +179,7 @@
 				for(let c = 0; c < qq[z].q[x].q.length; c++) {
 					let act = elt('div', {className: 'act'},
 						elt('a', {href: `../?page=${qq[z].q[x].q[c].ml}`},
-							elt('img', {src: `img/a${qq[z].q[x].q[c].num}.png`})),
+							elt('img', {src: `img/${qq[z].q[x].q[c].type ? 'a' : 'i'}${qq[z].q[x].q[c].num}.png`})),
 						elt('div', {},
 							elt('span', {}, `${qq[z].q[x].q[c].type ? 'Act' : 'Intermission'} ${qq[z].q[x].q[c].num}`),
 							elt('br'),
