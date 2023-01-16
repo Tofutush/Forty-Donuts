@@ -128,15 +128,15 @@
 								num: 1,
 								name: 'The Flashback',
 								ml: 2,
-								mls: [2, 3, 2, 3, 2]
+								mls: []
 							},
 							{ // act 1
 								bd: '#abcdef',
 								bg: '#fedcba',
 								c: '#111111',
 								type: 1,
-								num: 1,
-								name: 'Continued',
+								num: 2,
+								name: 'FLARPventure Underwater',
 								ml: 2,
 								mls: [2]
 							},
@@ -238,7 +238,7 @@
 								num: 0,
 								name: 'Memories Made of Soap',
 								ml: 0,
-								mls: [0]
+								mls: [0, 0]
 							},
 						]
 					}
@@ -263,12 +263,14 @@
 					act.style.setProperty('--bg', qq[z].q[x].q[c].bg);
 					act.style.setProperty('--bd', qq[z].q[x].q[c].bd);
 					act.style.setProperty('--c', qq[z].q[x].q[c].c);
-					let mls = elt('div', {className: 'mls'});
-					for(let v = 0; v < qq[z].q[x].q[c].mls.length; v++) {
-						mls.appendChild(elt('a', {href: `../?page=${qq[z].q[x].q[c].mls[v]}`}, elt('img', {src: `img/${qq[z].q[x].q[c].mls[v]}.png`})));
-					}
 					part.appendChild(act);
-					part.appendChild(mls);
+					if(qq[z].q[x].q[c].mls.length) {
+						let mls = elt('div', {className: 'mls'});
+						for(let v = 0; v < qq[z].q[x].q[c].mls.length; v++) {
+							mls.appendChild(elt('a', {href: `../?page=${qq[z].q[x].q[c].mls[v]}`}, elt('img', {src: `img/${qq[z].q[x].q[c].mls[v]}.png`})));
+						}
+						part.appendChild(mls);
+					}
 				}
 				side.appendChild(part);
 			}
