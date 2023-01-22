@@ -128,7 +128,6 @@
 								num: 1,
 								name: 'The Flashback',
 								ml: 2,
-								mls: []
 							},
 							{ // act 1
 								bd: '#abcdef',
@@ -136,7 +135,7 @@
 								c: '#111111',
 								type: 1,
 								num: 2,
-								name: 'FLARPventure Underwater',
+								name: 'The Plane Crash',
 								ml: 2,
 								mls: [2]
 							},
@@ -264,7 +263,7 @@
 					act.style.setProperty('--bd', qq[z].q[x].q[c].bd);
 					act.style.setProperty('--c', qq[z].q[x].q[c].c);
 					part.appendChild(act);
-					if(qq[z].q[x].q[c].mls.length) {
+					if(qq[z].q[x].q[c].mls) {
 						let mls = elt('div', {className: 'mls'});
 						for(let v = 0; v < qq[z].q[x].q[c].mls.length; v++) {
 							mls.appendChild(elt('a', {href: `../?page=${qq[z].q[x].q[c].mls[v]}`}, elt('img', {src: `img/${qq[z].q[x].q[c].mls[v]}.png`})));

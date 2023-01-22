@@ -285,20 +285,20 @@
 		<content>
 			<img>../0/24.png</img>
 			<log>
-				<l c="sparky"><s>闪闪</s><d>Wait a minute, let's go over this.</d></l>
-				<l c="violet"><s>波江</s><d>wwhat is there to go ovver</d></l>
-				<l c="sparky"><s>闪闪</s><d>You're wiling to give me anything to eat, if I play FLARP with you.</d></l>
-				<l c="violet"><s>波江</s><d>yeah as far as i can see im doin you a fuckin gigantic favvor</d></l>
-				<l c="sparky"><s>闪闪</s><d>...Then maybe I'm not that hungry after al.</d></l>
-				<l c="violet"><s>波江</s><d>wwhat the fuck</d></l>
-				<l c="violet"><s>波江</s><d>oh right this is howw you guys turn dowwn my kindness wwherevver i decide to showw it</d></l>
-				<l c="violet"><s>波江</s><d>and then you blame me for bein a jerk</d></l>
-				<l c="violet"><s>波江</s><d>wway to go bastards</d></l>
-				<l c="sparky"><s>闪闪</s><d>Huh? "Go Bastards?" What are those, a footbal team?</d></l>
-				<l c="violet"><s>波江</s><d>no no no forget it</d></l>
-				<l c="violet"><s>波江</s><d>just tell me why the fuck you freaked out so much wwhen hearin bout flarp</d></l>
-				<l c="sparky"><s>闪闪</s><d>FLARP!?!?!?</d></l>
-				<l c="violet"><s>波江</s><d>see wwhat i mean</d></l>
+				<l c="sparky"><s>闪闪</s><d>等等，咱再来梳理梳理这件事。</d></l>
+				<l c="violet"><s>波江</s><d>有啥好梳理的嘞</d></l>
+				<l c="sparky"><s>闪闪</s><d>只要我和你玩扑翅过家家，你就能给我吃的。</d></l>
+				<l c="violet"><s>波江</s><d>是啊 我这可不是帮了你个大忙</d></l>
+				<l c="sparky"><s>闪闪</s><d>……那么，我想我也不是很饿！</d></l>
+				<l c="violet"><s>波江</s><d>什么鬼</d></l>
+				<l c="violet"><s>波江</s><d>哦 对 我每次想做点好事 你们都躲得远远的</d></l>
+				<l c="violet"><s>波江</s><d>然后你们又转过身来 说我是混账</d></l>
+				<l c="violet"><s>波江</s><d>加油吧 讨厌鬼们</d></l>
+				<l c="sparky"><s>闪闪</s><d>啊？“加油，讨厌鬼”？那是什么啊，一支橄榄球队？</d></l>
+				<l c="violet"><s>波江</s><d>不不不 算了</d></l>
+				<l c="violet"><s>波江</s><d>你就告诉我 你听到扑翅过家家后为啥吓得半死</d></l>
+				<l c="sparky"><s>闪闪</s><d>扑翅过家家！？！？！？</d></l>
+				<l c="violet"><s>波江</s><d>就像这样子</d></l>
 			</log>
 		</content>
 	</page>
@@ -309,16 +309,16 @@
 			<log>
 				<l c="sparky"><s>闪闪</s><d>哦，哦！我明白你的言外之意了！</d></l>
 				<l c="violet"><s>波江</s><d>什么鬼言外之意 我说得分明很直白</d></l>
-				<l c="sparky"><s>闪闪</s><d>I was recaling a conversation I had with 荆芥 once.</d></l>
-				<l c="violet"><s>波江</s><d>and</d></l>
-				<l c="sparky"><s>闪闪</s><d>She told me that FLARP is very dangerous!</d></l>
-				<l c="violet"><s>波江</s><d>and</d></l>
-				<l c="sparky"><s>闪闪</s><d>And then she hit the wal prety hard and some roks fel on my head.</d></l>
-				<l c="violet"><s>波江</s><d>and</d></l>
-				<l c="sparky"><s>闪闪</s><d>And then I scrambled out of there.</d></l>
-				<l c="violet"><s>波江</s><d>and</d></l>
-				<l c="sparky"><s>闪闪</s><d>And then I saw this cute caterpilar outside her cave <c c="#6a006a">波江: kay kay thats your entire convversation wwith nep</c></d></l>
-				<l c="sparky"><s>闪闪</s><d>Yeah.</d></l>
+				<l c="sparky"><s>闪闪</s><d>我只是想起了那天荆芥说的话。</d></l>
+				<l c="violet"><s>波江</s><d>然后</d></l>
+				<l c="sparky"><s>闪闪</s><d>然后她告诉我，扑翅过家家很危险！</d></l>
+				<l c="violet"><s>波江</s><d>然后</d></l>
+				<l c="sparky"><s>闪闪</s><d>然后她使劲儿拍了拍墙壁，然后一个石头砸到我头上了！</d></l>
+				<l c="violet"><s>波江</s><d>然后</d></l>
+				<l c="sparky"><s>闪闪</s><d>然后我就赶紧走了。</d></l>
+				<l c="violet"><s>波江</s><d>然后</d></l>
+				<l c="sparky"><s>闪闪</s><d>然后我在山洞外看见了一只可爱的毛毛虫<c c="#6a006a">波江：好的好的 你们就聊了这些</c></d></l>
+				<l c="sparky"><s>闪闪</s><d>是的。</d></l>
 			</log>
 		</content>
 	</page>
@@ -327,28 +327,28 @@
 		<content>
 			<img>../0/26.png</img>
 			<log>
-				<l c="violet"><s>波江</s><d>an thats the entire reason wwhy youre so fuckin freaked out by evven a slight mention a flarp</d></l>
-				<l c="sparky"><s>闪闪</s><d>Uh, yes.</d></l>
+				<l c="violet"><s>波江</s><d>你那么害怕扑翅过家家 原因就只有这个</d></l>
+				<l c="sparky"><s>闪闪</s><d>呃，是的。</d></l>
 			</log>
-			<p>Sparky tugs at her hair. That freakishly-grown hair look hellishly like whiskers. It's just so unfair you have to resort to hitting on stupid girls like her.</p>
-			<p>You mean, 荆芥 told her that FLARP was dangerous. She not only believed it, but also got so afraid of it that she basically freaked out when you mentioned it. Either she regards 荆芥 as her firm life belief or she's just stupid. You're sure it's the latter.</p>
-			<p>What? Lying? Might she be lying? No way, she's not smart enough to lie with a straight face. She is definetely not lying.</p>
+			<p>闪闪扯着她的头发。奇奇怪怪的头发，长得跟个胡须似的。你为啥玩个游戏都只能找这种傻逼？</p>
+			<p>你是说，荆芥告诉她扑翅过家家很危险。她不仅信了，而且还怕到稍微提到它都会吓得不得了。她要么就是把荆芥视为她的人生信仰，要么就是傻。你想这应该是后者。</p>
+			<p>啥？撒谎？她会撒谎吗？不可能，她没聪明到面不改色地撒谎的地步。她肯定不在撒谎。</p>
 		</content>
 	</page>
 	<page num="27">
-		<command>波江: Try harder to get her to FLARP with you; you can't afford yet another night spent all alone!</command>
+		<command>波江：你一定要让她和你一起玩，今晚你不能再次独自度过了！</command>
 		<content>
 			<img>../0/27.png</img>
 			<log>
-				<l c="violet"><s>波江</s><d>cmon spark</d></l>
-				<l c="violet"><s>波江</s><d>howw much do you knoww bout flarp besides wwhat nep told you</d></l>
-				<l c="sparky"><s>闪闪</s><d>Um... Not much actualy.</d></l>
-				<l c="violet"><s>波江</s><d>exactly</d></l>
-				<l c="violet"><s>波江</s><d>howw do you knoww shes not lyin</d></l>
-				<l c="sparky"><s>闪闪</s><d>Of course I do! She has nothing to lie for!</d></l>
-				<l c="violet"><s>波江</s><d>to rob you a fun maybe</d></l>
-				<l c="sparky"><s>闪闪</s><d>She wouldn't do that! We're best friends! If there is any fun she would SHARE it with me, not hide it from me!</d></l>
-				<l c="violet"><s>波江</s><d>uh howw bout this</d></l>
+				<l c="violet"><s>波江</s><d>得了吧 闪</d></l>
+				<l c="violet"><s>波江</s><d>除了荆告诉你的 你还对扑翅过家家有别的了解吗</d></l>
+				<l c="sparky"><s>闪闪</s><d>呃……没多少。</d></l>
+				<l c="violet"><s>波江</s><d>那就是嘛</d></l>
+				<l c="violet"><s>波江</s><d>她说不定在撒谎呢</d></l>
+				<l c="sparky"><s>闪闪</s><d>她可没有撒谎！她为什么要撒谎？</d></l>
+				<l c="violet"><s>波江</s><d>让你享受不到过家家的乐趣吧</d></l>
+				<l c="sparky"><s>闪闪</s><d>不可能！我们是最好的朋友！她有乐趣肯定都会与我分享，而不是自己独自玩！</d></l>
+				<l c="violet"><s>波江</s><d>呃 要不这样子</d></l>
 				<l c="violet"><s>波江</s><d>you dont get a say on stuff you havvent tried</d></l>
 				<l c="violet"><s>波江</s><d>nep doesnt like flarpin</d></l>
 				<l c="violet"><s>波江</s><d>maybe she tried it before or somethin i dont care</d></l>
@@ -436,6 +436,8 @@
 				<l c="sparky"><s>闪闪</s><d>True, I hate ungrateful trols too!</d></l>
 				<l c="violet"><s>波江</s><d>?????</d></l>
 			</log>
+			<img>misc/newyear2023.png</img>
+			<p>2023/1/22 癸卯兔年 -- 闪闪祝大家新年快乐！</p>
 		</content>
 	</page>
 	<page num="34">
