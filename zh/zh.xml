@@ -475,7 +475,9 @@
 	<page num="37">
 		<command/>
 		<content>
-			<img>../0/37.png</img>
+			<img>../0/37_0.png</img>
+			<img>../0/37_1.png</img>
+			<img>../0/37_2.png</img>
 			<log>
 				<l c="violet"><s>波江</s><d>原书在这儿</d></l>
 			</log>
