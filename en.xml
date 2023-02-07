@@ -218,7 +218,7 @@
 				<l c="sparky"><s>SPARKY</s><d>I was standing too far away, I think. Or maybe my vision blured because I was SO HUNGRY.</d></l>
 				<l c="sparky"><s>SPARKY</s><d>But I gues that means you don't have any ice cream?</d></l>
 				<l c="sparky"><s>SPARKY</s><d>Awww... I was realy geting my hopes up...</d></l>
-				<l c="sparky"><s>SPARKY</s><d>Never mind; sory for wasting your time, then. I'll <c c="#6a006a">ERIDAN: WWAIT DONT GO</c></d></l>
+				<l c="sparky"><s>SPARKY</s><d>Never mind; sory for wasting your time, then. I'l <c c="#6a006a">ERIDAN: WWAIT DONT GO</c></d></l>
 			</log>
 		</content>
 	</page>
@@ -262,10 +262,11 @@
 				<l c="olive"><s>NEPETA</s><d>:33 &lt; while it may look like a harmless roleplaying game it is actually a terrible addictive mind-warper that will make trolls all fight and kill each other over nothing at all!</d></l>
 				<l c="olive"><s>NEPETA</s><d>:33 &lt; and then there will be blood and gore flying everywhere in this endless blazing inferno of death!!!</d></l>
 			</log>
+			<p>Later on, commands to pages with flashbacks will be preceded with [F]. Do pay special attention to these pages!</p>
 		</content>
 	</page>
 	<page num="21">
-		<command>[Gif] ======-></command>
+		<command>[F] [Gif] ======-></command>
 		<content>
 			<img>0/21.gif</img>
 			<log>
@@ -659,7 +660,7 @@
 		<command>Sparky: Have another flashback</command>
 		<content>
 			<img>0/49.png</img>
-			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one.</p>
+			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one. That's why they might not always be in chronological order!</p>
 		</content>
 	</page>
 	<page num="51">
@@ -684,6 +685,176 @@
 			<img>0/52_1.png</img>
 			<log>
 				<l c="violet"><s>eridan</s><d>(i wwant to fuckin kill you right here right noww)</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="53">
+		<command/>
+		<content>
+			<img>0/53.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>So is the character complete?</d></l>
+				<l c="violet"><s>eridan</s><d>yeah</d></l>
+				<l c="sparky"><s>sparky</s><d>Is Donutmania awesome?</d></l>
+				<l c="violet"><s>eridan</s><d>wwell</d></l>
+				<l c="violet"><s>eridan</s><d>to set the name aside</d></l>
+				<l c="violet"><s>eridan</s><d>TOTALLY</d></l>
+				<l c="violet"><s>eridan</s><d>its a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
+				<l c="violet"><s>eridan</s><d>its the BEST FUCKIN THING wwe could EVVER ask for</d></l>
+				<l c="violet"><s>eridan</s><d>you did a damn right thing teamin up wwith me</d></l>
+				<l c="sparky"><s>sparky</s><d>Awesome!!!!!!!!!!!!!</d></l>
+				<l c="sparky"><s>sparky</s><d>(Huh. I hope so)</d></l>
+				<l c="sparky"><s>sparky</s><d>What do we do now?</d></l>
+				<l c="violet"><s>eridan</s><d>noww wwe come up wwith a team name</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="54">
+		<command/>
+		<content>
+			<img>0/54.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>A team name?</d></l>
+				<l c="violet"><s>eridan</s><d>yeah the names of the other twwo teams are</d></l>
+				<l c="violet"><s>eridan</s><d>team scourge vvris an ter</d></l>
+				<l c="violet"><s>eridan</s><d>team charge ara an tavv</d></l>
+				<l c="sparky"><s>sparky</s><d>So they both end in the leters "GE".</d></l>
+				<l c="violet"><s>eridan</s><d>yeah lets see wwhat wwe can come up wwith</d></l>
+				<l c="sparky"><s>sparky</s><d>Cabage, orange, sausage...</d></l>
+				<l c="violet"><s>eridan</s><d>anchorage privvilage strange</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="55">
+		<command/>
+		<content>
+			<img>0/55.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>I've got it!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="56">
+		<command/>
+		<content>
+			<img>0/56.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Team Garbage!!!!!!!!!!!!!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="57">
+		<command>[G] Team Garbage's Grand Entrance!</command>
+		<content>
+			<img>0/57.gif</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>wwe are team garbage</d></l>
+				<l c="violet"><s>eridan</s><d>im team</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="58">
+		<command/>
+		<content>
+			<img>0/58.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Huh?</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="59">
+		<command/>
+		<content>
+			<img>0/59.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oh right! I'm garbage!</d></l>
+			</log>
+			<p><i>*Applause mixed with laughter (mostly laughter, to be honest)*</i></p>
+		</content>
+	</page>
+	<page num="60">
+		<command>Eridan: Set sail.</command>
+		<content>
+			<img>0/60.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>noww that evverythins ready</d></l>
+				<l c="violet"><s>eridan</s><d>take this sword and cut the anchor chain</d></l>
+				<l c="sparky"><s>sparky</s><d>What?!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="61">
+		<command/>
+		<content>
+			<img>0/61.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>you see theres this thing called an "anchor" thats used to hold the ship in place wwhen you dont wwant it to movve</d></l>
+				<l c="violet"><s>eridan</s><d>but noww wwere settin sail</d></l>
+				<l c="violet"><s>eridan</s><d>so wwell havve to cut it off</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="62">
+		<command/>
+		<content>
+			<img>0/62.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oh, I think I get it!</d></l>
+				<l c="sparky"><s>sparky</s><d>So we cut of the anchor chain every time we want the ship to move?</d></l>
+				<l c="violet"><s>eridan</s><d>uh yeah just like that</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="63">
+		<command>Sparky: You're not a show-off!</command>
+		<content>
+			<img>0/63.png</img>
+			<p>No indeed. You mean it.</p>
+		</content>
+	</page>
+	<page num="64">
+		<command>Team Garbage: Begin voyage.</command>
+		<content>
+			<img>0/64_0.png</img>
+			<img>0/64_1.png</img>
+			<img>0/64_2.png</img>
+			<p>The engine roars to life. The sea parts before you as the stars lead the way.</p>
+			<p>Eridan takes the helm. You stand in the crow's nest, watching far out to sea.</p>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Uh... So what do we actualy do?</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="65">
+		<command/>
+		<content>
+			<img>0/65_0.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>wwe sail around lookin for other flarpers</d></l>
+				<l c="violet"><s>eridan</s><d>then wwe sink their ships an loot them</d></l>
+				<l c="violet"><s>eridan</s><d>but before that</d></l>
+			</log>
+			<img>0/65_1.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>wwhy dont you swwap out your kaleidoscope wwith somethin that actually allowws you to see?????</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="66">
+		<command/>
+		<content>
+			<img>0/66.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oh, sure!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="67">
+		<command/>
+		<content>
+			<img>0/67.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Aha!</d></l>
 			</log>
 		</content>
 	</page>
