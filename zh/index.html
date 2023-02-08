@@ -51,63 +51,15 @@
 	let url = new URLSearchParams(window.location.search);
 	let allPages = loadXML('zh.xml').children;
 
-	function para(d, dom) {
-		let c = dom.childNodes;
-		for(let z = 0; z < c.length; z++) {
-			if(c[z].tagName) { // if it has something special, not a text node
-				let d1;
-				if(c[z].tagName == 'a') {
-					d1 = elt('a', {href: c[z].getAttribute('href')});
-				} else {
-					d1 = elt('span');
-					switch(c[z].tagName) {
-						case 'c': // color
-							d1.style.color = c[z].getAttribute('c');
-							break;
-						case 's': // size
-							d1.style.fontSize = c[z].getAttribute('s');
-							break;
-						case 'i': // italic
-							d1.style.fontFamily = '微软雅黑';
-							break;
-						case 'u': // underline
-							d1.style.textDecoration = 'underline';
-							break;
-						case 'st': // strikethrough
-							d1.style.textDecoration = 'line-through';
-							break;
-						case 'w': // weight
-							d1.style.fontWeight = c[z].getAttribute('w');
-							break;
-						case 'cap': //all caps
-							d1.style.textTransform = 'uppercase';
-							break;
-						default:
-							throw new Error(`whoops sorry tag name ${c[z].tagName} not supported`);
-					}
-				};
-				d.appendChild(para(d1, c[z]));
-			} else { // if its a text node
-				d.appendChild(c[z]);
-				z--;
-			}
-		}
-		return d;
-	}
-	function dialog(dom) {
-		let t = elt('table', {className: 'an-item dialog'});
-		let c = dom.children;
-		for(let z = 0; z < c.length; z++) {
-			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')]}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, '：'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
-		}
-		return t;
-	}
-
 	class Page {
 		constructor(num) {
 			this.num = num;
 			this.prevNum = this.num - 1;
 			this.nextNum = this.num + 1;
+			// 这个脚注写得我满脸狼狈
+			this.ftn = elt('ol');
+			this.footnote = elt('div', {id: 'footnote'}, this.ftn);
+			this.ftnCount = 0;
 			try {
 				this.getDom();
 				this.getSwitchLang();
@@ -124,6 +76,69 @@
 				f.appendChild(this.controls);
 			}
 		}
+		para(d, dom) {
+			let c = dom.childNodes;
+			for(let z = 0; z < c.length; z++) {
+				if(c[z].tagName) { // if it has something special, not a text node
+					if(c[z].tagName == 'ftn') {
+						console.log(c[z].firstChild);
+						this.ftnCount++;
+						this.ftn.appendChild(elt('li', {id: `ftn-${this.ftnCount}`}, String(c[z].firstChild.nodeValue)));
+						d.appendChild(elt('sup', {}, elt('a', {href: `#ftn-${this.ftnCount}`}, String(this.ftnCount))));
+					} else {
+						let d1;
+						if(c[z].tagName == 'a') {
+							d1 = elt('a', {href: c[z].getAttribute('href')});
+						} else {
+							d1 = elt('span');
+							switch(c[z].tagName) {
+								case 'c': // color
+									d1.style.color = colors[c[z].getAttribute('c')] || c[z].getAttribute('c');
+									break;
+								case 's': // size
+									d1.style.fontSize = c[z].getAttribute('s');
+									break;
+								case 'i': // italic
+									d1.style.fontFamily = "微软雅黑";
+									break;
+								case 'u': // underline
+									d1.style.textDecoration = 'underline';
+									break;
+								case 'st': // strikethrough
+									d1.style.textDecoration = 'line-through';
+									break;
+								case 'w': // weight
+									d1.style.fontFamily = "c[z].getAttribute('w')";
+									break;
+								case 'cap': // all caps
+									d1.style.textTransform = 'uppercase';
+									break;
+								default:
+									throw new Error(`whoops sorry tag name ${c[z].tagName} not supported`);
+							}
+						};
+						d.appendChild(this.para(d1, c[z]));
+					}
+				} else { // if its a text node
+					d.appendChild(c[z]);
+					z--;
+				}
+			}
+			return d;
+		}
+		dialog(dom) {
+			let t = elt('table', {className: 'an-item dialog'});
+			let c = dom.children;
+			for(let z = 0; z < c.length; z++) {
+				t.appendChild(elt('tr',
+					{style: `color: ${colors[c[z].getAttribute('c')] || c[z].getAttribute('c')}`},
+					this.para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]),
+					elt('td', {className: 'dialog-speaker'}, '：'),
+					this.para(elt('td', {className: 'dialog-line'}),
+					c[z].children[1])));
+			}
+			return t;
+		}
 		goToPage(num) {
 			window.location.href = `?page=${num}`;
 		}
@@ -131,10 +146,12 @@
 			this.dom = findPage(this.num);
 		}
 		getSwitchLang() {
-			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `../?page=${this.num}`}, 'English (USA)'));
+			this.switchLang = elt('div', {id: 'switch-lang'},
+				elt('a', {href: `../?page=${this.num}`}, 'English (USA)'));
 		}
 		getCommand() {
-			this.command = elt('div', {id: 'command'}, this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
+			this.command = elt('div', {id: 'command'},
+				this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
 		}
 		getContent() {
 			let q = this.dom.children[1].children;
@@ -142,16 +159,18 @@
 			for(let z = 0; z < q.length; z++) {
 				switch(q[z].tagName) {
 					case 'img':
-						this.div.appendChild(elt('div', {className: 'an-item panel'}, elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt')})));
+						this.div.appendChild(elt('div',
+							{className: 'an-item panel'},
+							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt') || ''})));
 						break;
 					case 'p':
 						let d = elt('div', {className: 'an-item p'});
-						this.div.appendChild(para(d, q[z]));
+						this.div.appendChild(this.para(d, q[z]));
 						break;
 					case 'br':
 						this.div.appendChild(elt('br'));
 					case 'log':
-						this.div.appendChild(dialog(q[z]));
+						this.div.appendChild(this.dialog(q[z]));
 						break;
 					default:
 						throw new Error(`dang it tag name "${q[z].tagName}" isnt supported sorry`);
@@ -160,20 +179,23 @@
 		}
 		getLink() {
 			let q = findPage(this.nextNum);
-			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `?page=${this.nextNum}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
+			if(q) this.link = elt('div', {id: 'link'},
+				'> ',
+				elt('a', {href: `?page=${this.nextNum}`},
+					q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
 			else this.link = 0;
 		}
 		getLoadAndSaveButtons() {
-			this.saveButton = elt('a', {}, '保存进度');
-			this.loadButton = elt('a', {}, '加载进度');
+			this.saveButton = elt('a', {}, '保存');
+			this.loadButton = elt('a', {}, '加载');
 			this.saveButton.addEventListener('click', e => {
 				window.localStorage.setItem('place', this.num);
-				alert('进度已保存');
+				alert('进度已保存！');
 			});
 			this.loadButton.addEventListener('click', e => {
 				let storage = window.localStorage.getItem('place');
 				if(storage) window.location.href = `?page=${storage}`;
-				else alert('进度未保存！请在加载前点击“保存进度”。');
+				else alert('进度未保存！请先点击“保存进度”！')
 			});
 		}
 		getControls() {
@@ -196,15 +218,17 @@
 			});
 		}
 		appendStuff() {
-			let f = document.querySelector('#frame');
+			let f = document.getElementById('frame');
 			f.appendChild(this.switchLang);
 			f.appendChild(this.command);
 			f.appendChild(this.div);
 			if(this.link) f.appendChild(this.link);
+			if(this.ftnCount) f.appendChild(this.footnote);
 			f.appendChild(this.controls);
 		}
 	}
 	let page = new Page(Number(url.get('page')) || 1);
+	// page.appendStuff();
 
 	// switch page needs to remember previous page num
 	function switchPage(kind) {

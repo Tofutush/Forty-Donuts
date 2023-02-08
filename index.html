@@ -60,7 +60,7 @@
 			this.ftn = elt('ol');
 			this.footnote = elt('div', {id: 'footnote'}, this.ftn);
 			this.ftnCount = 0;
-			// try {
+			try {
 				this.getDom();
 				this.getSwitchLang();
 				this.getCommand();
@@ -69,12 +69,12 @@
 				this.getControls();
 				this.eventListeners();
 				this.appendStuff();
-			// } catch(e) { // page number larger than largest page number
-			// 	this.getControls();
-			// 	let f = document.getElementById('frame');
-			// 	f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
-			// 	f.appendChild(this.controls);
-			// }
+			} catch(e) { // page number larger than largest page number
+				this.getControls();
+				let f = document.getElementById('frame');
+				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
+				f.appendChild(this.controls);
+			}
 		}
 		para(d, dom) {
 			let c = dom.childNodes;
@@ -161,7 +161,7 @@
 					case 'img':
 						this.div.appendChild(elt('div',
 							{className: 'an-item panel'},
-							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt')})));
+							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt') || ''})));
 						break;
 					case 'p':
 						let d = elt('div', {className: 'an-item p'});
