@@ -173,7 +173,7 @@
 			for(let z = 0; z < q.length; z++) {
 				switch(q[z].tagName) {
 					case 'img':
-						this.div.appendChild(elt('div', {className: 'an-item panel'}, elt('img', {src: q[z].firstChild.nodeValue})));
+						this.div.appendChild(elt('div', {className: 'an-item panel'}, elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt')})));
 						break;
 					case 'p':
 						let d = elt('div', {className: 'an-item p'});
