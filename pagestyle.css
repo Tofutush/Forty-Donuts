@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+	display: none;
+}
+#link {
+	font-size: 28px;
+	padding: 15px;
+}
+#footnote {
+	font-size: 18px;
+	user-select: text;
+}
+#footnote > ol {
+	margin: 0;
+	padding: 0 80px;
+}
+#footnote li:target {
+	font-size: 24px;
+	color: #0cf;
+}
+#controls {
+	font-size: 16px;
+	margin-top: 10px;
+}
+.an-item {
+	margin: 15px auto;
+}
+.panel {
+	height: 540px;
+	user-select: none;
+}
+.dialog {
+	max-width: 750px;
+}
+.dialog > tr > :first-child, .dialog > tr > :nth-child(2) {
+	text-align: right;
+	vertical-align: top;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.dialog > tr > :last-child {
+	text-align: left;
+}
+/* .dialog-speaker {
+	text-align: right;
+	vertical-align: top;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.dialog-line {
+	text-align: left;
+} */

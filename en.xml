@@ -568,10 +568,10 @@
 		<content>
 			<img>0/42.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Oh, sory! I gues I sort of lost focus.</d></l>
+				<l c="sparky"><s>sparky</s><d>Oh, sory! I gues<ftn>this is a footnote test just to see if it would work</ftn> I sort of lost focus.</d></l>
 				<l c="violet"><s>eridan</s><d>wwhatevver forget it</d></l>
-				<l c="violet"><s>eridan</s><d>look heres your class</d></l>
-				<l c="violet"><s>eridan</s><d>has to be the bast class evver</d></l>
+				<l c="violet"><s>eridan</s><d>look<ftn>another test</ftn> heres your cl<ftn>yet another!</ftn>ass</d></l>
+				<l c="violet"><s>eridan</s><d>has to be the best<ftn>hahaha</ftn> class evver</d></l>
 			</log>
 		</content>
 	</page>

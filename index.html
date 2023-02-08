@@ -3,38 +3,7 @@
 <head>
 	<title>Forty Donuts</title>
 	<link rel="stylesheet" href="style.css"/>
-	<style>
-		::-webkit-scrollbar {
-			display: none;
-		}
-		#link {
-			font-size: 28px;
-			padding: 10px;
-		}
-		#controls {
-			font-size: 16px;
-			margin-top: 10px;
-		}
-		.an-item {
-			margin: 15px auto;
-		}
-		.panel {
-			height: 540px;
-			user-select: none;
-		}
-		.dialog {
-			max-width: 750px;
-		}
-		.dialog-speaker {
-			text-align: right;
-			vertical-align: top;
-			text-transform: uppercase;
-			white-space: nowrap;
-		}
-		.dialog-line {
-			text-align: left;
-		}
-</style>
+	<link rel="stylesheet" href="pagestyle.css"/>
 </head>
 <body>
 <nav id="navbar">
@@ -82,64 +51,16 @@
 	let url = new URLSearchParams(window.location.search);
 	let allPages = loadXML('en.xml').children;
 
-	function para(d, dom) {
-		let c = dom.childNodes;
-		for(let z = 0; z < c.length; z++) {
-			if(c[z].tagName) { // if it has something special, not a text node
-				let d1;
-				if(c[z].tagName == 'a') {
-					d1 = elt('a', {href: c[z].getAttribute('href')});
-				} else {
-					d1 = elt('span');
-					switch(c[z].tagName) {
-						case 'c': // color
-							d1.style.color = colors[c[z].getAttribute('c')] || c[z].getAttribute('c');
-							break;
-						case 's': // size
-							d1.style.fontSize = c[z].getAttribute('s');
-							break;
-						case 'i': // italic
-							d1.style.fontStyle = 'italic';
-							break;
-						case 'u': // underline
-							d1.style.textDecoration = 'underline';
-							break;
-						case 'st': // strikethrough
-							d1.style.textDecoration = 'line-through';
-							break;
-						case 'w': // weight
-							d1.style.fontWeight = c[z].getAttribute('w');
-							break;
-						case 'cap': //all caps
-							d1.style.textTransform = 'uppercase';
-							break;
-						default:
-							throw new Error(`whoops sorry tag name ${c[z].tagName} not supported`);
-					}
-				};
-				d.appendChild(para(d1, c[z]));
-			} else { // if its a text node
-				d.appendChild(c[z]);
-				z--;
-			}
-		}
-		return d;
-	}
-	function dialog(dom) {
-		let t = elt('table', {className: 'an-item dialog'});
-		let c = dom.children;
-		for(let z = 0; z < c.length; z++) {
-			t.appendChild(elt('tr', {style: `color: ${colors[c[z].getAttribute('c')] || c[z].getAttribute('c')}`}, para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]), elt('td', {className: 'dialog-speaker'}, ':'), para(elt('td', {className: 'dialog-line'}), c[z].children[1])));
-		}
-		return t;
-	}
-
 	class Page {
 		constructor(num) {
 			this.num = num;
 			this.prevNum = this.num - 1;
 			this.nextNum = this.num + 1;
-			try {
+			// 这个脚注写得我满脸狼狈
+			this.ftn = elt('ol');
+			this.footnote = elt('div', {id: 'footnote'}, this.ftn);
+			this.ftnCount = 0;
+			// try {
 				this.getDom();
 				this.getSwitchLang();
 				this.getCommand();
@@ -148,12 +69,75 @@
 				this.getControls();
 				this.eventListeners();
 				this.appendStuff();
-			} catch(e) { // page number larger than largest page number
-				this.getControls();
-				let f = document.getElementById('frame');
-				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
-				f.appendChild(this.controls);
+			// } catch(e) { // page number larger than largest page number
+			// 	this.getControls();
+			// 	let f = document.getElementById('frame');
+			// 	f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
+			// 	f.appendChild(this.controls);
+			// }
+		}
+		para(d, dom) {
+			let c = dom.childNodes;
+			for(let z = 0; z < c.length; z++) {
+				if(c[z].tagName) { // if it has something special, not a text node
+					if(c[z].tagName == 'ftn') {
+						console.log(c[z].firstChild);
+						this.ftnCount++;
+						this.ftn.appendChild(elt('li', {id: `ftn-${this.ftnCount}`}, String(c[z].firstChild.nodeValue)));
+						d.appendChild(elt('sup', {}, elt('a', {href: `#ftn-${this.ftnCount}`}, String(this.ftnCount))));
+					} else {
+						let d1;
+						if(c[z].tagName == 'a') {
+							d1 = elt('a', {href: c[z].getAttribute('href')});
+						} else {
+							d1 = elt('span');
+							switch(c[z].tagName) {
+								case 'c': // color
+									d1.style.color = colors[c[z].getAttribute('c')] || c[z].getAttribute('c');
+									break;
+								case 's': // size
+									d1.style.fontSize = c[z].getAttribute('s');
+									break;
+								case 'i': // italic
+									d1.style.fontStyle = 'italic';
+									break;
+								case 'u': // underline
+									d1.style.textDecoration = 'underline';
+									break;
+								case 'st': // strikethrough
+									d1.style.textDecoration = 'line-through';
+									break;
+								case 'w': // weight
+									d1.style.fontWeight = c[z].getAttribute('w');
+									break;
+								case 'cap': // all caps
+									d1.style.textTransform = 'uppercase';
+									break;
+								default:
+									throw new Error(`whoops sorry tag name ${c[z].tagName} not supported`);
+							}
+						};
+						d.appendChild(this.para(d1, c[z]));
+					}
+				} else { // if its a text node
+					d.appendChild(c[z]);
+					z--;
+				}
 			}
+			return d;
+		}
+		dialog(dom) {
+			let t = elt('table', {className: 'an-item dialog'});
+			let c = dom.children;
+			for(let z = 0; z < c.length; z++) {
+				t.appendChild(elt('tr',
+					{style: `color: ${colors[c[z].getAttribute('c')] || c[z].getAttribute('c')}`},
+					this.para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]),
+					elt('td', {className: 'dialog-speaker'}, ':'),
+					this.para(elt('td', {className: 'dialog-line'}),
+					c[z].children[1])));
+			}
+			return t;
 		}
 		goToPage(num) {
 			window.location.href = `?page=${num}`;
@@ -162,10 +146,12 @@
 			this.dom = findPage(this.num);
 		}
 		getSwitchLang() {
-			this.switchLang = elt('div', {id: 'switch-lang'}, elt('a', {href: `zh/?page=${this.num}`}, '简体中文'));
+			this.switchLang = elt('div', {id: 'switch-lang'},
+				elt('a', {href: `zh/?page=${this.num}`}, '简体中文'));
 		}
 		getCommand() {
-			this.command = elt('div', {id: 'command'}, this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
+			this.command = elt('div', {id: 'command'},
+				this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
 		}
 		getContent() {
 			let q = this.dom.children[1].children;
@@ -173,16 +159,18 @@
 			for(let z = 0; z < q.length; z++) {
 				switch(q[z].tagName) {
 					case 'img':
-						this.div.appendChild(elt('div', {className: 'an-item panel'}, elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt')})));
+						this.div.appendChild(elt('div',
+							{className: 'an-item panel'},
+							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt')})));
 						break;
 					case 'p':
 						let d = elt('div', {className: 'an-item p'});
-						this.div.appendChild(para(d, q[z]));
+						this.div.appendChild(this.para(d, q[z]));
 						break;
 					case 'br':
 						this.div.appendChild(elt('br'));
 					case 'log':
-						this.div.appendChild(dialog(q[z]));
+						this.div.appendChild(this.dialog(q[z]));
 						break;
 					default:
 						throw new Error(`dang it tag name "${q[z].tagName}" isnt supported sorry`);
@@ -191,7 +179,10 @@
 		}
 		getLink() {
 			let q = findPage(this.nextNum);
-			if(q) this.link = elt('div', {id: 'link'}, '> ', elt('a', {href: `?page=${this.nextNum}`}, q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
+			if(q) this.link = elt('div', {id: 'link'},
+				'> ',
+				elt('a', {href: `?page=${this.nextNum}`},
+					q.children[0].firstChild ? q.children[0].firstChild.nodeValue : '======->'));
 			else this.link = 0;
 		}
 		getLoadAndSaveButtons() {
@@ -232,6 +223,7 @@
 			f.appendChild(this.command);
 			f.appendChild(this.div);
 			if(this.link) f.appendChild(this.link);
+			if(this.ftnCount) f.appendChild(this.footnote);
 			f.appendChild(this.controls);
 		}
 	}
