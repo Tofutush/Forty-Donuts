@@ -17,7 +17,7 @@
 		<command>启程。</command>
 		<content>
 			<img>../0/2.png</img>
-			<p>一位年轻山怪坐在临海的小码头上。碰巧她已经忘掉了自己的名字，忘掉了今天是星期几，忘掉了自己的生日，还忘掉了她为什么坐在这里。</p>
+			<p>一<ftn>haha</ftn>位<ftn>qwqw</ftn>年<ftn>gmognfsd</ftn>轻<ftn>哈哈哈阿巴阿巴</ftn>山<ftn>噼里啪啦</ftn>怪坐在临海的小码头上。碰巧她已经忘掉了自己的名字，忘掉了今天是星期几，忘掉了自己的生日，还忘掉了她为什么坐在这里。</p>
 		</content>
 	</page>
 	<page num="3">
@@ -108,7 +108,7 @@
 			<img>../0/11.png</img>
 			<log>
 				<l c="sparky"><s>闪闪</s><d>因为你手上的眼镜布！</d></l>
-				<l c="violet"><s>波江</s><d>嗯</d></l>
+				<l c="violet"><s>波江</s><d>蛤</d></l>
 			</log>
 		</content>
 	</page>
@@ -579,7 +579,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="45">
+	<page num="45(hidden)">
 		<command/>
 		<content>
 			<img>../0/45.png</img>
