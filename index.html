@@ -127,7 +127,7 @@
 			return d;
 		}
 		dialog(dom) {
-			let t = elt('table', {className: 'an-item dialog'});
+			let t = elt('table', {className: 'dialog'});
 			let c = dom.children;
 			for(let z = 0; z < c.length; z++) {
 				t.appendChild(elt('tr',
@@ -160,11 +160,11 @@
 				switch(q[z].tagName) {
 					case 'img':
 						this.div.appendChild(elt('div',
-							{className: 'an-item panel'},
+							{className: 'panel'},
 							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt') || ''})));
 						break;
 					case 'p':
-						let d = elt('div', {className: 'an-item p'});
+						let d = elt('div', {className: 'p'});
 						this.div.appendChild(this.para(d, q[z]));
 						break;
 					case 'br':
