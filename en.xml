@@ -253,7 +253,7 @@
 		</content>
 	</page>
 	<page num="20">
-		<command>Sparky: Have flashback.</command>
+		<command>[F] Sparky: Have flashback.</command>
 		<content>
 			<img>0/20.png</img>
 			<log>
@@ -262,7 +262,7 @@
 				<l c="olive"><s>NEPETA</s><d>:33 &lt; while it may look like a harmless roleplaying game it is actually a terrible addictive mind-warper that will make trolls all fight and kill each other over nothing at all!</d></l>
 				<l c="olive"><s>NEPETA</s><d>:33 &lt; and then there will be blood and gore flying everywhere in this endless blazing inferno of death!!!</d></l>
 			</log>
-			<p>Later on, commands to pages with flashbacks will be preceded with [F]. Do pay special attention to these pages!</p>
+			<p>Later on, commands to pages with flashbacks will be preceded with [F].</p>
 		</content>
 	</page>
 	<page num="21">
@@ -273,7 +273,7 @@
 				<l c="sparky"><s>SPARKY</s><d>Ouch!</d></l>
 				<l c="olive"><s>NEPETA</s><d>:33 &lt; thats why you should always watch your head</d></l>
 			</log>
-			<p>Later on, commands to pages with gif images will be preceded with [G].</p>
+			<p>Later on, commands to pages with gif images will be preceded with [G]. This includes epilepsy warnings, so please proceed with caution.</p>
 		</content>
 	</page>
 	<page num="22">
@@ -595,6 +595,7 @@
 				<l c="violet"><s>eridan</s><d>settin your bounds an challengin your limits</d></l>
 				<l c="violet"><s>eridan</s><d>blah blah blah... abilities... blah blah... glub glub... goob goob... doy dum dee...</d></l>
 			</log>
+			<p>Author's Note: Story's on hiatus until I get my new digital pen (the old one broke). Also, expect a mass-update on MSPFA once the site's fixed!</p>
 		</content>
 	</page>
 	<page num="45(hidden)">
@@ -831,7 +832,7 @@
 			<img>0/65_0.png</img>
 			<log>
 				<l c="violet"><s>eridan</s><d>wwe sail around lookin for other flarpers</d></l>
-				<l c="violet"><s>eridan</s><d>then wwe sink their ships an loot them</d></l>
+				<l c="violet"><s>eridan</s><d>then wwe sink their ships</d></l>
 				<l c="violet"><s>eridan</s><d>but before that</d></l>
 			</log>
 			<img>0/65_1.png</img>
@@ -855,6 +856,79 @@
 			<img>0/67.png</img>
 			<log>
 				<l c="sparky"><s>sparky</s><d>Aha!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="68">
+		<command/>
+		<content>
+			<img>0/68.png</img>
+			<!-- eridan facepalm -->
+		</content>
+	</page>
+	<page num="69">
+		<command>Eridan: Captain's log entry.</command>
+		<content>
+			<img>0/69.png</img>
+		</content>
+	</page>
+	<page num="70">
+		<command/>
+		<content>
+			<img>0/70.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Hey, what is this?</d></l>
+				<l c="violet"><s>eridan</s><d>oh this is the captains log wwhere you wwrite dowwn the status of the ship</d></l>
+				<l c="violet"><s>eridan</s><d>dead important this thing</d></l>
+				<l c="sparky"><s>sparky</s><d>That's cool, but why?</d></l>
+				<l c="violet"><s>eridan</s><d>wwell its mainly to givve future trolls an idea howw you died wwhen they fish your corpse outta the wwater</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="71">
+		<command/>
+		<content>
+			<img>0/71.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Can I take a look?</d></l>
+				<l c="violet"><s>eridan</s><d>sure but dont you dare let anythin bad happen to it</d></l>
+				<l c="violet"><s>eridan</s><d>(im only doin this cuz i knoww youd bug me relentlessly if i refuse)</d></l>
+				<l c="sparky"><s>sparky</s><d>Thanks!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="72">
+		<command>[G] Sparky: Be "Captain of the Day"!</command>
+		<content>
+			<img>0/72.gif</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>October the twenty-second, seven A.M.. Engine status: ERIDAN? COULD YOU TEL ME WHERE THE ENGINE IS? <c c="violet">ERIDAN: dowwn there</c> SPARKY: HERE? <c c="violet">ERIDAN: yeah dont touch anythin though</c> Engine status: I don't realy know. Wind: Blows on my hand. Waterline: Sea-level. Crew and their positions: Eridan, at the helm. Sparky, runing.</d></l>
+				<l c="sparky"><s>sparky</s><d>October the twenty-second, seven o five A.M.. Engine status: I stil don't know, but it's been runing for five minutes, it has to be okay. Wind: Stil blows on my hand. Waterline: Stil at sea-level, unles the sea-level changed. Crew and their positions: Eridan, stil at the helm. Sparky, stil runing.</d></l>
+				<l c="sparky"><s>sparky</s><d>October the twenty-second, seven ten A.M.. Engine status: I stil don't know, but it's been runing for ten minutes, it has to be okay. Wind: Stil blows. Waterline: Stil at sea-level, unles the sea-level changed. Crew and their positions: Eridan, at the helm like before. Sparky, stil runing.</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat the FUCK are you doin</d></l>
+				<l c="sparky"><s>sparky</s><d>writing the Captain's log! You said it was important!</d></l>
+				<l c="violet"><s>eridan</s><d>yeah but that doesnt mean you havve to wwite an entry EVVERY FIVVE FUCKIN MINUTES</d></l>
+				<l c="violet"><s>eridan</s><d>givve it back</d></l>
+				<l c="sparky"><s>sparky</s><d>October the twenty-second, seven fifteen A.M.. Engine status: I stil don't know, but it's been runing for fifteen minutes, it has to be okay. Wind: Stil blows. Waterline: Stil at sea-level. Crew and their positions: Eridan, standing with his hand outstretched. Sparky, runing towards Eridan.</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="73">
+		<command/>
+		<content>
+			<img>0/73.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Here you go!</d></l>
+				<l c="violet"><s>eridan</s><d>wwait WWHAT wwhoa</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="74">
+		<command/>
+		<content>
+			<img>0/74.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oops! Come bak! Come BAK!</d></l>
 			</log>
 		</content>
 	</page>

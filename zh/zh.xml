@@ -17,7 +17,7 @@
 		<command>启程。</command>
 		<content>
 			<img>../0/2.png</img>
-			<p>一<ftn>haha</ftn>位<ftn>qwqw</ftn>年<ftn>gmognfsd</ftn>轻<ftn>哈哈哈阿巴阿巴</ftn>山<ftn>噼里啪啦</ftn>怪坐在临海的小码头上。碰巧她已经忘掉了自己的名字，忘掉了今天是星期几，忘掉了自己的生日，还忘掉了她为什么坐在这里。</p>
+			<p>一位年轻山怪坐在临海的小码头上。碰巧她已经忘掉了自己的名字，忘掉了今天是星期几，忘掉了自己的生日，还忘掉了她为什么坐在这里。</p>
 		</content>
 	</page>
 	<page num="3">
@@ -228,7 +228,7 @@
 		</content>
 	</page>
 	<page num="20">
-		<command>闪闪：回忆。</command>
+		<command>[F] 闪闪：回忆。</command>
 		<content>
 			<img>../0/20.png</img>
 			<log>
@@ -237,6 +237,7 @@
 				<l c="olive"><s>荆芥</s><d>:33 &lt; 尽管它表面上看起来像是个无害的过家家游戏 但实际上它是一个恐怖又极易上瘾的头脑卷曲利器 能让山怪们为了一些微不足道的事自相残杀！</d></l>
 				<l c="olive"><s>荆芥</s><d>:33 &lt; 然后 在这片无边无际的死亡地狱烈火中 鲜血满天飞！！！</d></l>
 			</log>
+			<p>从此往后，带有回忆的页数指令会以 [F] 开头。</p>
 		</content>
 	</page>
 	<page num="21">
@@ -349,117 +350,117 @@
 				<l c="violet"><s>波江</s><d>让你享受不到过家家的乐趣吧</d></l>
 				<l c="sparky"><s>闪闪</s><d>不可能！我们是最好的朋友！她有乐趣肯定都会与我分享，而不是自己独自玩！</d></l>
 				<l c="violet"><s>波江</s><d>呃 要不这样子</d></l>
-				<l c="violet"><s>波江</s><d>you dont get a say on stuff you havvent tried</d></l>
-				<l c="violet"><s>波江</s><d>nep doesnt like flarpin</d></l>
-				<l c="violet"><s>波江</s><d>maybe she tried it before or somethin i dont care</d></l>
-				<l c="violet"><s>波江</s><d>but youre not nep an you havvent tried</d></l>
-				<l c="violet"><s>波江</s><d>maybe youll like flarpin</d></l>
-				<l c="violet"><s>波江</s><d>i wwouldnt knoww</d></l>
-				<l c="violet"><s>波江</s><d>you havve to try it yourself</d></l>
+				<l c="violet"><s>波江</s><d>你不能对你没做过的事情做评价</d></l>
+				<l c="violet"><s>波江</s><d>荆不喜欢扑翅过家家</d></l>
+				<l c="violet"><s>波江</s><d>她可能之前试过吧 不知道</d></l>
+				<l c="violet"><s>波江</s><d>但你又不是荆 你没玩过</d></l>
+				<l c="violet"><s>波江</s><d>说不定你喜欢呢</d></l>
+				<l c="violet"><s>波江</s><d>我不知道</d></l>
+				<l c="violet"><s>波江</s><d>只能你自己试试</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="28">
-		<command>Sparky: Have inner monologue.</command>
+		<command>闪闪：听听内心独白。</command>
 		<content>
 			<img>../0/28.png</img>
-			<p>The 荆芥 card isn't working for you.</p>
-			<p>Why are you even bothering? The disaster Doc Scratch told you about can't be avoided anyways, can it?</p>
-			<p>And even if it can be avoided, would it be any use to simply refuse to play FLARP?</p>
-			<p>You're going to try anyways. 波江's right about one thing. You don't get a say on stuff you haven't even tried.</p>
+			<p>荆芥这招不管用了。</p>
+			<p>你到底想干什么呢？反正划痕博士告诉你的那场灾难也不可避免，不是吗？</p>
+			<p>但即使它能被避免，那这仅靠拒绝玩扑翅过家家就能办到吗？</p>
+			<p>但你还是得试一试。波江至少有一点说对了。你不能对你没做过的事情做评价。</p>
 		</content>
 	</page>
 	<page num="29">
-		<command>Sparky: Try.</command>
+		<command>闪闪：尝试。</command>
 		<content>
 			<img>../0/29.png</img>
 			<log>
-				<l c="sparky"><s>闪闪</s><d>Listen here, 波江.</d></l>
-				<l c="sparky"><s>闪闪</s><d>I don't think I should play FLARP, and I don't think you should either.</d></l>
-				<l c="sparky"><s>闪闪</s><d>I don't think ANYONE should, in fact!</d></l>
-				<l c="sparky"><s>闪闪</s><d>How about we cal up everyone whom you know plays FLARP and we'l go chil out together. Nicely, like in a burow or something. Play some board games. Or video games. Read some comics. Or draw some, I know you guys draw realy wel. Have some snacks.</d></l>
-				<l c="violet"><s>波江</s><d>stop changin the subject you knoww you keep changin the subject cause your brain constantly drift evverywwhere</d></l>
-				<l c="violet"><s>波江</s><d>an you dont get to tell me wwhat to do</d></l>
-				<l c="violet"><s>波江</s><d>if your scared a bein hurt or somethin</d></l>
-				<l c="violet"><s>波江</s><d>you knoww wwhat ill givve you a m1911</d></l>
+				<l c="sparky"><s>闪闪</s><d>听着，波江。</d></l>
+				<l c="sparky"><s>闪闪</s><d>我觉得我不该玩扑翅过家家，你也不该玩。</d></l>
+				<l c="sparky"><s>闪闪</s><d>实际上，我觉得<i>谁</i>都不该玩！</d></l>
+				<l c="sparky"><s>闪闪</s><d>要不我们叫上所有玩扑翅过家家的山怪，一起聚聚。挑个好地方，兔子窝之类的。下下棋，打打游戏，看看漫画。或者画些漫画，我知道你们画画都很好。吃点零食。</d></l>
+				<l c="violet"><s>波江</s><d>别转移话题了 你一直都在转移话题 因为你的脑子经常满天飞</d></l>
+				<l c="violet"><s>波江</s><d>你也别叫我干事</d></l>
+				<l c="violet"><s>波江</s><d>如果你是害怕受伤或是什么的话</d></l>
+				<l c="violet"><s>波江</s><d>你猜怎么着 我可以给你一把手枪</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="30">
-		<command>Sparky: You don't say no to an M1911!</command>
+		<command>闪闪：这把手枪你可得拿到！</command>
 		<content>
 			<img alt="完美着陆！">../0/30.png</img>
-			<p>Right! You're in dead need of a new gun ever since your old one got stolen.</p>
+			<p>没错！自从你上一把枪被偷走后，你就一直处于枪械紧缺状态。</p>
 			<log>
-				<l c="sparky"><s>闪闪</s><d>Deal!!!!!!!!!!!!!</d></l>
-				<l c="violet"><s>波江</s><d>boy that wwas a helluvva jump</d></l>
+				<l c="sparky"><s>闪闪</s><d>成交！！！！！！！！！！！！！</d></l>
+				<l c="violet"><s>波江</s><d>我天 这跳的</d></l>
 			</log>
-			<p>To be honest you hardly even need a gun anyways. The old one you had didn't even shoot bullets. It shoots some kind of thorny vine that clings onto things, like the way Spidertroll shoots webs. The upside is that you'll never have to load it.</p>
-			<p>But it's always cool to get a gun! Just in case you haven't mentioned yet, you are an apex crack shot.</p>
+			<p>有一说一，你压根用不上枪。你原先的那个甚至都不发子弹。它会射出某种带刺的，能挂在东西上的藤蔓，像蜘蛛山怪的网一样。那把枪的优点就是永远不用装弹上膛。</p>
+			<p>但有把枪还是挺酷的！你有没有提到过呀，你是个顶级神枪手。</p>
 		</content>
 	</page>
 	<page num="31">
-		<command>波江: Yes, she's aboard! She's never getting off now!</command>
+		<command>波江耶！她上船了！她再也别想下去了！</command>
 		<content>
-			<img alt="不是很完美……">../0/31.png</img>
-			<p>No, that's a stupid thing to say. She <i>is</i> getting off the ship.</p>
-			<p><i>You</i> are not.</p>
+			<img alt="并不是很完美……">../0/31.png</img>
+			<p>不，怎么可能。她是下得去的。</p>
+			<p>下不去的是<i>你</i>。</p>
 		</content>
 	</page>
 	<page num="32">
-		<command>Sparky: Receive your pistol.</command>
+		<command>闪闪：收下手枪。</command>
 		<content>
 			<img>../0/32.png</img>
 			<log>
-				<l c="sparky"><s>闪闪</s><d>Is this a new one or an old one?</d></l>
-				<l c="violet"><s>波江</s><d>does it look neww</d></l>
-				<l c="sparky"><s>闪闪</s><d>Uh, kind of.</d></l>
-				<l c="violet"><s>波江</s><d>then it is</d></l>
+				<l c="sparky"><s>闪闪</s><d>这是新的还是旧的？</d></l>
+				<l c="violet"><s>波江</s><d>看起来像新的吗</d></l>
+				<l c="sparky"><s>闪闪</s><d>呃，差不多吧。</d></l>
+				<l c="violet"><s>波江</s><d>那就是新的</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="33">
-		<command>Sparky: Show off your marksmanship!</command>
+		<command>闪闪：炫炫枪法！</command>
 		<content>
 			<img>../0/33.png</img>
-			<p>No, no, no, you're not a show-off. And anyways, a good marksmanship isn't really a glorious skill or something. It means you practiced a lot. You wouldn't be so pleased to meet someone who claims that they've practiced a lot of shooting.</p>
+			<p>不不不，你不爱炫耀。而且，好枪法也不怎么值得骄傲。这只意味着你练习了很久。碰到一个说自己“练了很久枪法”的山怪也不是什么好事。</p>
 			<log>
-				<l c="violet"><s>波江</s><d>here is your flarp rulebook</d></l>
-				<l c="violet"><s>波江</s><d>a must havve for any flarp player</d></l>
-				<l c="violet"><s>波江</s><d>spark</d></l>
-				<l c="violet"><s>波江</s><d>spark are you listenin</d></l>
-				<l c="violet"><s>波江</s><d>fuck</d></l>
-				<l c="violet"><s>波江</s><d>drop your gun spark and come ovver here</d></l>
-				<l c="violet"><s>波江</s><d>dang i get it i get it</d></l>
-				<l c="violet"><s>波江</s><d>you vvalue a pistol ovver a friend wwhos wwillin to spend an entire night wwith you</d></l>
-				<l c="violet"><s>波江</s><d>ungrateful fuckin land dwweller i hate you guys</d></l>
-				<l c="sparky"><s>闪闪</s><d>True, I hate ungrateful trols too!</d></l>
-				<l c="violet"><s>波江</s><d>?????</d></l>
+				<l c="violet"><s>波江</s><d>这是你的扑翅规则手册</d></l>
+				<l c="violet"><s>波江</s><d>是每个扑翅玩家的必备品</d></l>
+				<l c="violet"><s>波江</s><d>闪</d></l>
+				<l c="violet"><s>波江</s><d>闪 你在听吗</d></l>
+				<l c="violet"><s>波江</s><d>艹</d></l>
+				<l c="violet"><s>波江</s><d>把枪放下 闪 给我过来</d></l>
+				<l c="violet"><s>波江</s><d>哎呦喂呀 我懂了 我懂了</d></l>
+				<l c="violet"><s>波江</s><d>你觉得一把枪比一个愿意花一整晚陪你的朋友重要 是不</d></l>
+				<l c="violet"><s>波江</s><d>不懂感恩的陆栖山怪 老子恨死你们所有人</d></l>
+				<l c="sparky"><s>闪闪</s><d>确实，我也很讨厌不懂感恩的山怪！</d></l>
+				<l c="violet"><s>波江</s><d>？？？？？</d></l>
 			</log>
 			<img>misc/newyear2023.png</img>
 			<p>2023/1/22 癸卯兔年 -- 闪闪祝大家新年快乐！</p>
 		</content>
 	</page>
 	<page num="34">
-		<command>Sparky: Pay attention as an act of gratitude.</command>
+		<command>闪闪：集中注意以示感激。</command>
 		<content>
 			<img>../0/34.png</img>
-			<p>You try to pay attention, which proves to be difficult to you, because you have Attention Deficit Hyperactivity Disorder, Inattentive type.</p>
-			<p>You didn't use to have it, but hey, trolls change.</p>
+			<p>你尝试着集中注意，但有点困难，因为你有注意力缺陷多动症。</p>
+			<p>你之前还没有，但山怪都会变的。</p>
 		</content>
 	</page>
 	<page num="35">
-		<command>Sparky: Try anyways.</command>
+		<command>闪闪：再试试。</command>
 		<content>
 			<img>../0/35.png</img>
 			<log>
-				<l c="violet"><s>波江</s><d>so like i wwas sayin</d></l>
-				<l c="violet"><s>波江</s><d>a flarp rulebook is a must havve for all flarpers</d></l>
-				<l c="sparky"><s>闪闪</s><d>Cool! Why though?</d></l>
-				<l c="violet"><s>波江</s><d>cause</d></l>
-				<l c="violet"><s>波江</s><d>cause its the RULES dude</d></l>
-				<l c="sparky"><s>闪闪</s><d>Oh I get it! Sory for interupting.</d></l>
-				<l c="sparky"><s>闪闪</s><d>But this hardly explains anything! It's just a bunch of incomplete sentences with a number folowing them!</d></l>
+				<l c="violet"><s>波江</s><d>我刚才说到哪儿了</d></l>
+				<l c="violet"><s>波江</s><d>对 扑翅规则手册是每个玩家的必备品</d></l>
+				<l c="sparky"><s>闪闪</s><d>酷！不过，为什么呢？</d></l>
+				<l c="violet"><s>波江</s><d>因为</d></l>
+				<l c="violet"><s>波江</s><d>因为这是<i>规则</i>啊 伙计</d></l>
+				<l c="sparky"><s>闪闪</s><d>哦，我懂了！抱歉打扰。</d></l>
+				<l c="sparky"><s>闪闪</s><d>但这规则什么都没解释啊！只有一对不完整的句子，后面标着数字！</d></l>
 			</log>
 		</content>
 	</page>
@@ -490,25 +491,25 @@
 			<log>
 				<l c="violet"><s>波江</s><d>不要感到压力</d></l>
 				<l c="violet"><s>波江</s><d>有我这个大佬带你飞 咱们队伍绝对能屌炸</d></l>
-				<l c="sparky"><s>闪闪</s><d>I don't doubt that, but I feel kind of overwhelmed, you know?</d></l>
-				<l c="violet"><s>波江</s><d>ugh nevver mind</d></l>
+				<l c="sparky"><s>闪闪</s><d>这点我并不否认，但是我感到一点压力，你懂不？</d></l>
+				<l c="violet"><s>波江</s><d>呃啊 没事</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="39">
-		<command>波江: Start making her character; you don't have all night!</command>
+		<command>波江：赶快开始创造她的角色，别浪费时间了！</command>
 		<content>
 			<img>../0/39.png</img>
 			<log>
-				<l c="violet"><s>波江</s><d>the sheet a paper i havve here in my hand is your character sheet</d></l>
-				<l c="sparky"><s>闪闪</s><d>Cool, what does it do?</d></l>
-				<l c="violet"><s>波江</s><d>it logs the info a your role play character</d></l>
-				<l c="violet"><s>波江</s><d>noww wwhat wwe need to do is to roll some dice to determine the statuses of your character</d></l>
+				<l c="violet"><s>波江</s><d>我手里拿的这张纸是你的角色信息表</d></l>
+				<l c="sparky"><s>闪闪</s><d>酷！它是干什么的？</d></l>
+				<l c="violet"><s>波江</s><d>记录你角色的信息</d></l>
+				<l c="violet"><s>波江</s><d>现在咱得扔些骰子来决定你角色的数值</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="40">
-		<command>[G] Sparky: Roll dice.</command>
+		<command>[G] 闪闪：扔骰子</command>
 		<content>
 			<img>../0/40.gif</img>
 			<log>
@@ -522,18 +523,18 @@
 		<content>
 			<img>../0/41.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>nowws the most important step a creating a character</d></l>
-				<l c="violet"><s>eridan</s><d>assignin these numbers to stats and determinin your class</d></l>
-				<l c="sparky"><s>sparky</s><d>I didn't get it, but it does sound important!</d></l>
-				<l c="violet"><s>eridan</s><d>exactly an thats wwhy im doing it for you</d></l>
-				<l c="violet"><s>eridan</s><d>feel lucky cause wwhen i played there wwas no one there to guide me</d></l>
-				<l c="violet"><s>eridan</s><d>i had to figure this shit all out on my own</d></l>
-				<l c="violet"><s>eridan</s><d>all a the others had a teammate but im all alone there</d></l>
-				<l c="violet"><s>eridan</s><d>it wwas so damn hard</d></l>
-				<l c="violet"><s>eridan</s><d>it wwas hard an nobody understands</d></l>
-				<l c="sparky"><s>sparky</s><d>Have you ever wondered how clouds stay up in the sky?</d></l>
-				<l c="violet"><s>eridan</s><d>wwhat the fuck</d></l>
-				<l c="violet"><s>eridan</s><d>youd been wwonderin bout clouds this wwhole time</d></l>
+				<l c="violet"><s>波江</s><d>现在是创造角色中最重要的一步</d></l>
+				<l c="violet"><s>波江</s><d>用这些数字决定你的角色类别</d></l>
+				<l c="sparky"><s>闪闪</s><d>我没听懂，但好像确实很重要！</d></l>
+				<l c="violet"><s>波江</s><d>确实 所以这事得我来做</d></l>
+				<l c="violet"><s>波江</s><d>感到幸运吧 我玩的时候都没有人带我</d></l>
+				<l c="violet"><s>波江</s><d>这些鬼东西都是我自己摸索出来的</d></l>
+				<l c="violet"><s>波江</s><d>别人都有队友 但就我是一个人</d></l>
+				<l c="violet"><s>波江</s><d>忒 tmd 难了</d></l>
+				<l c="violet"><s>波江</s><d>忒难了 没人懂得了</d></l>
+				<l c="sparky"><s>闪闪</s><d>你有没有想过，云是怎么飘在天上的？</d></l>
+				<l c="violet"><s>波江</s><d>什么鬼</d></l>
+				<l c="violet"><s>波江</s><d>你一直在想着云？</d></l>
 			</log>
 		</content>
 	</page>
@@ -542,15 +543,15 @@
 		<content>
 			<img>../0/42.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Oh, sory! I gues I sort of lost focus.</d></l>
-				<l c="violet"><s>eridan</s><d>wwhatevver forget it</d></l>
-				<l c="violet"><s>eridan</s><d>look heres your class</d></l>
-				<l c="violet"><s>eridan</s><d>has to be the bast class evver</d></l>
+				<l c="sparky"><s>闪闪</s><d>哦，抱歉！我想我走神了。</d></l>
+				<l c="violet"><s>波江</s><d>管他呢 算了</d></l>
+				<l c="violet"><s>波江</s><d>看 这是你的角色种类</d></l>
+				<l c="violet"><s>波江</s><d>这可是最棒的类了</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="43">
-		<command>Sparky: Take a look.</command>
+		<command>闪闪：看看。</command>
 		<content>
 			<img alt="角色信息
 				名字：
@@ -561,7 +562,7 @@
 				2
 				3
 				满级">../0/43.png</img>
-			<p><i>Petticoat Seagrift</i></p>
+			<p><i>衬裙海贼</i></p>
 		</content>
 	</page>
 	<page num="44">
@@ -569,13 +570,12 @@
 		<content>
 			<img>../0/44.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>This is cool! What does this  do?</d></l>
-				<l c="violet"><s>eridan</s><d>wwhat does it do</d></l>
-				<l c="violet"><s>eridan</s><d>boy this stuff is wway more than that</d></l>
-				<l c="violet"><s>eridan</s><d>bein the most important trait your class is basically wwhat defines your flarp character</d></l>
-				<l c="violet"><s>eridan</s><d>it accompanies you through your wwhole flarpin journey all the wway to the end</d></l>
-				<l c="violet"><s>eridan</s><d>settin your bounds an challengin your limits</d></l>
-				<l c="violet"><s>eridan</s><d>blah blah blah... abilities... blah blah... glub glub... goob goob... doy dum dee...</d></l>
+				<l c="sparky"><s>闪闪</s><d>好酷哦！这是干什么的？</d></l>
+				<l c="violet"><s>波江</s><d>这是干什么的</d></l>
+				<l c="violet"><s>波江</s><d>天哪 这种东西可不只是 “干什么”</d></l>
+				<l c="violet"><s>波江</s><d>这玩意儿基本上是定义了你的角色</d></l>
+				<l c="violet"><s>波江</s><d>从头到尾都跟随着你的角色</d></l>
+				<l c="violet"><s>波江</s><d>阿巴阿巴阿巴……能力……阿巴阿巴……略略略……云云云……这个那个这个那个……</d></l>
 			</log>
 		</content>
 	</page>
@@ -584,50 +584,50 @@
 		<content>
 			<img>../0/45.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Hey Eridan, what's YOUR clas?</d></l>
-				<l c="violet"><s>eridan</s><d>wwhat mine</d></l>
-				<l c="violet"><s>eridan</s><d>not as nice as yours you dont evven need to knoww about it</d></l>
-				<l c="violet"><s>eridan</s><d>like i said i didnt havve anyone guidin me</d></l>
-				<l c="violet"><s>eridan</s><d>but evven then i managed to get to max levvel</d></l>
-				<l c="sparky"><s>sparky</s><d>Whoa, there's a level?</d></l>
-				<l c="violet"><s>eridan</s><d>yeah like if you get enough experience points or somethin you can levvel up</d></l>
-				<l c="violet"><s>eridan</s><d>youre on levvel one right noww it wwould take you pretty long to reach maximum</d></l>
+				<l c="sparky"><s>闪闪</s><d>嘿，波江，<i>你</i>的角色种类是什么？</d></l>
+				<l c="violet"><s>波江</s><d>啥 我的吗</d></l>
+				<l c="violet"><s>波江</s><d>没你的好 你压根就不用管</d></l>
+				<l c="violet"><s>波江</s><d>刚说了 我没有人带我</d></l>
+				<l c="violet"><s>波江</s><d>但即便如此 我也达到了满级</d></l>
+				<l c="sparky"><s>闪闪</s><d>哇，还有等级的？</d></l>
+				<l c="violet"><s>波江</s><d>是啊 拿到了足够的经验或啥的就能升级</d></l>
+				<l c="violet"><s>波江</s><d>你现在在一级 要满级还早得很呢</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="46">
-		<command>Sparky: Prove him wrong.</command>
+		<command>闪闪：他错了。</command>
 		<content>
 			<img>../0/46.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Realy? It seems that al of my level boxes are checked though!</d></l>
-				<l c="violet"><s>eridan</s><d>wwhat the fuck</d></l>
-				<l c="sparky"><s>sparky</s><d>See?</d></l>
-				<l c="violet"><s>eridan</s><d>you checked them yourself didnt you</d></l>
-				<l c="sparky"><s>sparky</s><d>Why, can't I?</d></l>
+				<l c="sparky"><s>闪闪</s><d>真的吗？我看我这些等级格子都被打上勾了啊！</d></l>
+				<l c="violet"><s>波江</s><d>什么鬼</d></l>
+				<l c="sparky"><s>闪闪</s><d>看见了没？</d></l>
+				<l c="violet"><s>波江</s><d>这是你自己打上去的 是不</d></l>
+				<l c="sparky"><s>闪闪</s><d>咋啦，不行吗？</d></l>
 			</log>
 		</content>
 	</page>
 	<page num="47">
-		<command>Eridan: Of course you can!</command>
+		<command>波江：当然可以！</command>
 		<content>
 			<img>../0/47.png</img>
-			<p>Hey, nice! Now you have a max-level Petticoat Seagrift, who basically cheated to get there, but it isn't your fault.</p>
-			<p>Your night keeps on getting better and better.</p>
+			<p>好耶！你现在有一个满级的衬裙海贼，虽然开了外挂，但又不是你的错。</p>
+			<p>今晚越来越棒。</p>
 		</content>
 	</page>
 	<page num="48">
-		<command>Eridan: Finish character creation.</command>
+		<command>波江：完成角色创建。</command>
 		<content>
 			<img>../0/48.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>lets put the finishing touches on your character</d></l>
-				<l c="violet"><s>eridan</s><d>think of a name for her</d></l>
-				<l c="sparky"><s>sparky</s><d>A name? Hmm...</d></l>
-				<l c="sparky"><s>sparky</s><d>I'm not sure what to name her!</d></l>
-				<l c="sparky"><s>sparky</s><d>What did you name yours?</d></l>
-				<l c="violet"><s>eridan</s><d>mine</d></l>
-				<l c="violet"><s>eridan</s><d>orphaner dualscar the same as my ancestors</d></l>
+				<l c="violet"><s>波江</s><d>咱来给你的角色添上画龙点睛之笔</d></l>
+				<l c="violet"><s>波江</s><d>给她起个名</d></l>
+				<l c="sparky"><s>闪闪</s><d>名字？嗯……</d></l>
+				<l c="sparky"><s>闪闪</s><d>我不知道该叫她什么好！</d></l>
+				<l c="sparky"><s>闪闪</s><d>你的角色叫什么？</d></l>
+				<l c="violet"><s>波江</s><d>我的啊</d></l>
+				<l c="violet"><s>波江</s><d>孤儿生产商 和我祖先的外号一样</d></l>
 			</log>
 		</content>
 	</page>
@@ -650,10 +650,10 @@
 		<content>
 			<img>../0/51.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>That's cool! I have an ancestor too!</d></l>
-				<l c="violet"><s>eridan</s><d>oh wwell wwhatevver just come up wwith a name already</d></l>
-				<l c="sparky"><s>sparky</s><d>Hmmmmmmmmmmmmm...</d></l>
-				<l c="sparky"><s>sparky</s><d>Aha! I got it!</d></l>
+				<l c="sparky"><s>闪闪</s><d>That's cool! I have an ancestor too!</d></l>
+				<l c="violet"><s>波江</s><d>oh wwell wwhatevver just come up wwith a name already</d></l>
+				<l c="sparky"><s>闪闪</s><d>Hmmmmmmmmmmmmm...</d></l>
+				<l c="sparky"><s>闪闪</s><d>Aha! I got it!</d></l>
 			</log>
 		</content>
 	</page>
@@ -662,11 +662,11 @@
 		<content>
 			<img>../0/52_0.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Donutmania Derpeyes!</d></l>
+				<l c="sparky"><s>闪闪</s><d>Donutmania Derpeyes!</d></l>
 			</log>
 			<img>../0/52_1.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>(i wwant to fuckin kill you right here right noww)</d></l>
+				<l c="violet"><s>波江</s><d>(i wwant to fuckin kill you right here right noww)</d></l>
 			</log>
 		</content>
 	</page>
@@ -675,19 +675,19 @@
 		<content>
 			<img>../0/53.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>So is the character complete?</d></l>
-				<l c="violet"><s>eridan</s><d>yeah</d></l>
-				<l c="sparky"><s>sparky</s><d>Is Donutmania awesome?</d></l>
-				<l c="violet"><s>eridan</s><d>wwell</d></l>
-				<l c="violet"><s>eridan</s><d>to set the name aside</d></l>
-				<l c="violet"><s>eridan</s><d>TOTALLY</d></l>
-				<l c="violet"><s>eridan</s><d>its a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
-				<l c="violet"><s>eridan</s><d>its the BEST FUCKIN THING wwe could EVVER ask for</d></l>
-				<l c="violet"><s>eridan</s><d>you did a damn right thing teamin up wwith me</d></l>
-				<l c="sparky"><s>sparky</s><d>Awesome!!!!!!!!!!!!!</d></l>
-				<l c="sparky"><s>sparky</s><d>(Huh. I hope so)</d></l>
-				<l c="sparky"><s>sparky</s><d>What do we do now?</d></l>
-				<l c="violet"><s>eridan</s><d>noww wwe come up wwith a team name</d></l>
+				<l c="sparky"><s>闪闪</s><d>So is the character complete?</d></l>
+				<l c="violet"><s>波江</s><d>yeah</d></l>
+				<l c="sparky"><s>闪闪</s><d>Is Donutmania awesome?</d></l>
+				<l c="violet"><s>波江</s><d>wwell</d></l>
+				<l c="violet"><s>波江</s><d>to set the name aside</d></l>
+				<l c="violet"><s>波江</s><d>TOTALLY</d></l>
+				<l c="violet"><s>波江</s><d>its a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
+				<l c="violet"><s>波江</s><d>its the BEST FUCKIN THING wwe could EVVER ask for</d></l>
+				<l c="violet"><s>波江</s><d>you did a damn right thing teamin up wwith me</d></l>
+				<l c="sparky"><s>闪闪</s><d>Awesome!!!!!!!!!!!!!</d></l>
+				<l c="sparky"><s>闪闪</s><d>(Huh. I hope so)</d></l>
+				<l c="sparky"><s>闪闪</s><d>What do we do now?</d></l>
+				<l c="violet"><s>波江</s><d>noww wwe come up wwith a team name</d></l>
 			</log>
 		</content>
 	</page>
@@ -696,14 +696,14 @@
 		<content>
 			<img>../0/54.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>A team name?</d></l>
-				<l c="violet"><s>eridan</s><d>yeah the names of the other twwo teams are</d></l>
-				<l c="violet"><s>eridan</s><d>team scourge vvris an ter</d></l>
-				<l c="violet"><s>eridan</s><d>team charge ara an tavv</d></l>
-				<l c="sparky"><s>sparky</s><d>So they both end in the leters "GE".</d></l>
-				<l c="violet"><s>eridan</s><d>yeah lets see wwhat wwe can come up wwith</d></l>
-				<l c="sparky"><s>sparky</s><d>Cabage, orange, sausage...</d></l>
-				<l c="violet"><s>eridan</s><d>anchorage privvilage strange</d></l>
+				<l c="sparky"><s>闪闪</s><d>A team name?</d></l>
+				<l c="violet"><s>波江</s><d>yeah the names of the other twwo teams are</d></l>
+				<l c="violet"><s>波江</s><d>team scourge vvris an ter</d></l>
+				<l c="violet"><s>波江</s><d>team charge ara an tavv</d></l>
+				<l c="sparky"><s>闪闪</s><d>So they both end in the leters "GE".</d></l>
+				<l c="violet"><s>波江</s><d>yeah lets see wwhat wwe can come up wwith</d></l>
+				<l c="sparky"><s>闪闪</s><d>Cabage, orange, sausage...</d></l>
+				<l c="violet"><s>波江</s><d>anchorage privvilage strange</d></l>
 			</log>
 		</content>
 	</page>
@@ -712,7 +712,7 @@
 		<content>
 			<img>../0/55.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>I've got it!</d></l>
+				<l c="sparky"><s>闪闪</s><d>I've got it!</d></l>
 			</log>
 		</content>
 	</page>
@@ -721,7 +721,7 @@
 		<content>
 			<img>../0/56.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Team Garbage!!!!!!!!!!!!!</d></l>
+				<l c="sparky"><s>闪闪</s><d>Team Garbage!!!!!!!!!!!!!</d></l>
 			</log>
 		</content>
 	</page>
@@ -730,8 +730,8 @@
 		<content>
 			<img>../0/57.gif</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>wwe are team garbage</d></l>
-				<l c="violet"><s>eridan</s><d>im team</d></l>
+				<l c="violet"><s>波江</s><d>wwe are team garbage</d></l>
+				<l c="violet"><s>波江</s><d>im team</d></l>
 			</log>
 		</content>
 	</page>
@@ -740,7 +740,7 @@
 		<content>
 			<img>../0/58.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Huh?</d></l>
+				<l c="sparky"><s>闪闪</s><d>Huh?</d></l>
 			</log>
 		</content>
 	</page>
@@ -749,7 +749,7 @@
 		<content>
 			<img>../0/59.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Oh right! I'm garbage!</d></l>
+				<l c="sparky"><s>闪闪</s><d>Oh right! I'm garbage!</d></l>
 			</log>
 			<p><i>*Applause mixed with laughter (mostly laughter, to be honest)*</i></p>
 		</content>
@@ -759,9 +759,9 @@
 		<content>
 			<img>../0/60.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>noww that evverythins ready</d></l>
-				<l c="violet"><s>eridan</s><d>take this sword and cut the anchor chain</d></l>
-				<l c="sparky"><s>sparky</s><d>What?!</d></l>
+				<l c="violet"><s>波江</s><d>noww that evverythins ready</d></l>
+				<l c="violet"><s>波江</s><d>take this sword and cut the anchor chain</d></l>
+				<l c="sparky"><s>闪闪</s><d>What?!</d></l>
 			</log>
 		</content>
 	</page>
@@ -770,9 +770,9 @@
 		<content>
 			<img>../0/61.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>you see theres this thing called an "anchor" thats used to hold the ship in place wwhen you dont wwant it to movve</d></l>
-				<l c="violet"><s>eridan</s><d>but noww wwere settin sail</d></l>
-				<l c="violet"><s>eridan</s><d>so wwell havve to cut it off</d></l>
+				<l c="violet"><s>波江</s><d>you see theres this thing called an "anchor" thats used to hold the ship in place wwhen you dont wwant it to movve</d></l>
+				<l c="violet"><s>波江</s><d>but noww wwere settin sail</d></l>
+				<l c="violet"><s>波江</s><d>so wwell havve to cut it off</d></l>
 			</log>
 		</content>
 	</page>
@@ -781,9 +781,9 @@
 		<content>
 			<img>../0/62.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Oh, I think I get it!</d></l>
-				<l c="sparky"><s>sparky</s><d>So we cut of the anchor chain every time we want the ship to move?</d></l>
-				<l c="violet"><s>eridan</s><d>uh yeah just like that</d></l>
+				<l c="sparky"><s>闪闪</s><d>Oh, I think I get it!</d></l>
+				<l c="sparky"><s>闪闪</s><d>So we cut of the anchor chain every time we want the ship to move?</d></l>
+				<l c="violet"><s>波江</s><d>uh yeah just like that</d></l>
 			</log>
 		</content>
 	</page>
@@ -803,7 +803,7 @@
 			<p>The engine roars to life. The sea parts before you as the stars lead the way.</p>
 			<p>Eridan takes the helm. You stand in the crow's nest, watching far out to sea.</p>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Uh... So what do we actualy do?</d></l>
+				<l c="sparky"><s>闪闪</s><d>Uh... So what do we actualy do?</d></l>
 			</log>
 		</content>
 	</page>
@@ -812,13 +812,13 @@
 		<content>
 			<img>../0/65_0.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>wwe sail around lookin for other flarpers</d></l>
-				<l c="violet"><s>eridan</s><d>then wwe sink their ships an loot them</d></l>
-				<l c="violet"><s>eridan</s><d>but before that</d></l>
+				<l c="violet"><s>波江</s><d>wwe sail around lookin for other flarpers</d></l>
+				<l c="violet"><s>波江</s><d>then wwe sink their ships an loot them</d></l>
+				<l c="violet"><s>波江</s><d>but before that</d></l>
 			</log>
 			<img>../0/65_1.png</img>
 			<log>
-				<l c="violet"><s>eridan</s><d>wwhy dont you swwap out your kaleidoscope wwith somethin that actually allowws you to see?????</d></l>
+				<l c="violet"><s>波江</s><d>wwhy dont you swwap out your kaleidoscope wwith somethin that actually allowws you to see?????</d></l>
 			</log>
 		</content>
 	</page>
@@ -827,7 +827,7 @@
 		<content>
 			<img>../0/66.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Oh, sure!</d></l>
+				<l c="sparky"><s>闪闪</s><d>哦，好的！</d></l>
 			</log>
 		</content>
 	</page>
@@ -836,7 +836,7 @@
 		<content>
 			<img>../0/67.png</img>
 			<log>
-				<l c="sparky"><s>sparky</s><d>Aha!</d></l>
+				<l c="sparky"><s>闪闪</s><d>啊哈！</d></l>
 			</log>
 		</content>
 	</page>

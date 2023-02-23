@@ -70,9 +70,10 @@
 				this.eventListeners();
 				this.appendStuff();
 			} catch(e) { // page number larger than largest page number
+				console.log(e);
 				this.getControls();
 				let f = document.getElementById('frame');
-				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'This page number does not exist!')));
+				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'An error occured. Maybe because this page number does not exist yet. Maybe because the stupid author made a typo. Check console.')));
 				f.appendChild(this.controls);
 			}
 		}
