@@ -22,7 +22,7 @@
 	margin-top: 10px;
 }
 #content > :nth-child(n) { /* former an-item */
-	margin: 15px auto;
+	margin: 20px auto;
 }
 .panel {
 	height: 540px;
@@ -40,12 +40,25 @@
 .dialog > tr > :last-child {
 	text-align: left;
 }
-/* .dialog-speaker {
-	text-align: right;
-	vertical-align: top;
-	text-transform: uppercase;
-	white-space: nowrap;
+.spoiler {
+	border: 10px dashed #0cf;
+	padding: 10px;
 }
-.dialog-line {
-	text-align: left;
-} */
+.spoiler > button {
+	border: 0;
+	border-radius: 5px;
+	background-color: #0cf;
+	color: #000;
+	cursor: pointer;
+	font-family: Courier new, 微软雅黑 light;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	user-select: none;
+}
+.spoiler > button:hover {
+	text-decoration: underline;
+}
+.spoiler > div {
+	display: none;
+}

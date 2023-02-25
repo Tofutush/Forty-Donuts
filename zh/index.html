@@ -64,7 +64,8 @@
 				this.getDom();
 				this.getSwitchLang();
 				this.getCommand();
-				this.getContent();
+				// compromise for spoilers
+				this.div = this.getContent(this.dom.children[1]); // the "content" tag
 				this.getLink();
 				this.getControls();
 				this.eventListeners();
@@ -73,7 +74,7 @@
 				console.log(e);
 				this.getControls();
 				let f = document.getElementById('frame');
-				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'An error occured. Maybe because this page number does not exist yet. Maybe because the stupid author made a typo. Check console.')));
+				f.appendChild(elt('div', {id: 'content'}, elt('p', {}, '出问题了。可能是目前的页面不存在，也可能是作者打错了个字。看看控制台。')));
 				f.appendChild(this.controls);
 			}
 		}
@@ -82,7 +83,6 @@
 			for(let z = 0; z < c.length; z++) {
 				if(c[z].tagName) { // if it has something special, not a text node
 					if(c[z].tagName == 'ftn') {
-						console.log(c[z].firstChild);
 						this.ftnCount++;
 						this.ftn.appendChild(elt('li', {id: `ftn-${this.ftnCount}`}, String(c[z].firstChild.nodeValue)));
 						d.appendChild(elt('sup', {}, elt('a', {href: `#ftn-${this.ftnCount}`}, String(this.ftnCount))));
@@ -100,7 +100,7 @@
 									d1.style.fontSize = c[z].getAttribute('s');
 									break;
 								case 'i': // italic
-									d1.style.fontFamily = "微软雅黑";
+									d1.style.fontFamily = '微软雅黑';
 									break;
 								case 'u': // underline
 									d1.style.textDecoration = 'underline';
@@ -109,7 +109,7 @@
 									d1.style.textDecoration = 'line-through';
 									break;
 								case 'w': // weight
-									d1.style.fontFamily = "c[z].getAttribute('w')";
+									d1.style.fontWeight = c[z].getAttribute('w');
 									break;
 								case 'cap': // all caps
 									d1.style.textTransform = 'uppercase';
@@ -140,6 +140,20 @@
 			}
 			return t;
 		}
+		spoiler(dom) {
+			let button = elt('button', {}, dom.getAttribute('text'));
+			console.log(dom.children)
+			let cont = this.getContent(dom);
+			console.log(dom, cont);
+			button.addEventListener('click', e => {
+				if(cont.style.display == 'block') {
+					cont.style.display = 'none';
+				} else {
+					cont.style.display = 'block';
+				}
+			});
+			return elt('div', {className: 'spoiler'}, button, cont);
+		}
 		goToPage(num) {
 			window.location.href = `?page=${num}`;
 		}
@@ -154,29 +168,34 @@
 			this.command = elt('div', {id: 'command'},
 				this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
 		}
-		getContent() {
-			let q = this.dom.children[1].children;
-			this.div = elt('div', {id: 'content'});
+		getContent(dom) {
+			console.log(dom);
+			let q = dom.children;
+			let div = elt('div', {id: 'content'});
 			for(let z = 0; z < q.length; z++) {
 				switch(q[z].tagName) {
 					case 'img':
-						this.div.appendChild(elt('div',
+						div.appendChild(elt('div',
 							{className: 'panel'},
 							elt('img', {src: q[z].firstChild.nodeValue, title: q[z].getAttribute('alt') || ''})));
 						break;
 					case 'p':
 						let d = elt('div', {className: 'p'});
-						this.div.appendChild(this.para(d, q[z]));
+						div.appendChild(this.para(d, q[z]));
 						break;
 					case 'br':
-						this.div.appendChild(elt('br'));
+						div.appendChild(elt('br'));
 					case 'log':
-						this.div.appendChild(this.dialog(q[z]));
+						div.appendChild(this.dialog(q[z]));
+						break;
+					case 'spoiler':
+						div.appendChild(this.spoiler(q[z]));
 						break;
 					default:
 						throw new Error(`dang it tag name "${q[z].tagName}" isnt supported sorry`);
 				}
 			}
+			return div;
 		}
 		getLink() {
 			let q = findPage(this.nextNum);
@@ -187,8 +206,8 @@
 			else this.link = 0;
 		}
 		getLoadAndSaveButtons() {
-			this.saveButton = elt('a', {}, '保存');
-			this.loadButton = elt('a', {}, '加载');
+			this.saveButton = elt('a', {}, '保存进度');
+			this.loadButton = elt('a', {}, '加载进度');
 			this.saveButton.addEventListener('click', e => {
 				window.localStorage.setItem('place', this.num);
 				alert('进度已保存！');
