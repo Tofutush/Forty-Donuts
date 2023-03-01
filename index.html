@@ -142,10 +142,9 @@
 		}
 		spoiler(dom) {
 			let button = elt('button', {}, dom.getAttribute('text'));
-			console.log(dom.children)
 			let cont = this.getContent(dom);
-			console.log(dom, cont);
 			button.addEventListener('click', e => {
+				console.log(document.body.scrollHeight);
 				if(cont.style.display == 'block') {
 					cont.style.display = 'none';
 				} else {
@@ -169,7 +168,6 @@
 				this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
 		}
 		getContent(dom) {
-			console.log(dom);
 			let q = dom.children;
 			let div = elt('div', {id: 'content'});
 			for(let z = 0; z < q.length; z++) {
@@ -259,8 +257,8 @@
 	window.addEventListener('scroll', e => {
 		let navbar = document.getElementById('navbar');
 		navbar.style.backgroundImage = `linear-gradient(to right, #0cf ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #000 0%)`;
-		// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 	});
+	// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 </script>
 </body>
 </html>

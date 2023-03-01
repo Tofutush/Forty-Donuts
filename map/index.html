@@ -4,79 +4,12 @@
 	<title>Story Map</title>
 	<link rel="stylesheet" href="../style.css"/>
 	<style>
-		#content {
-			margin: auto;
-			width: 75%;
-		}
-		.section {
-			border-left: 12px solid var(--bd);
-			padding: 0 24px 0 36px;
-			position: relative;
-			user-select: none;
-		}
-		.section::before {
-			background-color: var(--bd);
-			content: '';
-			height: 12px;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 12px;
-		}
-		.section::after {
-			content: '';
-			background-color: var(--bd);
-			height: 12px;
-			width: 12px;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-		}
-		.section div:first-child {
-			background-color: var(--bd);
-			color: #fff;
-			font-size: 24px;
-			left: -34px;
-			line-height: 21px;
-			padding: 5px 3px;
-			position: absolute;
-			top: 40px;
-			width: 28px;
-			word-wrap: break-word;
-		}
-		.section div:first-child p {
-			font-size: 40px;
-			margin: 10px 0;
-		}
-		.act {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			border: 8px solid var(--bd);
-			background-color: var(--bg);
-			color: var(--c);
-			padding: 3px;
-			margin: 12px 0;
-		}
-		.act a {
-			height: 150px;
-			width: 150px;
-		}
-		.act div {
-			margin: 24px;
-			text-align: right;
-		}
-		.act div span:first-child {
-			font-size: 36px;
-		}
-		.act div span:last-child {
-			font-size: 24px;
-		}
-		.mls {
-			display: grid;
-			grid-template-columns: 110px 110px 110px 110px 110px;
-			margin: auto;
-			width: 550px;
+		#title-box {
+			border: 10px solid #0cf;
+			background-color: #fff;
+			padding: 5px;
+			position: fixed;
+			display: none;
 		}
 	</style>
 </head>
@@ -98,183 +31,35 @@
 		<div id="frame">
 			<div id="switch-lang"><a href="../zh/map">简体中文</a></div>
 			<div id="command">Story Map</div>
-			<div id="content">PAGE STILL UNDER CONSTRUCTION. CONTENT IS TEMPORARY.</div>
+			<div id="content">
+				PAGE STILL UNDER CONSTRUCTION. CONTENT IS TEMPORARY.
+				<img src="map.png" usemap="#map">
+				<map name="map">
+				    <area text="page 1" href="../?page=1" target="_blank" shape="rect" coords="181,742,425,874"/>
+				    <area text="page 2adsadasd" href="../?page=2" shape="circle" coords="309,229,140"/>
+				    <area text="page 3 ds s s s s s s s d f d " href="../?page=3" shape="poly" coords="676,375,650,311,689,310,709,344,738,336,775,338,796,361,806,392,807,419,808,437,795,448,755,449,739,459,722,467,697,539,656,483,620,516,603,460,559,519,531,530,538,420,556,375"/>
+				</map>
+				<div id="title-box"/>
+			</div>
 		</div>
 	</div>
 	<script src="../functions.js"></script>
 	<script>
-		const qq = [
-			{ // side 1
-				c: '#b7b7b7',
-				q: [
-					{ // part 1
-						c: '#00f',
-						q: [
-							{ // act 1
-								bd: '#123456',
-								bg: '#654321',
-								c: '#111111',
-								type: 1, // 1 means act
-								num: 1,
-								name: 'FLARPventure',
-								ml: 2,
-								mls: [2, 3, 2, 3, 2, 3, 2, 3]
-							},
-							{ // intermission 1
-								bd: 'green',
-								bg: 'lightgreen',
-								c: '#fff',
-								type: 0, // 0 means intermission
-								num: 1,
-								name: 'The Flashback',
-								ml: 2,
-							},
-							{ // act 1
-								bd: '#abcdef',
-								bg: '#fedcba',
-								c: '#111111',
-								type: 1,
-								num: 2,
-								name: 'The Plane Crash',
-								ml: 2,
-								mls: [2]
-							},
-							{ // act 2
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 2,
-								name: 'Milk, Tea, and Donuts',
-								ml: 2,
-								mls: [2]
-							},
-							{ // intermission ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 0,
-								num: 0,
-								name: 'Asshole Academy',
-								ml: 2,
-								mls: [2]
-							},
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: 'Unfinished Business',
-								ml: 2,
-								mls: [2]
-							},
-						]
-					},
-					{ // part 2
-						c: '#9000ff',
-						q: [
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: '12 + 1: Enter',
-								ml: 0,
-								mls: [0],
-							},
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: 'Desparado Rocket Chair',
-								ml: 0,
-								mls: [0],
-							},
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: 'Operation Regisurp',
-								ml: 0,
-								mls: [0],
-							},
-						]
-					},
-					{ // part 3
-						c: '#555',
-						q: [
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: 'How To Make Shit Go Down: Three Simple Steps',
-								ml: 0,
-								mls: [0],
-							},
-						]
-					}
-				]
-			},
-			{ // side 2
-				c: '#b7b7b7',
-				q: [
-					{ // part 3
-						c: '#555',
-						q: [
-							{ // act ???
-								bd: '#',
-								bg: '#',
-								c: '#',
-								type: 1,
-								num: 0,
-								name: 'Memories Made of Soap',
-								ml: 0,
-								mls: [0, 0]
-							},
-						]
-					}
-				]
-			}
-		];
-		// code relies heavily on structure of qq object
-		for(let z = 0; z < qq.length; z++) {
-			let side = elt('div', {className: 'section'}, elt('div', {}, 'Side', elt('p', {}, String(z + 1))));
-			side.style.setProperty('--bd', qq[z].c);
-			for(let x = 0; x < qq[z].q.length; x++) {
-				let part = elt('div', {className: 'section'}, elt('div', {}, 'Part', elt('p', {}, String(x + 1))));
-				part.style.setProperty('--bd', qq[z].q[x].c);
-				for(let c = 0; c < qq[z].q[x].q.length; c++) {
-					let act = elt('div', {className: 'act'},
-						elt('a', {href: `../?page=${qq[z].q[x].q[c].ml}`},
-							elt('img', {src: `img/${qq[z].q[x].q[c].type ? 'a' : 'i'}${qq[z].q[x].q[c].num}.png`})),
-						elt('div', {},
-							elt('span', {}, `${qq[z].q[x].q[c].type ? 'Act' : 'Intermission'} ${qq[z].q[x].q[c].num}`),
-							elt('br'),
-							elt('span', {}, qq[z].q[x].q[c].name)));
-					act.style.setProperty('--bg', qq[z].q[x].q[c].bg);
-					act.style.setProperty('--bd', qq[z].q[x].q[c].bd);
-					act.style.setProperty('--c', qq[z].q[x].q[c].c);
-					part.appendChild(act);
-					if(qq[z].q[x].q[c].mls) {
-						let mls = elt('div', {className: 'mls'});
-						for(let v = 0; v < qq[z].q[x].q[c].mls.length; v++) {
-							mls.appendChild(elt('a', {href: `../?page=${qq[z].q[x].q[c].mls[v]}`}, elt('img', {src: `img/${qq[z].q[x].q[c].mls[v]}.png`})));
-						}
-						part.appendChild(mls);
-					}
-				}
-				side.appendChild(part);
-			}
-			document.getElementById('content').appendChild(side);
-		}
+		let titleBox = document.getElementById('title-box');
+		let mapAreas = document.querySelector('map').children;
+		for(let z = 0; z < mapAreas.length; z++) {
+			mapAreas[z].addEventListener('mouseover', e => {
+				titleBox.innerText = mapAreas[z].getAttribute('text');
+				titleBox.style.display = 'block';
+			});
+			mapAreas[z].addEventListener('mouseout', e => {
+				titleBox.style.display = 'none';
+			});
+		};
+		window.addEventListener('mousemove', e => {
+			titleBox.style.top = (e.clientY + 20) + 'px';
+			titleBox.style.left = (e.clientX + 20) + 'px';
+		});
 		// when going back, go to last visited page
 		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
 	</script>
