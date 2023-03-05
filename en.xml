@@ -619,7 +619,7 @@
 			</spoiler>
 		</content>
 	</page>
-	<page num="46(hidden)">
+	<page num="46">
 		<command>Sparky: Prove him wrong.</command>
 		<content>
 			<img>0/46.png</img>
@@ -632,7 +632,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="47">
+	<page num="47(hidden)">
 		<command>Eridan: Of course you can!</command>
 		<content>
 			<img>0/47.png</img>

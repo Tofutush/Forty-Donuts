@@ -9,7 +9,12 @@
 			background-color: #fff;
 			padding: 5px;
 			position: fixed;
-			display: none;
+			white-space: nowrap;
+			filter: opacity(0);
+			transition: filter .1s;
+		}
+		img {
+			user-select: none;
 		}
 	</style>
 </head>
@@ -32,12 +37,12 @@
 			<div id="switch-lang"><a href="../zh/map">简体中文</a></div>
 			<div id="command">Story Map</div>
 			<div id="content">
-				PAGE STILL UNDER CONSTRUCTION. CONTENT IS TEMPORARY.
+				<p>PAGE STILL UNDER CONSTRUCTION. CONTENT IS TEMPORARY.</p>
 				<img src="map.png" usemap="#map">
 				<map name="map">
 				    <area text="page 1" href="../?page=1" target="_blank" shape="rect" coords="181,742,425,874"/>
-				    <area text="page 2adsadasd" href="../?page=2" shape="circle" coords="309,229,140"/>
-				    <area text="page 3 ds s s s s s s s d f d " href="../?page=3" shape="poly" coords="676,375,650,311,689,310,709,344,738,336,775,338,796,361,806,392,807,419,808,437,795,448,755,449,739,459,722,467,697,539,656,483,620,516,603,460,559,519,531,530,538,420,556,375"/>
+				    <area text="page 2adsadasd" href="../?page=2" target="_blank" shape="circle" coords="309,229,140"/>
+				    <area text="page 3 ds s s s s s s s d f d " href="../?page=3" target="_blank" shape="poly" coords="676,375,650,311,689,310,709,344,738,336,775,338,796,361,806,392,807,419,808,437,795,448,755,449,739,459,722,467,697,539,656,483,620,516,603,460,559,519,531,530,538,420,556,375"/>
 				</map>
 				<div id="title-box"/>
 			</div>
@@ -50,10 +55,10 @@
 		for(let z = 0; z < mapAreas.length; z++) {
 			mapAreas[z].addEventListener('mouseover', e => {
 				titleBox.innerText = mapAreas[z].getAttribute('text');
-				titleBox.style.display = 'block';
+				titleBox.style.filter = 'opacity(1)';
 			});
 			mapAreas[z].addEventListener('mouseout', e => {
-				titleBox.style.display = 'none';
+				titleBox.style.filter = 'opacity(0)';
 			});
 		};
 		window.addEventListener('mousemove', e => {
