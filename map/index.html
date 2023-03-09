@@ -4,18 +4,7 @@
 	<title>Story Map</title>
 	<link rel="stylesheet" href="../style.css"/>
 	<style>
-		#title-box {
-			border: 10px solid #0cf;
-			background-color: #fff;
-			padding: 5px;
-			position: fixed;
-			white-space: nowrap;
-			filter: opacity(0);
-			transition: filter .1s;
-		}
-		img {
-			user-select: none;
-		}
+		img { user-select: none; }
 	</style>
 </head>
 <body>
@@ -44,28 +33,11 @@
 				    <area text="page 2adsadasd" href="../?page=2" target="_blank" shape="circle" coords="309,229,140"/>
 				    <area text="page 3 ds s s s s s s s d f d " href="../?page=3" target="_blank" shape="poly" coords="676,375,650,311,689,310,709,344,738,336,775,338,796,361,806,392,807,419,808,437,795,448,755,449,739,459,722,467,697,539,656,483,620,516,603,460,559,519,531,530,538,420,556,375"/>
 				</map>
-				<div id="title-box"/>
 			</div>
 		</div>
 	</div>
 	<script src="../functions.js"></script>
 	<script>
-		let titleBox = document.getElementById('title-box');
-		let mapAreas = document.querySelector('map').children;
-		for(let z = 0; z < mapAreas.length; z++) {
-			mapAreas[z].addEventListener('mouseover', e => {
-				titleBox.innerText = mapAreas[z].getAttribute('text');
-				titleBox.style.filter = 'opacity(1)';
-			});
-			mapAreas[z].addEventListener('mouseout', e => {
-				titleBox.style.filter = 'opacity(0)';
-			});
-		};
-		window.addEventListener('mousemove', e => {
-			titleBox.style.top = (e.clientY + 20) + 'px';
-			titleBox.style.left = (e.clientX + 20) + 'px';
-		});
-		// when going back, go to last visited page
-		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
+		document.body.appendChild(titleBox(document.querySelector('map').children));
 	</script>
 </body>

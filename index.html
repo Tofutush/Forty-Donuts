@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="pagestyle.css"/>
 </head>
 <body>
-<nav id="navbar">
+<!-- <nav id="navbar">
 	<a onclick="switchPage('info')">Story Info</a>
 	|
 	<a onclick="switchPage('log')">Story Log</a>
@@ -18,7 +18,19 @@
 	<a href="https://mspfa.com">MSPFA Site</a>
 	|
 	<a href="https://homestuck.com">Homestuck Site</a>
-</nav>
+</nav> -->
+<div id="menu">
+	<div><img src="misc/0.png"/></div>
+	<div text="Story Info"><a href="info"><img src="misc/1.png"/></a></div>
+	<div text="Story Log"><a href="log"><img src="misc/2.png"/></a></div>
+	<div text="Story Map (under construction)"><a href="map"><img src="misc/3.png"/></a></div>
+	<div text="Forty Donuts on MSPFA"><a href="https://mspfa.com/?s=48313&p=1"><img src="misc/4.png"/></a></div>
+	<div text="MSPFA Site"><a href="https://mspfa.com"><img src="misc/5.png"/></a></div>
+	<div text="Homestuck Site"><a href="https://www.homestuck.com"><img src="misc/6.png"/></a></div>
+</div>
+<div id="topbar">
+	<a href="."><img src="misc/topbar.png"/></a>
+</div>
 <div id="wrapper">
 	<div id="frame"></div>
 </div>
@@ -247,18 +259,6 @@
 	}
 	let page = new Page(Number(url.get('page')) || 1);
 	// page.appendStuff();
-
-	// switch page needs to remember previous page num
-	function switchPage(kind) {
-		window.localStorage.setItem('switchpagenum', page.num);
-		window.location.href = kind;
-	}
-	// alt progress bar at top cuz it looks stupid on the right. code from eloquentjavascript.net
-	window.addEventListener('scroll', e => {
-		let navbar = document.getElementById('navbar');
-		navbar.style.backgroundImage = `linear-gradient(to right, #0cf ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, #000 0%)`;
-	});
-	// navbar.style.backgroundImage = `linear-gradient(to right, #a5a5a5 ${(pageYOffset / (document.body.scrollHeight - innerHeight)) * 100}%, transparent 0%), url('backgroundimage')`;
 </script>
 </body>
 </html>

@@ -25,21 +25,28 @@ a:visited {
 	color: inherit;
 	background-color: #aaa;
 }
-#navbar {
+#topbar {
 	min-width: 1024px;
-	background-color: #000;
-	font-size: 16px;
-	color: #fff;
-	text-shadow: #000 1px 1px 0;
-	padding: 3px;
 	text-align: center;
-	position: sticky;
-	top: 0;
-	z-index: 999;
-	// background: url('backgroundimage');
+	background-color: #000;
 }
-#navbar a {
-	color: #0cf;
+#menu {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+#menu > div {
+	height: 50px;
+	width: 50px;
+	border: 8px solid #0cf;
+	border-radius: 999px;
+	margin: 15px 0;
+	cursor: pointer;
+	transition: .5s;
+	filter: opacity(0);
+}
+#menu > div:nth-child(1) {
+	filter: none;
 }
 #wrapper {
 	background-color: #fff;
