@@ -5,19 +5,17 @@
 	<link rel="stylesheet" href="../../style.css"/>
 </head>
 <body>
-	<nav id="navbar">
-		<a id="back">返回</a>
-		|
-		<a href="../log">页面清单</a>
-		|
-		<a href="../map">故事地图</a>
-		|
-		<a href="https://mspfa.com/?s=48313&p=1">MSPFA 上查看四十甜甜圈</a>
-		|
-		<a href="https://mspfa.com">MSPFA 主站</a>
-		|
-		<a href="https://homestuck.com">卡家主站</a>
-	</nav>
+	<div id="menu">
+		<div><img src="../../misc/0.png"/></div>
+		<div text="页面清单"><a target="_blank" href="../log"><img src="../../misc/2.png"/></a></div>
+		<div text="故事地图（未完成）"><a target="_blank" href="../map"><img src="../../misc/3.png"/></a></div>
+		<div text="MSPFA 上的四十甜甜圈"><a target="_blank" href="https://mspfa.com/?s=48313&p=1"><img src="../../misc/4.png"/></a></div>
+		<div text="MSPFA 主站"><a target="_blank" href="https://mspfa.com"><img src="../../misc/5.png"/></a></div>
+		<div text="卡家主站"><a target="_blank" href="https://www.homestuck.com"><img src="../../misc/6.png"/></a></div>
+	</div>
+	<div id="topbar">
+		<a href="."><img src="../../misc/topbar.png"/></a>
+	</div>
 	<div id="wrapper">
 		<div id="frame">
 			<div id="switch-lang"><a href="../../info">English (USA)</a></div>
@@ -30,9 +28,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		// when going back, go to last visited page
-		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
-	</script>
+	<script src="../../functions.js"></script>
 </body>
 </html>
