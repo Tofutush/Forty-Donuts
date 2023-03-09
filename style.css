@@ -38,6 +38,7 @@ a:visited {
 #menu > div {
 	height: 50px;
 	width: 50px;
+	background-color: #fff;
 	border: 8px solid #0cf;
 	border-radius: 999px;
 	margin: 15px 0;
@@ -45,7 +46,11 @@ a:visited {
 	transition: .5s;
 	filter: opacity(0);
 }
+#menu img {
+	transition: .5s;
+}
 #menu > div:nth-child(1) {
+	background-color: #0000;
 	filter: none;
 }
 #wrapper {

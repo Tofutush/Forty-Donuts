@@ -24,7 +24,7 @@ function titleBox(targets) {
 // menu in every page
 (function() {
 	let menu = Array.from(document.getElementById('menu').children);
-	let open = menu.shift(); // now open is the first element and menu contains the rest
+	let open = menu.shift().children[0]; // now open is the first element and menu contains the rest
 	document.body.appendChild(titleBox(menu));
 	open.addEventListener('click', e => {
 		if(open.style.transform == 'rotate(540deg)') {
