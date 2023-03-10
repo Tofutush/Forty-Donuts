@@ -29,14 +29,18 @@ function titleBox(targets) {
 	open.addEventListener('click', e => {
 		if(open.style.transform == 'rotate(540deg)') {
 			open.style.transform = '';
-			for(let z = 0; z < menu.length; z++) {
-				menu[z].style.filter = 'opacity(0)';
-			}
+			setTimeout(() => {
+				for(let z = 0; z < menu.length; z++) {
+					menu[z].style.display = 'none';
+				}
+			}, 250);
 		} else {
 			open.style.transform = 'rotate(540deg)';
-			for(let z = 0; z < menu.length; z++) {
-				menu[z].style.filter = 'opacity(1)';
-			}
+			setTimeout(() => {
+				for(let z = 0; z < menu.length; z++) {
+					menu[z].style.display = 'block';
+				}
+			}, 250);
 		}
 	})
 })();
