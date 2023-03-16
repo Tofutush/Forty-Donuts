@@ -612,7 +612,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="47(hidden)">
+	<page num="47">
 		<command>波江：当然可以！</command>
 		<content>
 			<img>../0/47.png</img>
@@ -620,7 +620,7 @@
 			<p>今晚越来越棒。</p>
 		</content>
 	</page>
-	<page num="48">
+	<page num="48(hidden)">
 		<command>波江：完成角色创建。</command>
 		<content>
 			<img>../0/48.png</img>

@@ -1,0 +1,13 @@
+#content {
+	text-align: left;
+	column: 30% 3;
+}
+.log-page {
+	margin: 10px;
+}
+.log-div {
+	margin-left: 24px;
+}
+.old-to-new:hover {
+	cursor: pointer;
+}

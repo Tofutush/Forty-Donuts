@@ -632,7 +632,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="47(hidden)">
+	<page num="47">
 		<command>Eridan: Of course you can!</command>
 		<content>
 			<img>0/47.png</img>
@@ -640,7 +640,7 @@
 			<p>Your night keeps on getting better and better.</p>
 		</content>
 	</page>
-	<page num="48">
+	<page num="48(hidden)">
 		<command>Eridan: Finish character creation.</command>
 		<content>
 			<img>0/48.png</img>

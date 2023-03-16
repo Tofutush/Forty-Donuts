@@ -3,80 +3,34 @@
 <head>
 	<title>页面清单</title>
 	<link rel="stylesheet" href="../../style.css"/>
-	<style>
-		#content {
-			text-align: left;
-			column: 30% 3;
-		}
-		.log-page {
-			margin: 10px;
-		}
-		.log-div {
-			margin-left: 24px;
-		}
-		.old-to-new:hover {
-			cursor: pointer;
-		}
-	</style>
+	<link rel="stylesheet" href="../../log/log.css"/>
 </head>
 <body>
-	<div id="menu">
-		<div><img src="../../misc/0.png"/></div>
-		<div text="故事简介"><a target="_blank" href="../info"><img src="../../misc/1.png"/></a></div>
-		<div text="故事地图（未完成）"><a target="_blank" href="../map"><img src="../../misc/3.png"/></a></div>
-		<div text="MSPFA 上的四十甜甜圈"><a target="_blank" href="https://mspfa.com/?s=48313&p=1"><img src="../../misc/4.png"/></a></div>
-		<div text="MSPFA 主站"><a target="_blank" href="https://mspfa.com"><img src="../../misc/5.png"/></a></div>
-		<div text="卡家主站"><a target="_blank" href="https://www.homestuck.com"><img src="../../misc/6.png"/></a></div>
+<div id="menu">
+	<div><img src="../../misc/0.png"/></div>
+	<div text="故事简介"><a target="_blank" href="../info"><img src="../../misc/1.png"/></a></div>
+	<div text="故事地图（未完成）"><a target="_blank" href="../map"><img src="../../misc/3.png"/></a></div>
+	<div text="MSPFA 上的四十甜甜圈"><a target="_blank" href="https://mspfa.com/?s=48313&p=1"><img src="../../misc/4.png"/></a></div>
+	<div text="MSPFA 主站"><a target="_blank" href="https://mspfa.com"><img src="../../misc/5.png"/></a></div>
+	<div text="卡家主站"><a target="_blank" href="https://www.homestuck.com"><img src="../../misc/6.png"/></a></div>
+</div>
+<div id="topbar">
+	<a href="/Forty-Donuts/zh"><img src="../../misc/topbar.png"/></a>
+</div>
+<div id="wrapper">
+	<div id="frame">
+		<div id="switch-lang"><a href="../../log">English (USA)</a></div>
+		<div id="command">页面清单</div>
+		<div id="content"/>
 	</div>
-	<div id="topbar">
-		<a href="/Forty-Donuts"><img src="../../misc/topbar.png"/></a>
-	</div>
-	<div id="wrapper">
-		<div id="frame">
-			<div id="switch-lang"><a href="../../log">English (USA)</a></div>
-			<div id="command">页面清单</div>
-			<div id="content"/>
-		</div>
-	</div>
-	<script src="../../functions.js"></script>
-	<script>
-		// first get info
-		let content = document.getElementById('content');
-		let allPages = loadXML('../zh.xml').children;
-		let log = [], flag = true;
-		for(let z = allPages.length - 1; z >= 0; z--) {
-			log.push({
-				num: z + 1,
-				command: allPages[z].children[0].firstChild ? allPages[z].children[0].firstChild.nodeValue : '======->'
-			});
-		}
-		// then append stuff
-		let oldToNew = elt('a', {className: 'old-to-new'}, '由旧到新');
-		content.appendChild(oldToNew);
-		let logAsc = elt('ol', {className: 'log-div', style: 'display: none;'});
-		let logDsc = elt('ol', {className: 'log-div', reversed: 1});
-		for(let z = log.length - 1; z >= 0; z--) {
-			logAsc.appendChild(elt('li', {className: 'log-page',}, elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
-		}
-		for(let z = 0; z < log.length; z++) {
-			logDsc.appendChild(elt('li', {className: 'log-page'}, elt('a', {href: `../?page=${log[z].num}`}, log[z].command)));
-		}
-		content.appendChild(logAsc);
-		content.appendChild(logDsc);
-		// old to new function
-		oldToNew.addEventListener('click', e => {
-			if(flag) { // asc
-				logAsc.style.display = 'block';
-				logDsc.style.display = 'none';
-				oldToNew.innerText = '由新到旧';
-			} else { // desc
-				logDsc.style.display = 'block';
-				logAsc.style.display = 'none';
-				oldToNew.innerText = '由旧到新';
-			}
-			flag = !flag;
-		});
-		// when going back, go to last visited page
-		document.getElementById('back').href = `../?page=${window.localStorage.getItem('switchpagenum') || 1}`;
-	</script>
+</div>
+<script src="../../functions.js"></script>
+<script>
+let local = {
+	xml: '../zh.xml',
+	old2new: '由旧到新',
+	new2old: '由新到旧',
+};
+</script>
+<script src="../../log/log.js"></script>
 </body>
