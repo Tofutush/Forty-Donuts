@@ -617,10 +617,10 @@
 		<content>
 			<img>../0/47.png</img>
 			<p>好耶！你现在有一个满级的衬裙海贼，虽然开了外挂，但又不是你的错。</p>
-			<p>今晚越来越棒。</p>
+			<p>今晚真是越来越棒！</p>
 		</content>
 	</page>
-	<page num="48(hidden)">
+	<page num="48">
 		<command>波江：完成角色创建。</command>
 		<content>
 			<img>../0/48.png</img>
@@ -631,8 +631,11 @@
 				<l c="sparky"><s>闪闪</s><d>我不知道该叫她什么好！</d></l>
 				<l c="sparky"><s>闪闪</s><d>你的角色叫什么？</d></l>
 				<l c="violet"><s>波江</s><d>我的啊</d></l>
-				<l c="violet"><s>波江</s><d>孤儿生产商 和我祖先的外号一样</d></l>
+				<l c="violet"><s>波江</s><d>Orphaner Dualscar 和我祖先的外号一样</d></l>
 			</log>
+			<spoiler text="作者提醒">
+				<p>波江笑了，有点出戏，但我感觉只有这个表情合适。还有，Orphaner Dualscar 我留在那儿没翻译，因为我想不出很好的翻译。</p>
+			</spoiler>
 		</content>
 	</page>
 	<page num="49">
@@ -645,8 +648,8 @@
 	<page num="50">
 		<command>Sparky: Have another flashback</command>
 		<content>
-			<img>../0/49.png</img>
-			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one. That's why they might not always be in chronological order!</p>
+			<img>../0/50.png</img>
+			<p>No, you're not having a flashback every time you think of something! That would be really time-consuming, since you have a <i>lot</i> of memories.</p>
 		</content>
 	</page>
 	<page num="51">
@@ -661,7 +664,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="52">
+	<page num="52(hidden)">
 		<command/>
 		<content>
 			<img>../0/52_0.png</img>
@@ -685,11 +688,11 @@
 				<l c="violet"><s>波江</s><d>wwell</d></l>
 				<l c="violet"><s>波江</s><d>to set the name aside</d></l>
 				<l c="violet"><s>波江</s><d>TOTALLY</d></l>
-				<l c="violet"><s>波江</s><d>its a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
-				<l c="violet"><s>波江</s><d>its the BEST FUCKIN THING wwe could EVVER ask for</d></l>
+				<l c="violet"><s>波江</s><d>shes a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
+				<l c="violet"><s>波江</s><d>shes the BEST FUCKIN THING wwe could EVVER ask for</d></l>
 				<l c="violet"><s>波江</s><d>you did a damn right thing teamin up wwith me</d></l>
 				<l c="sparky"><s>闪闪</s><d>Awesome!!!!!!!!!!!!!</d></l>
-				<l c="sparky"><s>闪闪</s><d>(Huh. I hope so)</d></l>
+				<l c="sparky"><s>闪闪</s><d>(Huh. I hope so.)</d></l>
 				<l c="sparky"><s>闪闪</s><d>What do we do now?</d></l>
 				<l c="violet"><s>波江</s><d>noww wwe come up wwith a team name</d></l>
 			</log>
@@ -706,8 +709,8 @@
 				<l c="violet"><s>波江</s><d>team charge ara an tavv</d></l>
 				<l c="sparky"><s>闪闪</s><d>So they both end in the leters "GE".</d></l>
 				<l c="violet"><s>波江</s><d>yeah lets see wwhat wwe can come up wwith</d></l>
-				<l c="sparky"><s>闪闪</s><d>Cabage, orange, sausage...</d></l>
 				<l c="violet"><s>波江</s><d>anchorage privvilage strange</d></l>
+				<l c="sparky"><s>闪闪</s><d>Cabage, orange, sausage...</d></l>
 			</log>
 		</content>
 	</page>
@@ -755,7 +758,7 @@
 			<log>
 				<l c="sparky"><s>闪闪</s><d>Oh right! I'm garbage!</d></l>
 			</log>
-			<p><i>*Applause mixed with laughter (mostly laughter, to be honest)*</i></p>
+			<p><i>*Applause mixed with laughter (mostly laughter, to be honest.)*</i></p>
 		</content>
 	</page>
 	<page num="60">

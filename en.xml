@@ -640,7 +640,7 @@
 			<p>Your night keeps on getting better and better.</p>
 		</content>
 	</page>
-	<page num="48(hidden)">
+	<page num="48">
 		<command>Eridan: Finish character creation.</command>
 		<content>
 			<img>0/48.png</img>
@@ -653,6 +653,9 @@
 				<l c="violet"><s>eridan</s><d>mine</d></l>
 				<l c="violet"><s>eridan</s><d>orphaner dualscar the same as my ancestors</d></l>
 			</log>
+			<spoiler text="Author's note">
+				<p>Eridan smiles. That's a little out of character and I apologize, but I can't really think of a better expression for this page.</p>
+			</spoiler>
 		</content>
 	</page>
 	<page num="49">
@@ -665,8 +668,8 @@
 	<page num="50">
 		<command>Sparky: Have another flashback</command>
 		<content>
-			<img>0/49.png</img>
-			<p>No, you're not having a flashback every time you think of something! Flashbacks don't come to you; you decide when you have one. That's why they might not always be in chronological order!</p>
+			<img>0/50.png</img>
+			<p>No, you're not having a flashback every time you think of something! That would be really time-consuming, since you have a <i>lot</i> of memories.</p>
 		</content>
 	</page>
 	<page num="51">
@@ -681,7 +684,7 @@
 			</log>
 		</content>
 	</page>
-	<page num="52">
+	<page num="52（hidden）">
 		<command/>
 		<content>
 			<img>0/52_0.png</img>
@@ -705,11 +708,11 @@
 				<l c="violet"><s>eridan</s><d>wwell</d></l>
 				<l c="violet"><s>eridan</s><d>to set the name aside</d></l>
 				<l c="violet"><s>eridan</s><d>TOTALLY</d></l>
-				<l c="violet"><s>eridan</s><d>its a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
-				<l c="violet"><s>eridan</s><d>its the BEST FUCKIN THING wwe could EVVER ask for</d></l>
+				<l c="violet"><s>eridan</s><d>shes a MAX LEVVEL PETTICOAT SEAGRIFT</d></l>
+				<l c="violet"><s>eridan</s><d>shes the BEST FUCKIN THING wwe could EVVER ask for</d></l>
 				<l c="violet"><s>eridan</s><d>you did a damn right thing teamin up wwith me</d></l>
 				<l c="sparky"><s>sparky</s><d>Awesome!!!!!!!!!!!!!</d></l>
-				<l c="sparky"><s>sparky</s><d>(Huh. I hope so)</d></l>
+				<l c="sparky"><s>sparky</s><d>(Huh. I hope so.)</d></l>
 				<l c="sparky"><s>sparky</s><d>What do we do now?</d></l>
 				<l c="violet"><s>eridan</s><d>noww wwe come up wwith a team name</d></l>
 			</log>
@@ -725,9 +728,8 @@
 				<l c="violet"><s>eridan</s><d>team scourge vvris an ter</d></l>
 				<l c="violet"><s>eridan</s><d>team charge ara an tavv</d></l>
 				<l c="sparky"><s>sparky</s><d>So they both end in the leters "GE".</d></l>
-				<l c="violet"><s>eridan</s><d>yeah lets see wwhat wwe can come up wwith</d></l>
+				<l c="violet"><s>eridan</s><d>yeah lets see wwhat wwe can come up wwith</d></l>			<l c="violet"><s>eridan</s><d>anchorage privvilage strange</d></l>
 				<l c="sparky"><s>sparky</s><d>Cabage, orange, sausage...</d></l>
-				<l c="violet"><s>eridan</s><d>anchorage privvilage strange</d></l>
 			</log>
 		</content>
 	</page>
@@ -775,7 +777,7 @@
 			<log>
 				<l c="sparky"><s>sparky</s><d>Oh right! I'm garbage!</d></l>
 			</log>
-			<p><i>*Applause mixed with laughter (mostly laughter, to be honest)*</i></p>
+			<p><i>*Applause mixed with laughter (mostly laughter, to be honest.)*</i></p>
 		</content>
 	</page>
 	<page num="60">
