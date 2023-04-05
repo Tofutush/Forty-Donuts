@@ -22,7 +22,7 @@
 	margin: 20px auto;
 }
 .panel {
-	height: 540px;
+	min-height: 540px;
 	user-select: none;
 }
 .dialog {

@@ -13,14 +13,14 @@ const colors = {
 	purple: '#440a7f',
 	violet: '#6a006a',
 	fuchsia: '#99004d',
-	blue: '#0715cd',
-	lightblue: '#00d6f1',
-	lalondepurple: '#b536da',
-	pink: '#ff6ff2',
-	red: '#e00707',
-	orange: '#f1a500',
-	green: '#4a7925',
-	darkgreen: '#1e9300'
+	john: '#0715cd',
+	jane: '#00d6f1',
+	rose: '#b536da',
+	roxy: '#ff6ff2',
+	dave: '#e00707',
+	dirk: '#f1a500',
+	jade: '#4a7925',
+	jake: '#1e9300'
 };
 let url = new URLSearchParams(window.location.search);
 let allPages = loadXML(local.xml).children;

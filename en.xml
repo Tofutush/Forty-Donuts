@@ -1,33 +1,24 @@
 <story>
 	<!-- syntax:
-		<page num="pagenum">
-			<command/>
-			<content>
-				<img>url</img>
-				<p>every paragraph must be wrapped with it.</p>
-				<log>
-					<l c="color, rust - fuchsia or sparky or equius"><s>speaker, no : needed</s><d>what they say</d></l>
-				</log>
-			</content>
-		</page>
+	<page num="">
+		<command/>
+		<content>
+			<img>.png</img>
+			<log>
+				<l c=""><s></s><d></d></l>
+			</log>
+		</content>
+	</page>
 	-->
 	<page num="1">
 		<command>Forty Donuts</command>
 		<content>
-			<p><s s="40px">Act 1: FLARPventure</s></p>
-			<br/>
-			<p>In which Sparky gets roped into FLARPing by Eridan, and they get stuck on the first step: coming up with a team name.</p>
-			<p>Team Garbage? Sounds great.</p>
-			<br/>
-			<p>CHARACTERS: <c c="sparky">Sparky</c>, <c c="violet">Eridan</c>, <c c="teal">Terezi</c>, <c c="cerulean">Vriska</c>, <c c="rust">Aradia</c>, <c c="bronze">Tavros</c>, <c c="olive">Nepeta</c> (flashback).</p>
-			<br/>
-			<p>DEVIATION FROM HOMESTUCK: Not much. Actually it's not going to differ a lot to the canon trolls until right before they enter the game. <i>Objectif Luna</i></p>
-			<br/>
-			<p><s s="40px">Notes</s></p>
-			<p>- Every instance of "god" or "gog" is replaced with "boy".</p>
-			<p>- Content warnings: basically Homestuck level. If you can read through the entirety of Homestuck, you'll be able to handle this.</p>
-			<br/>
-			<spoiler text="Author's pathetic inner monologue">
+			<img>0/1.png</img>
+			<spoiler text="Notes">
+				<p>- Every instance of "god" or "gog" is replaced with "boy".</p>
+				<p>- Content warnings: basically Homestuck level. If you can read through the entirety of Homestuck, you'll be able to handle this.</p>
+			</spoiler>
+			<spoiler text="Author's pathetic inner monologue (TL;DR)">
 				<p>First of all, hey reader, thank you for clicking into this little adventure for whatever reason. Mostly because you saw it on the "recently updated" section.</p>
 				<p>Now, this is my first ever Homestuck fanventure. I'm still even relatively new to this <a href="https://mspfa.com">mspfa site</a>. However, I already have this adventure planned from Alternia to Earth C, the entire journey of the trolls and kids. (I won't say no to suggestions though.) I know that a lot of adventures probably follow this timeline pattern: Start -- lots of grand plans for future plot -- rising fanbase -- author cancells it because they've lost their childhood dreams and goals -- declining fanbase -- unfinished fanventure lying in the depths of the metaverse, never to be found again.</p>
 				<p>I know that Forty Donuts will probably end like that. I know that you'd probably know it too. But I genuenly (idk how to spell that word not native english speaker sorry) hope it won't. I'm currently in high school, and suffering from a multitude of problems from physical to financial to emotional. Homestuck (along with some other works of fiction) is basically my entire emotional support. Sometimes I zone out and start thinking of imaginary scenes in my head, which I really love and adore (and which I later knew as ADHD-I). That's why I really want to see my grand vision out on your screen and not just in my head. This is going to sound like crap for future me. But at least for now, that's what I want.</p>
@@ -38,7 +29,7 @@
 		</content>
 	</page>
 	<page num="2">
-		<command>Begin.</command>
+		<command>Act 1: FLARPventure</command>
 		<content>
 			<img>0/2.png</img>
 			<p>A young troll sits on a small pier overlooking the sea. It just so happens that she has forgotten her name, forgotten the days of the week, forgotten her larval awakening, and forgotten why she was even here.</p>
@@ -936,6 +927,58 @@
 			<img>0/74.png</img>
 			<log>
 				<l c="sparky"><s>sparky</s><d>Oops! Come bak! Come BAK!</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="75">
+		<command/>
+		<content>
+			<img>0/75.png</img>
+			<p><i>Splash!</i></p>
+			<p>The sound of heartbreak.</p>
+		</content>
+	</page>
+	<page num="76">
+		<command/>
+		<content>
+			<img>0/76.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Oops, I'm so sory!</d></l>
+				<l c="sparky"><s>sparky</s><d>But don't wory! I know what to do! We can draw a line on the gunwale to mark where the book fel of. Then we sail bak to get some diving equipment and dive down at this mark to look for it!</d></l>
+				<l c="violet"><s>eridan</s><d>oh boy oh FUCK</d></l>
+				<l c="sparky"><s>sparky</s><d>You don't like this idea? It's fine! We can also post out a "mising book" notice writen in dolphin language and hope some friendly dolphin down there can return it to us! We'l just have to include the precise longitude and latitude of our ship. Can you calculate that?</d></l>
+				<l c="violet"><s>eridan</s><d>you knoww wwhat ill go wwith the ship markin solution</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="77">
+		<command/>
+		<content>
+			<img>77.png</img>
+			<log>
+				<l c="violet"><s>eridan</s><d>spark wwhy dont you get back on the crowws nest and keep a wwatch for other ships nearby</d></l>
+				<l c="violet"><s>eridan</s><d>if you see ANYTHIN</d></l>
+				<l c="violet"><s>eridan</s><d>anythin at all</d></l>
+				<l c="violet"><s>eridan</s><d>report to me kay</d></l>
+				<l c="sparky"><s>sparky</s><d>Okay!</d></l>
+				<l c="violet"><s>eridan</s><d>an make sure to use this TELESCOPE</d></l>
+			</log>
+		</content>
+	</page>
+	<page num="78">
+		<command/>
+		<content>
+			<img>78.png</img>
+			<log>
+				<l c="sparky"><s>sparky</s><d>Ooh ooh Eridan! I see something!</d></l>
+				<l c="violet"><s>eridan</s><d>wwhat is it</d></l>
+				<l c="sparky"><s>sparky</s><d>The ocean!</d></l>
+				<l c="violet"><s>eridan</s><d>ugh</d></l>
+				<l c="violet"><s>eridan</s><d>somethin wwe havvent seen before</d></l>
+				<l c="sparky"><s>sparky</s><d>Wel, I don't know about YOU, but I know that what <i>I</i> haven't seen is a cat with two croisants pined together at their tips forming a circle around the legs.</d></l>
+				<l c="sparky"><s>sparky</s><d>But I doubt that such a cat would apear in the midle of the sea.</d></l>
+				<l c="violet"><s>eridan</s><d>anythin wwe havvent seen since wwe took sail okay</d></l>
+				<l c="violet"><s>eridan</s><d>(boy is it hard talkin to you)</d></l>
 			</log>
 		</content>
 	</page>
