@@ -675,20 +675,13 @@
 			</log>
 		</content>
 	</page>
-	<page num="52（hidden）">
-		<command/>
+	<page num="52">
+		<command>HIATUS NOTICE</command>
 		<content>
-			<img>0/52_0.png</img>
-			<log>
-				<l c="sparky"><s>sparky</s><d>Donutmania Derpeyes!</d></l>
-			</log>
-			<img>0/52_1.png</img>
-			<log>
-				<l c="violet"><s>eridan</s><d>(i wwant to fuckin kill you right here right noww)</d></l>
-			</log>
+			<p>My drawing tablet broke down, and it would be at least a week before I get a new one. And shit would be going down after a week. The thing is, updates are probably going to resume late May. Sorry :(.</p>
 		</content>
 	</page>
-	<page num="53">
+	<page num="53(hidden)">
 		<command/>
 		<content>
 			<img>0/53.png</img>
