@@ -1,13 +1,21 @@
 #content {
 	text-align: left;
 	column: 30% 3;
+	font-size: 16px;
 }
-.log-page {
+ul > li {
 	margin: 10px;
 }
-.log-div {
-	margin-left: 24px;
+div > ul {
+	list-style: none;
 }
 .old-to-new:hover {
 	cursor: pointer;
+}
+.flash::selection {
+	background-color: #0cf;
+	color: #fff;
+}
+.date {
+	user-select: none;
 }

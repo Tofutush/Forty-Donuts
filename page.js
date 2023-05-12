@@ -1,27 +1,3 @@
-const colors = {
-	rust: '#a10000',
-	bronze: '#a15000',
-	gold: '#a1a100',
-	gray: '#626262',
-	olive: '#416600',
-	jade: '#078446',
-	teal: '#008282',
-	cerulean: '#004182',
-	indigo: '#0021cb',
-	equius: '#000056',
-	sparky: '#0cf',
-	purple: '#440a7f',
-	violet: '#6a006a',
-	fuchsia: '#99004d',
-	john: '#0715cd',
-	jane: '#00d6f1',
-	rose: '#b536da',
-	roxy: '#ff6ff2',
-	dave: '#e00707',
-	dirk: '#f1a500',
-	jade: '#4a7925',
-	jake: '#1e9300'
-};
 let url = new URLSearchParams(window.location.search);
 let allPages = loadXML(local.xml).children;
 
@@ -44,13 +20,13 @@ class Page {
 			this.getControls();
 			this.eventListeners();
 			this.appendStuff();
-		} catch(e) { // page number larger than largest page number
-			console.log(e);
-			this.getControls();
-			let f = document.getElementById('frame');
-			f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'An error occured. Maybe because this page number does not exist yet. Maybe because the stupid author made a typo. Check console.')));
-			f.appendChild(this.controls);
-		}
+		 } catch(e) { // page number larger than largest page number
+		 	console.log(e);
+		 	this.getControls();
+		 	let f = document.getElementById('frame');
+		 	f.appendChild(elt('div', {id: 'content'}, elt('p', {}, 'Page number does not exist!')));
+		 	f.appendChild(this.controls);
+		 }
 	}
 	para(d, dom) {
 		let c = dom.childNodes;
@@ -68,7 +44,7 @@ class Page {
 						d1 = elt('span');
 						switch(c[z].tagName) {
 							case 'c': // color
-								d1.style.color = colors[c[z].getAttribute('c')] || c[z].getAttribute('c');
+								d1.classList.add(c[z].getAttribute('c'));
 								break;
 							case 's': // size
 								d1.style.fontSize = c[z].getAttribute('s');
@@ -106,7 +82,7 @@ class Page {
 		let c = dom.children;
 		for(let z = 0; z < c.length; z++) {
 			t.appendChild(elt('tr',
-				{style: `color: ${colors[c[z].getAttribute('c')] || c[z].getAttribute('c')}`},
+				{className: c[z].getAttribute('c')},
 				this.para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]),
 				elt('td', {className: 'dialog-speaker'}, local.colon),
 				this.para(elt('td', {className: 'dialog-line'}),
@@ -162,6 +138,9 @@ class Page {
 					break;
 				case 'spoiler':
 					div.appendChild(this.spoiler(q[z]));
+					break;
+				case 'split':
+					div.appendChild(elt('div', {className: 'split'}));
 					break;
 				default:
 					throw new Error(`dang it tag name "${q[z].tagName}" isnt supported sorry`);
@@ -220,3 +199,12 @@ class Page {
 	}
 }
 let page = new Page(Number(url.get('page')) || 1);
+document.title = `Forty Donuts | page ${page.num}`;
+
+function findPage(num) {
+	for(let z = 0; z < allPages.length; z++) {
+		if(Number(allPages[z].getAttribute('num')) == num
+		   && allPages[z].getAttribute('date')) // make sure the page is ready to be published
+			return allPages[z];
+	};
+}

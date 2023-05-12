@@ -28,6 +28,9 @@
 .dialog {
 	max-width: 750px;
 }
+.dialog td {
+	padding: 2px;
+}
 .dialog > tr > :first-child, .dialog > tr > :nth-child(2) {
 	text-align: right;
 	vertical-align: top;
@@ -38,13 +41,13 @@
 	text-align: left;
 }
 .spoiler {
-	border: 10px dashed #0cf;
+	border: 10px dashed #aaa;
 	padding: 10px;
 }
 .spoiler > button {
 	border: 0;
 	border-radius: 5px;
-	background-color: #0cf;
+	background-color: #aaa;
 	color: #000;
 	cursor: pointer;
 	font-family: Courier new, 微软雅黑 light;
@@ -59,3 +62,28 @@
 .spoiler > div {
 	display: none;
 }
+/* colors */
+.rust { color: #a10000; }
+.bronze { color: #a15000; }
+.gold { color: #a1a100; }
+.gold > td::selection { color: #e6e600; }
+.gray { color: #626262; }
+.olive { color: #416600; }
+.jade { color: #078446; }
+.teal { color: #008282; }
+.cerulean { color: #004182; }
+.indigo { color: #0021cb; }
+.equius { color: #000056; }
+.sparky { color: #0cf; }
+.sparky > td::selection { color: #2dd5ff; }
+.purple { color: #440a7f; }
+.violet { color: #6a006a; }
+.fuchsia { color: #99004d; }
+.john { color: #0715cd; }
+.jane { color: #00d6f1; }
+.rose { color: #b536da; }
+.roxy { color: #ff6ff2; }
+.dave { color: #e00707; }
+.dirk { color: #f1a500; }
+.jake { color: #4a7925; }
+.jade { color: #1e9300; }
