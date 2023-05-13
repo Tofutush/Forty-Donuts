@@ -182,15 +182,15 @@ class Page {
 	}
 	eventListeners() {
 		document.body.addEventListener('keydown', e => {
-			if(e.keyCode == 37 && findPage(this.prevNum)) // left arrow
+			if(e.key == 'ArrowLeft' && findPage(this.prevNum)) // left arrow
 				this.goToPage(this.prevNum);
-			if(e.keyCode == 39 && findPage(this.nextNum)) // right arrow
+			if(e.key == 'ArrowRight' && findPage(this.nextNum)) // right arrow
 				this.goToPage(this.nextNum);
 		});
 	}
 	appendStuff() {
 		let f = document.getElementById('frame');
-		f.appendChild(this.switchLang);
+		// f.appendChild(this.switchLang);
 		f.appendChild(this.command);
 		f.appendChild(this.div);
 		if(this.link) f.appendChild(this.link);
