@@ -12,7 +12,6 @@ class Page {
 		this.ftnCount = 0;
 		try {
 			this.getDom();
-			this.getSwitchLang();
 			this.getCommand();
 			// compromise for spoilers
 			this.div = this.getContent(this.dom.children[1]); // the "content" tag
@@ -109,10 +108,6 @@ class Page {
 	getDom() {
 		this.dom = findPage(this.num);
 	}
-	getSwitchLang() {
-			this.switchLang = elt('div', {id: 'switch-lang'},
-				elt('a', {href: `${local.href}/?page=${this.num}`}, local.switchLang));
-	}
 	getCommand() {
 		this.command = elt('div', {id: 'command'},
 			this.dom.children[0].firstChild ? this.dom.children[0].firstChild.nodeValue : '======->');
@@ -190,7 +185,6 @@ class Page {
 	}
 	appendStuff() {
 		let f = document.getElementById('frame');
-		// f.appendChild(this.switchLang);
 		f.appendChild(this.command);
 		f.appendChild(this.div);
 		if(this.link) f.appendChild(this.link);
