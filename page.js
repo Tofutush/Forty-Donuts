@@ -1,5 +1,5 @@
 let url = new URLSearchParams(window.location.search);
-let allPages = loadXML(local.xml).children;
+let allPages = loadXML('en.xml').children;
 
 class Page {
 	constructor(num) {
@@ -83,7 +83,7 @@ class Page {
 			t.appendChild(elt('tr',
 				{className: c[z].getAttribute('c')},
 				this.para(elt('td', {className: 'dialog-speaker'}), c[z].children[0]),
-				elt('td', {className: 'dialog-speaker'}, local.colon),
+				elt('td', {className: 'dialog-speaker'}, ':'),
 				this.para(elt('td', {className: 'dialog-line'}),
 				c[z].children[1])));
 		}
@@ -152,8 +152,8 @@ class Page {
 		else this.link = 0;
 	}
 	getLoadAndSaveButtons() {
-		this.saveButton = elt('a', {}, local.save);
-		this.loadButton = elt('a', {}, local.load);
+		this.saveButton = elt('a', {}, 'save place');
+		this.loadButton = elt('a', {}, 'load place');
 		this.saveButton.addEventListener('click', e => {
 			window.localStorage.setItem('place', this.num);
 			alert('place saved!');
@@ -161,15 +161,15 @@ class Page {
 		this.loadButton.addEventListener('click', e => {
 			let storage = window.localStorage.getItem('place');
 			if(storage) window.location.href = `?page=${storage}`;
-			else alert(local.saveAlert);
+			else alert('no place saved! make sure to click "save place" before you can load.');
 		});
 	}
 	getControls() {
 		this.getLoadAndSaveButtons();
 		this.controls = elt('div', {id: 'controls'},
-			elt('a', {href: `?page=${this.prevNum}`}, local.goBack),
+			elt('a', {href: `?page=${this.prevNum}`}, 'go back'),
 			elt('span', {style: 'font-weight: bold;'}, ' | '),
-			elt('a', {href: `?page=1`}, local.startOver),
+			elt('a', {href: `?page=1`}, 'start over'),
 			elt('span', {style: 'font-weight: bold;'}, ' | '),
 			this.saveButton,
 			elt('span', {style: 'font-weight: bold;'}, ' | '),

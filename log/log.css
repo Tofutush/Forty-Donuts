@@ -12,10 +12,6 @@ div > ul {
 .old-to-new:hover {
 	cursor: pointer;
 }
-.flash::selection {
-	background-color: #0cf;
-	color: #fff;
-}
 .date {
 	user-select: none;
 }
